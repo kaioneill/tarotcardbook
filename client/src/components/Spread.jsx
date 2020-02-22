@@ -27,7 +27,7 @@ class Spread extends Component {
         <button onClick={this.moreCards}>more cards</button>
         <div className="card-container">
           {this.state.cards.map(card => (
-            <Card card={card} />
+            <Card card={card} key={card.name} />
           ))}
         </div>
       </div>

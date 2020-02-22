@@ -5,7 +5,7 @@ class Card extends Component {
 
   render() {
     return (
-      <div className="Card" key={this.props.card.name}>
+      <div className="Card">
         <div>
           <div>{this.props.card.name}</div>
           <a
