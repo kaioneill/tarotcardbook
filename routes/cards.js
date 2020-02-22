@@ -1,21 +1,17 @@
-var express = require('express');
-var router = express.Router();
+import express from "express"
 import Card from '../models/card'
+var router = express.Router();
 
 
-/* GET users listing. */
+
 router.get('/', function(req, res, next) {
   // res.send('respond with a resource');
 
-  Card.count().exec(function (err, count) {
+
+  Card.findRandom({}, {}, { limit: 5 }, function(err, cards) {
     if (err) return console.error(err);
-
-    let random = Math.floor(Math.random() * count)
-
-    Card.find({}).skip(random).limit(1).exec(function (err, card) {
-      if (err) return console.error(err);
-      res.send(card);
-    });
+    res.send(cards);
+    console.log(cards);
   });
 
 

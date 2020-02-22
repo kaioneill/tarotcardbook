@@ -1,4 +1,6 @@
 import mongoose from "mongoose";
+import random from "mongoose-simple-random";
+
 
 const cardSchema = new mongoose.Schema({
   name: {
@@ -10,7 +12,10 @@ const cardSchema = new mongoose.Schema({
   }
 });
 
+cardSchema.plugin(random);
+
 const Card = mongoose.model("Card", cardSchema);
+
 
 
 const saveCards = () => {

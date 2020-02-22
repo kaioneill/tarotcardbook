@@ -1,5 +1,4 @@
 import models, { connectDb } from './models/index';
-import Card from './models/card';
 import { saveCards } from "./models/card";
 
 var createError = require('http-errors');
@@ -45,7 +44,7 @@ app.use(function(err, req, res, next) {
 
 connectDb().then(async () => {
   app.listen(process.env.PORT, () => {
-    console.log(`Example app listening on port ${process.env.PORT}!`);
+    console.log(`tarot listening on port ${process.env.PORT}!`);
     // saveCards();
   });
 }).catch((e) => {
