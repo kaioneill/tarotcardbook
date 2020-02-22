@@ -6,9 +6,11 @@ class Spread extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cards: [new Card(), new Card(), new Card()]
+      cards: []
     };
     this.moreCards = this.moreCards.bind(this);
+    this.moreCards();
+    console.log(this.state.cards);
   }
 
   moreCards = () => {
@@ -23,9 +25,11 @@ class Spread extends Component {
       <div className="Spread">
         <h2>spread</h2>
         <button onClick={this.moreCards}>more cards</button>
-        {this.state.cards.map(card => (
-          <Card card={card} />
-        ))}
+        <div className="card-container">
+          {this.state.cards.map(card => (
+            <Card card={card} />
+          ))}
+        </div>
       </div>
     );
   }
