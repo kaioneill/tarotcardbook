@@ -1,6 +1,6 @@
 import models, { connectDb } from './models/index';
 import Card from './models/card';
-import { saveMagician } from "./models/card";
+import { saveCards } from "./models/card";
 
 var createError = require('http-errors');
 var express = require('express');
@@ -46,7 +46,7 @@ app.use(function(err, req, res, next) {
 connectDb().then(async () => {
   app.listen(process.env.PORT, () => {
     console.log(`Example app listening on port ${process.env.PORT}!`);
-    // saveMagician();
+    // saveCards();
   });
 }).catch((e) => {
   console.log(e)

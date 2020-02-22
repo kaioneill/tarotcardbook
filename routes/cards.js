@@ -7,12 +7,23 @@ import Card from '../models/card'
 router.get('/', function(req, res, next) {
   // res.send('respond with a resource');
 
-
-  Card.find({}, function (err, cards) {
+  Card.count().exec(function (err, count) {
     if (err) return console.error(err);
-    console.log(cards)
-    res.send(cards);
-  })
+
+    let random = Math.floor(Math.random() * count)
+
+    Card.find({}).skip(random).limit(1).exec(function (err, card) {
+      if (err) return console.error(err);
+      res.send(card);
+    });
+  });
+
+
+  // Card.find({}, function (err, cards) {
+  //   if (err) return console.error(err);
+  //   console.log(cards)
+  //   res.send(cards);
+  // }).limit(1);
 
 
 
