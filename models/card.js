@@ -9,6 +9,54 @@ const cardSchema = new mongoose.Schema({
   },
   link: {
     type: String,
+  },
+  number: {
+    type: Number,
+  },
+  arcana: {
+    type: String,
+  },
+  suit: {
+    type: String,
+  },
+  img: {
+    type: String,
+  },
+  fortune_telling: {
+    type: [String]
+  },
+  keywords: {
+    type: [String]
+  },
+  light: {
+    type: [String]
+  },
+  shadow: {
+    type: [String]
+  },
+  archetype: {
+    type: String
+  },
+  hebrew_alphabet: {
+    type: String
+  },
+  numerology: {
+    type: String
+  },
+  astrology: {
+    type: String
+  },
+  affirmation: {
+    type: String
+  },
+  elemental: {
+    type: String
+  },
+  mythical_spiritual: {
+    type: String
+  },
+  questions: {
+    type: [String]
   }
 });
 
