@@ -23,9 +23,9 @@ class Spread extends Component {
   render() {
     return (
       <div className="Spread">
-        <h2>spread</h2>
+        <h2>wisdom below</h2>
         <button onClick={this.moreCards}>more cards</button>
-        <div className="card-container">
+        <div className="card-container flex flex-center">
           {this.state.cards.map(card => (
             <Card card={card} key={card.name} />
           ))}

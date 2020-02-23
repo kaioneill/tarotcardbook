@@ -7,6 +7,7 @@ class Card extends Component {
     return (
       <div className="Card">
         <div>
+          <img src={"/images/cards/" + this.props.card.img} alt={ this.props.card.name + ".img"} className="card-image"></img>
           <div>{this.props.card.name}</div>
           <a
             href={this.props.card.link}
