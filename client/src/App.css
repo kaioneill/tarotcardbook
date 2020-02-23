@@ -37,7 +37,9 @@
   }
 }
 
-
+.hidden {
+  display: none;
+}
 
 .flex {
   display: flex;
@@ -54,4 +56,6 @@
 .card-image {
   height: 300px;
 }
+
+
 
