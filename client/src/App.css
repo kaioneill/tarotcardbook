@@ -51,11 +51,19 @@
 
 .Card {
   padding: 20px;
-  width: 200px;
+  width: 300px;
 }
 
 .card-image {
   height: 300px;
+}
+
+.rotate-180 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 

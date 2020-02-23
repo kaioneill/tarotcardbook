@@ -2,6 +2,12 @@ import React, { Component } from "react";
 import "../App.css";
 
 class Card extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      reversed: Math.random() >= 0.5
+    };
+  }
 
   render() {
     return (
@@ -10,9 +16,11 @@ class Card extends Component {
           src={"/images/cards/" + this.props.card.img}
           alt={this.props.card.name + ".img"}
           onClick={this.showModal}
-          className="card-image"
+          className={"card-image" + (this.state.reversed ? " rotate-180" : "")}
         ></img>
-        <div>{this.props.card.name}</div>
+        <h4>
+          {this.props.card.name + (this.state.reversed ? " Reversed" : "")}
+        </h4>
         <div>"{this.props.card.light[0]}"</div>
         <a
           href={this.props.card.link}
