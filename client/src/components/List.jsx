@@ -15,7 +15,7 @@ export class List extends Component {
   }
 
   render() {
-    if (this.state.cards.length == 0) {
+    if (this.state.cards.length === 0) {
       return (
         <div className="List">
           <h2>all the things</h2>
