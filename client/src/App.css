@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: 100%;
 }
 
 .App-logo {
@@ -48,6 +49,11 @@
 .flex-center {
   justify-content: center;
 }
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 
 .Card {
   padding: 20px;

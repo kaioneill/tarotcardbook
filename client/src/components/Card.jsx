@@ -5,7 +5,7 @@ class Card extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      reversed: Math.random() >= 0.5
+      reversed: (this.props.noReverse ? false : Math.random() >= 0.5)
     };
   }
 
