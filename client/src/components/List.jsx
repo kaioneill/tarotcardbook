@@ -10,7 +10,10 @@ export class List extends Component {
     };
     this.getSuit = this.getSuit.bind(this);
     this.toggleDepressed = this.toggleDepressed.bind(this);
-    this.getSuit(null, 'Trump');
+  }
+
+  componentDidMount() {
+    this.getSuit(null, "Trump");
   }
 
   getSuit = (e, suit) => {

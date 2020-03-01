@@ -9,8 +9,10 @@ class Spread extends Component {
       cards: []
     };
     this.moreCards = this.moreCards.bind(this);
+  }
+
+  componentDidMount() {
     this.moreCards();
-    console.log(this.state.cards);
   }
 
   moreCards = () => {
@@ -25,7 +27,7 @@ class Spread extends Component {
       <div className="Spread">
         <h2>wisdom below</h2>
         <button onClick={this.moreCards}>more cards</button>
-        <div className="card-container flex flex-center">
+        <div className="card-container flex flex-center flex-wrap">
           {this.state.cards.map(card => (
             <Card card={card} key={card.name} />
           ))}
