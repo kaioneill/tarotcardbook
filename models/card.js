@@ -11,6 +11,9 @@ const cardSchema = new mongoose.Schema({
   link: {
     type: String,
   },
+  link_r: {
+    type: String,
+  },
   number: {
     type: Number,
   },
@@ -65,7 +68,12 @@ cardSchema.plugin(random);
 
 const Card = mongoose.model("Card", cardSchema);
 
-
+const deleteCards = () => {
+  Card.deleteMany({}, function (err) {
+    if (err) return console.error(err);
+    console.log('cards deleted');
+  });
+}
 
 const saveCards = () => {
 
@@ -79,5 +87,5 @@ const saveCards = () => {
   });
 }
 
-export { saveCards }
+export { deleteCards, saveCards }
 export default Card;

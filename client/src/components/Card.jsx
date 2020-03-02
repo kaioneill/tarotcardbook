@@ -23,7 +23,7 @@ class Card extends Component {
         </h4>
         <div>"{this.props.card.light[0]}"</div>
         <a
-          href={this.props.card.link}
+          href={this.state.reversed ? this.props.card.link_r : this.props.card.link}
           rel="noopener noreferrer"
           target="_blank"
         >
