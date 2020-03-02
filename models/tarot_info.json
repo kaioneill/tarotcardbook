@@ -4,7 +4,8 @@
 		{
 			"name": "The Fool",
 			"link": "https://www.elliotoracle.com/blog/2017/7/23/the-card-of-the-day-the-fool",
-			"number": "0",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/11/the-card-of-the-day-the-fool-reversed",
+      "number": "0",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m00.jpg",
@@ -52,7 +53,8 @@
 		{
 			"name": "The Magician",
 			"link": "https://www.elliotoracle.com/blog/2018/1/30/the-card-of-the-day-the-magician",
-			"number": "1",
+			"link_r": "https://www.elliotoracle.com/blog/2018/6/25/the-card-of-the-day-the-magician-reversed",
+      "number": "1",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m01.jpg",
@@ -95,7 +97,8 @@
 		{
 			"name": "The High Priestess",
 			"link": "https://www.elliotoracle.com/blog/2018/10/2/the-card-of-the-day-the-high-priestess",
-			"number": "2",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/13/the-card-of-the-day-the-high-priestess-reversed",
+      "number": "2",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m02.jpg",
@@ -141,7 +144,8 @@
 		{
 			"name": "The Empress",
 			"link": "https://www.elliotoracle.com/blog/2017/7/10/the-card-of-the-day-the-empress",
-			"number": "3",
+			"link_r": "https://www.elliotoracle.com/blog/2017/8/18/the-card-of-the-day-the-empress-reversed",
+      "number": "3",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m03.jpg",
@@ -188,7 +192,8 @@
 		{
 			"name": "The Emperor",
 			"link": "https://www.elliotoracle.com/blog/2018/10/11/the-card-of-the-day-the-emperor",
-			"number": "4",
+			"link_r": "https://www.elliotoracle.com/blog/2017/8/17/the-card-of-the-day-the-emperor-reversed",
+      "number": "4",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m04.jpg",
@@ -232,7 +237,8 @@
 		{
 			"name": "The Hierophant",
 			"link": "https://www.elliotoracle.com/blog/2018/12/26/the-card-of-the-day-the-hierophant",
-			"number": "5",
+			"link_r": "https://www.elliotoracle.com/blog/2017/11/14/the-card-of-the-day-the-hierophant-reversed",
+      "number": "5",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m05.jpg",
@@ -278,7 +284,8 @@
 		{
 			"name": "The Lovers",
 			"link": "https://www.elliotoracle.com/blog/2019/4/11/the-card-of-the-day-the-lovers",
-			"number": "6",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/17/the-card-of-the-day-the-lovers-reversed",
+      "number": "6",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m06.jpg",
@@ -322,7 +329,8 @@
 		{
 			"name": "The Chariot",
 			"link": "https://www.elliotoracle.com/blog/2017/6/8/the-card-of-the-day-the-chariot",
-			"number": "7",
+			"link_r": "https://www.elliotoracle.com/blog/2018/1/10/the-card-of-the-day-the-chariot-reversed",
+      "number": "7",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m07.jpg",
@@ -365,7 +373,8 @@
 		{
 			"name": "Strength",
 			"link": "https://www.elliotoracle.com/blog/2018/1/31/the-card-of-the-day-strength",
-			"number": "8",
+			"link_r": "https://www.elliotoracle.com/blog/2018/10/27/the-card-of-the-day-strength-reversed",
+      "number": "8",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m08.jpg",
@@ -407,7 +416,8 @@
 		{
 			"name": "The Hermit",
 			"link": "https://www.elliotoracle.com/blog/2017/10/30/the-card-of-the-day-the-hermit",
-			"number": "9",
+			"link_r": "https://www.elliotoracle.com/blog/2017/9/21/the-card-of-the-day-the-hermit-reversed",
+      "number": "9",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m09.jpg",
@@ -450,7 +460,8 @@
 		{
 			"name": "Wheel of Fortune",
 			"link": "https://www.elliotoracle.com/blog/2017/10/27/the-card-of-the-day-the-wheel-of-fortune",
-			"number": "10",
+			"link_r": "https://www.elliotoracle.com/blog/2017/8/17/the-card-of-the-day-the-wheel-of-fortune-reversed",
+      "number": "10",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m10.jpg",
@@ -494,7 +505,8 @@
 		{
 			"name": "Justice",
 			"link": "https://www.elliotoracle.com/blog/2017/10/30/the-card-of-the-day-justice",
-			"number": "11",
+			"link_r": "https://www.elliotoracle.com/blog/2017/9/22/the-card-of-the-day-justice-reversed",
+      "number": "11",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m11.jpg",
@@ -538,7 +550,8 @@
 		{
 			"name": "The Hanged Man",
 			"link": "https://www.elliotoracle.com/blog/2018/3/8/the-card-of-the-day-the-hanged-man",
-			"number": "12",
+			"link_r": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-hanged-man-reversed",
+      "number": "12",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m12.jpg",
@@ -582,7 +595,8 @@
 		{
 			"name": "Death",
 			"link": "https://www.elliotoracle.com/blog/2018/1/23/the-card-of-the-day-death",
-			"number": "13",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/9/the-card-of-the-day-the-death-card-reversed",
+      "number": "13",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m13.jpg",
@@ -626,7 +640,8 @@
 		{
 			"name": "Temperance",
 			"link": "https://www.elliotoracle.com/blog/2017/10/30/the-card-of-the-day-temperance",
-			"number": "14",
+			"link_r": "https://www.elliotoracle.com/blog/2017/8/18/the-card-of-the-day-temperance-reversed",
+      "number": "14",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m14.jpg",
@@ -672,7 +687,8 @@
 		{
 			"name": "The Devil",
 			"link": "https://www.elliotoracle.com/blog/2017/9/4/the-card-of-the-day-the-devil",
-			"number": "15",
+			"link_r": "",
+      "number": "15",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m15.jpg",
@@ -717,7 +733,8 @@
 		{
 			"name": "The Tower",
 			"link": "https://www.elliotoracle.com/blog/2017/11/17/the-card-of-the-day-the-tower",
-			"number": "16",
+			"link_r": "https://www.elliotoracle.com/blog/2018/9/23/the-card-of-the-day-the-tower-reversed",
+      "number": "16",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m16.jpg",
@@ -763,7 +780,8 @@
 		{
 			"name": "The Star",
 			"link": "https://www.elliotoracle.com/blog/2018/1/8/the-card-of-the-day-the-star",
-			"number": "17",
+			"link_r": "https://www.elliotoracle.com/blog/2019/1/27/the-card-of-the-day-the-star-reversed",
+      "number": "17",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m17.jpg",
@@ -810,7 +828,8 @@
 		{
 			"name": "The Moon",
 			"link": "https://www.elliotoracle.com/blog/2019/2/12/the-card-of-the-day-the-moon",
-			"number": "18",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/5/the-card-of-the-day-the-moon-reversed",
+      "number": "18",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m18.jpg",
@@ -854,7 +873,8 @@
 		{
 			"name": "The Sun",
 			"link": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-sun",
-			"number": "19",
+			"link_r": "https://www.elliotoracle.com/blog/2018/1/5/the-card-ofvthe-day-the-sun-reversed",
+      "number": "19",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m19.jpg",
@@ -897,7 +917,8 @@
 		{
 			"name": "Judgement",
 			"link": "https://www.elliotoracle.com/blog/2017/7/8/the-card-of-the-day-judgment",
-			"number": "20",
+			"link_r": "https://www.elliotoracle.com/blog/2018/7/7/the-card-of-the-day-judgment-reversed",
+      "number": "20",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m20.jpg",
@@ -942,7 +963,8 @@
 		{
 			"name": "The World",
 			"link": "https://www.elliotoracle.com/blog/2019/3/26/the-card-of-the-day-the-world",
-			"number": "21",
+			"link_r": "https://www.elliotoracle.com/blog/2018/1/29/the-card-of-the-day-the-world-reversed",
+      "number": "21",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m21.jpg",
@@ -986,7 +1008,8 @@
 		{
 			"name": "Ace of Cups",
 			"link": "https://www.elliotoracle.com/blog/2019/1/15/the-card-of-the-day-the-ace-of-cups",
-			"number": "1",
+			"link_r": "https://www.elliotoracle.com/blog/2017/9/16/the-card-of-the-day-the-ace-of-cups-reversed",
+      "number": "1",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c01.jpg",
@@ -1029,7 +1052,8 @@
 		{
 			"name": "Two of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-two-of-cups",
-			"number": "2",
+			"link_r": "https://www.elliotoracle.com/blog/2017/10/25/the-card-of-the-day-the-two-of-cups-reversed",
+      "number": "2",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c02.jpg",
@@ -1072,7 +1096,8 @@
 		{
 			"name": "Three of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/6/13/the-card-of-the-day-the-three-of-cups",
-			"number": "3",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/22/the-card-of-the-day-the-three-of-cups-reversed",
+      "number": "3",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c03.jpg",
@@ -1111,7 +1136,8 @@
 		{
 			"name": "Four of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/8/17/the-card-of-the-day-the-four-of-cups",
-			"number": "4",
+			"link_r": "https://www.elliotoracle.com/blog/2017/11/19/the-card-of-the-day-the-four-of-cups-reversed",
+      "number": "4",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c04.jpg",
@@ -1153,7 +1179,8 @@
 		{
 			"name": "Five of Cups",
 			"link": "https://www.elliotoracle.com/blog/2018/12/28/the-card-of-the-day-the-five-of-cups",
-			"number": "5",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/20/the-card-of-the-day-the-five-of-cups-reversed",
+      "number": "5",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c05.jpg",
@@ -1199,7 +1226,8 @@
 		{
 			"name": "Six of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/7/6/the-card-of-the-day-the-six-of-cups",
-			"number": "6",
+			"link_r": "https://www.elliotoracle.com/blog/2019/5/27/the-card-of-the-day-the-six-of-cups-reversed",
+      "number": "6",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c06.jpg",
@@ -1241,7 +1269,8 @@
 		{
 			"name": "Seven of Cups",
 			"link": "https://www.elliotoracle.com/blog/2018/1/26/the-card-of-the-day-the-seven-of-cups",
-			"number": "7",
+			"link_r": "https://www.elliotoracle.com/blog/2017/8/31/the-card-of-the-day-the-seven-of-cups-reversed",
+      "number": "7",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c07.jpg",
@@ -1281,7 +1310,8 @@
 		{
 			"name": "Eight of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/8/12/the-card-of-the-day-the-eight-of-cups",
-			"number": "8",
+			"link_r": "https://www.elliotoracle.com/blog/2019/1/29/the-card-of-the-day-the-eight-of-cups-reversed",
+      "number": "8",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c08.jpg",
@@ -1327,7 +1357,8 @@
 		{
 			"name": "Nine of Cups",
 			"link": "https://www.elliotoracle.com/blog/2018/12/11/the-card-of-the-day-the-nine-of-cups",
-			"number": "9",
+			"link_r": "https://www.elliotoracle.com/blog/2018/2/5/the-card-of-the-day-the-nine-of-cups-reversed",
+      "number": "9",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c09.jpg",
@@ -1369,7 +1400,8 @@
 		{
 			"name": "Ten of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/8/13/the-card-of-the-day-the-ten-of-cups",
-			"number": "10",
+			"link_r": "https://www.elliotoracle.com/blog/2017/11/16/the-card-of-the-day-the-ten-of-cups-reversed",
+      "number": "10",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c10.jpg",
@@ -1408,7 +1440,8 @@
 		{
 			"name": "Page of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-page-of-cups",
-			"number": "11",
+			"link_r": "https://www.elliotoracle.com/blog/2019/4/2/the-card-of-the-day-the-page-of-cups-reversed",
+      "number": "11",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c11.jpg",
@@ -1449,7 +1482,8 @@
 		{
 			"name": "Knight of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/7/3/the-card-of-the-day-the-knight-of-cups",
-			"number": "12",
+			"link_r": "https://www.elliotoracle.com/blog/2017/8/16/the-card-of-the-day-the-knight-of-cups-reversed",
+      "number": "12",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c12.jpg",
@@ -1488,7 +1522,8 @@
 		{
 			"name": "Queen of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/6/29/the-card-of-the-day-the-queen-of-cups",
-			"number": "13",
+			"link_r": "https://www.elliotoracle.com/blog/2017/10/16/the-card-of-the-day-the-queen-of-cups-reversed",
+      "number": "13",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c13.jpg",
@@ -1527,7 +1562,8 @@
 		{
 			"name": "King of Cups",
 			"link": "https://www.elliotoracle.com/blog/2019/4/19/the-card-of-the-day-the-king-of-cups",
-			"number": "14",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/18/the-card-of-the-day-the-king-of-cups-reversed",
+      "number": "14",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c14.jpg",
@@ -1565,7 +1601,8 @@
 		{
 			"name": "Ace of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/11/9/the-card-of-the-day-the-ace-of-swords",
-			"number": "1",
+			"link_r": "https://www.elliotoracle.com/blog/2017/10/17/the-card-of-the-day-the-ace-of-swords-reversed",
+      "number": "1",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s01.jpg",
@@ -1608,7 +1645,8 @@
 		{
 			"name": "Two of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/9/19/the-card-of-the-day-the-two-of-swords",
-			"number": "2",
+			"link_r": "https://www.elliotoracle.com/blog/2018/1/5/the-card-of-the-day-the-two-of-swords-reversed",
+      "number": "2",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s02.jpg",
@@ -1649,7 +1687,8 @@
 		{
 			"name": "Three of Swords",
 			"link": "https://www.elliotoracle.com/blog/2019/3/26/the-card-of-the-day-the-three-of-swords",
-			"number": "3",
+			"link_r": "https://www.elliotoracle.com/blog/2017/9/18/the-card-of-the-day-the-three-of-swords-reversed",
+      "number": "3",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s03.jpg",
@@ -1690,7 +1729,8 @@
 		{
 			"name": "Four of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/9/28/the-card-of-the-day-the-four-of-swords",
-			"number": "4",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/13/the-card-of-the-day-the-four-of-swords-reversed",
+      "number": "4",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s04.jpg",
@@ -1729,7 +1769,8 @@
 		{
 			"name": "Five of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/7/4/the-card-of-the-day-the-five-of-swords",
-			"number": "5",
+			"link_r": "https://www.elliotoracle.com/blog/2017/11/20/the-card-of-the-day-the-five-of-swords-reversed",
+      "number": "5",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s05.jpg",
@@ -1773,7 +1814,8 @@
 		{
 			"name": "Six of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/6/24/the-card-of-the-day-the-six-of-swords",
-			"number": "6",
+			"link_r": "https://www.elliotoracle.com/blog/2017/8/30/the-card-of-the-day-the-six-of-swords-reversed",
+      "number": "6",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s06.jpg",
@@ -1815,7 +1857,8 @@
 		{
 			"name": "Seven of Swords",
 			"link": "https://www.elliotoracle.com/blog/2019/2/26/the-card-of-the-day-the-seven-of-swords",
-			"number": "7",
+			"link_r": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-seven-of-swords-reversed",
+      "number": "7",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s07.jpg",
@@ -1855,7 +1898,8 @@
 		{
 			"name": "Eight of Swords",
 			"link": "https://www.elliotoracle.com/blog/2019/2/21/the-card-of-the-day-the-eight-of-swords",
-			"number": "8",
+			"link_r": "https://www.elliotoracle.com/blog/2017/9/28/the-card-of-the-day-the-eight-of-swords-reversed",
+      "number": "8",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s08.jpg",
@@ -1900,7 +1944,8 @@
 		{
 			"name": "Nine of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/6/28/the-card-of-the-day-the-nine-of-swords",
-			"number": "9",
+			"link_r": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-nine-of-swords-reversed",
+      "number": "9",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s09.jpg",
@@ -1943,7 +1988,8 @@
 		{
 			"name": "Ten of Swords",
 			"link": "https://www.elliotoracle.com/blog/2018/10/18/the-card-of-the-day-the-ten-of-swords",
-			"number": "10",
+			"link_r": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-ten-of-swords-reversed",
+      "number": "10",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s10.jpg",
@@ -1987,7 +2033,8 @@
 		{
 			"name": "Page of Swords",
 			"link": "https://www.elliotoracle.com/blog/2019/1/29/the-card-of-the-day-the-page-of-swords",
-			"number": "11",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/7/the-card-of-the-day-the-page-of-swords-reversed",
+      "number": "11",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s11.jpg",
@@ -2028,7 +2075,8 @@
 		{
 			"name": "Knight of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/11/29/the-card-of-the-day-the-knight-of-swords",
-			"number": "12",
+			"link_r": "https://www.elliotoracle.com/blog/2017/8/5/the-card-of-the-day-the-knight-of-swords-reversed",
+      "number": "12",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s12.jpg",
@@ -2074,7 +2122,8 @@
 		{
 			"name": "Queen of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/12/22/the-card-of-the-day-the-queen-of-swords",
-			"number": "13",
+			"link_r": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-queen-of-swords-reversed",
+      "number": "13",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s13.jpg",
@@ -2119,7 +2168,8 @@
 		{
 			"name": "King of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/12/22/the-card-of-the-day-the-king-of-swords",
-			"number": "14",
+			"link_r": "https://www.elliotoracle.com/blog/2017/8/5/the-card-of-the-day-the-knight-of-swords-reversed",
+      "number": "14",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s14.jpg",
@@ -2160,7 +2210,8 @@
 		{
 			"name": "Ace of Wands",
 			"link": "https://www.elliotoracle.com/blog/2017/8/4/the-card-of-the-day-the-ace-of-wands",
-			"number": "1",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/8/the-card-of-the-day-the-ace-of-wands-reversed",
+      "number": "1",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w01.jpg",
@@ -2205,7 +2256,8 @@
 		{
 			"name": "Two of Wands",
 			"link": "https://www.elliotoracle.com/blog/2017/9/14/the-card-of-the-day-the-two-of-wands",
-			"number": "2",
+			"link_r": "https://www.elliotoracle.com/blog/2017/11/18/the-card-of-the-day-the-two-of-wands-reversed",
+      "number": "2",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w02.jpg",
@@ -2246,7 +2298,8 @@
 		{
 			"name": "Three of Wands",
 			"link": "https://www.elliotoracle.com/blog/2017/7/25/the-card-of-the-day-the-three-of-wands",
-			"number": "3",
+			"link_r": "https://www.elliotoracle.com/blog/2018/12/13/the-card-of-the-day-the-three-of-wands-reversed",
+      "number": "3",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w03.jpg",
@@ -2287,7 +2340,8 @@
 		{
 			"name": "Four of Wands",
 			"link": "https://www.elliotoracle.com/blog/2019/3/20/the-card-of-the-day-the-four-of-wands",
-			"number": "4",
+			"link_r": "https://www.elliotoracle.com/blog/2018/10/2/the-card-of-the-day-the-four-of-wands-reversed",
+      "number": "4",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w04.jpg",
@@ -2328,7 +2382,8 @@
 		{
 			"name": "Five of Wands",
 			"link": "https://www.elliotoracle.com/blog/2017/6/22/the-card-of-the-day-the-five-of-wands",
-			"number": "5",
+			"link_r": "https://www.elliotoracle.com/blog/2017/11/26/the-card-of-the-day-the-five-of-wands-reversed",
+      "number": "5",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w05.jpg",
@@ -2368,7 +2423,8 @@
 		{
 			"name": "Six of Wands",
 			"link": "https://www.elliotoracle.com/blog/2019/2/26/the-card-of-the-day-the-six-of-wands",
-			"number": "6",
+			"link_r": "https://www.elliotoracle.com/blog/2017/8/14/the-card-of-the-day-the-six-of-wands-reversed",
+      "number": "6",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w06.jpg",
@@ -2412,7 +2468,8 @@
 		{
 			"name": "Seven of Wands",
 			"link": "https://www.elliotoracle.com/blog/2017/9/27/the-card-of-the-day-the-seven-of-wands",
-			"number": "7",
+			"link_r": "https://www.elliotoracle.com/blog/2018/11/13/the-card-of-the-day-the-seven-of-wands-reversed",
+      "number": "7",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w07.jpg",
@@ -2452,7 +2509,8 @@
 		{
 			"name": "Eight of Wands",
 			"link": "https://www.elliotoracle.com/blog/2018/12/13/the-card-of-the-day-the-eight-of-wands",
-			"number": "8",
+			"link_r": "https://www.elliotoracle.com/blog/2017/11/28/the-card-of-the-day-the-eight-of-wands-reversed",
+      "number": "8",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w08.jpg",
@@ -2495,7 +2553,8 @@
 		{
 			"name": "Nine of Wands",
 			"link": "https://www.elliotoracle.com/blog/2018/11/20/the-card-of-the-day-the-nine-of-wands",
-			"number": "9",
+			"link_r": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-nine-of-wands-reversed",
+      "number": "9",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w09.jpg",
@@ -2540,7 +2599,8 @@
 		{
 			"name": "Ten of Wands",
 			"link": "https://www.elliotoracle.com/blog/2019/4/11/the-card-of-the-day-the-ten-of-wands",
-			"number": "10",
+			"link_r": "https://www.elliotoracle.com/blog/2017/10/20/the-card-of-the-day-the-ten-of-wands-reversed",
+      "number": "10",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w10.jpg",
@@ -2580,7 +2640,8 @@
 		{
 			"name": "Page of Wands",
 			"link": "https://www.elliotoracle.com/blog/2017/7/14/the-card-of-the-day-the-page-of-wands",
-			"number": "11",
+			"link_r": "https://www.elliotoracle.com/blog/2017/11/29/the-card-of-the-day-the-page-of-wands-reversed",
+      "number": "11",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w11.jpg",
@@ -2619,7 +2680,8 @@
 		{
 			"name": "Knight of Wands",
 			"link": "https://www.elliotoracle.com/blog/2017/6/10/the-card-of-the-day-the-knight-of-wands",
-			"number": "12",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/31/the-card-of-the-day-the-knight-of-wands-reversed",
+      "number": "12",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w12.jpg",
@@ -2660,7 +2722,8 @@
 		{
 			"name": "Queen of Wands",
 			"link": "https://www.elliotoracle.com/blog/2019/4/19/the-card-of-the-day-the-queen-of-wands",
-			"number": "13",
+			"link_r": "https://www.elliotoracle.com/blog/2017/10/17/the-card-of-the-day-the-queen-of-wands-reversed",
+      "number": "13",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w13.jpg",
@@ -2697,7 +2760,8 @@
 		{
 			"name": "King of Wands",
 			"link": "https://www.elliotoracle.com/blog/2018/12/13/the-card-of-the-day-the-king-of-wands",
-			"number": "14",
+			"link_r": "https://www.elliotoracle.com/blog/2017/11/21/the-king-of-wands-reversed",
+      "number": "14",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w14.jpg",
@@ -2734,7 +2798,8 @@
 		{
 			"name": "Ace of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2019/1/4/the-card-of-the-day-the-ace-of-pentacles",
-			"number": "1",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/22/the-card-of-the-day-the-ace-of-pentacles-reversed",
+      "number": "1",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p01.jpg",
@@ -2775,7 +2840,8 @@
 		{
 			"name": "Two of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/11/27/the-card-of-the-day-the-two-of-pentacles",
-			"number": "2",
+			"link_r": "https://www.elliotoracle.com/blog/2017/9/9/the-card-of-the-day-the-two-of-pentacles-reversed",
+      "number": "2",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p02.jpg",
@@ -2817,7 +2883,8 @@
 		{
 			"name": "Three of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/10/30/the-card-of-the-day-the-three-of-pentacles",
-			"number": "3",
+			"link_r": "https://www.elliotoracle.com/blog/2018/11/12/the-card-of-the-day-the-three-of-pentacles-reversed",
+      "number": "3",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p03.jpg",
@@ -2860,7 +2927,8 @@
 		{
 			"name": "Four of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/10/19/the-card-of-the-day-the-four-of-pentacles",
-			"number": "4",
+			"link_r": "https://www.elliotoracle.com/blog/2017/10/27/the-card-of-the-day-the-four-of-pentacles-reversed",
+      "number": "4",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p04.jpg",
@@ -2902,7 +2970,8 @@
 		{
 			"name": "Five of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/6/1/the-card-of-the-day-the-five-of-pentacles",
-			"number": "5",
+			"link_r": "https://www.elliotoracle.com/blog/2019/1/7/the-card-of-the-day-the-five-of-pentacles-reversed",
+      "number": "5",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p05.jpg",
@@ -2945,7 +3014,8 @@
 		{
 			"name": "Six of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2019/3/19/the-card-of-the-day-the-six-of-pentacles",
-			"number": "6",
+			"link_r": "https://www.elliotoracle.com/blog/2017/11/12/the-card-of-the-day-the-six-of-pentacles-reversed",
+      "number": "6",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p06.jpg",
@@ -2988,7 +3058,8 @@
 		{
 			"name": "Seven of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/6/20/the-card-of-the-day-the-seven-of-pentacles",
-			"number": "7",
+			"link_r": "https://www.elliotoracle.com/blog/2017/11/29/the-card-of-the-day-the-seven-of-pentacles-reversed",
+      "number": "7",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p07.jpg",
@@ -3030,7 +3101,8 @@
 		{
 			"name": "Eight of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/12/5/the-card-of-the-day-the-eight-of-pentacles",
-			"number": "8",
+			"link_r": "https://www.elliotoracle.com/blog/2017/9/11/the-card-of-the-day-the-eight-of-pentacles-reversed",
+      "number": "8",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p08.jpg",
@@ -3074,7 +3146,8 @@
 		{
 			"name": "Nine of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/7/27/the-card-of-the-day-the-nine-of-pentacles",
-			"number": "9",
+			"link_r": "https://www.elliotoracle.com/blog/2018/11/25/the-card-of-the-day-the-nine-of-pentacles-reversed",
+      "number": "9",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p09.jpg",
@@ -3114,7 +3187,8 @@
 		{
 			"name": "Ten of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2019/4/11/the-card-of-the-day-the-ten-of-pentacles",
-			"number": "10",
+			"link_r": "https://www.elliotoracle.com/blog/2018/1/31/the-card-of-the-day-the-ten-of-pentacles-reversed",
+      "number": "10",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p10.jpg",
@@ -3155,7 +3229,8 @@
 		{
 			"name": "Page of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/9/28/the-card-of-the-day-the-page-of-pentacles",
-			"number": "11",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/22/the-card-of-the-day-the-page-of-pentacles-reversed",
+      "number": "11",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p11.jpg",
@@ -3196,7 +3271,8 @@
 		{
 			"name": "Knight of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/6/14/the-card-of-the-day-the-knight-of-pentacles",
-			"number": "12",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/22/the-card-of-the-day-the-knight-of-pentacles-reversed",
+      "number": "12",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p12.jpg",
@@ -3240,7 +3316,8 @@
 		{
 			"name": "Queen of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/10/30/the-card-of-the-day-the-queen-of-pentacles",
-			"number": "13",
+			"link_r": "https://www.elliotoracle.com/blog/2017/9/4/the-card-of-the-day-the-queen-of-pentacles-reversed",
+      "number": "13",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p13.jpg",
@@ -3280,7 +3357,8 @@
 		{
 			"name": "King of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/8/18/the-card-of-the-day-the-king-of-pentacles",
-			"number": "14",
+			"link_r": "https://www.elliotoracle.com/blog/2017/12/22/the-card-of-the-day-the-knight-of-pentacles-reversed",
+      "number": "14",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p14.jpg",
