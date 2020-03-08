@@ -7,7 +7,8 @@ class Spread extends Component {
     super(props);
     this.state = {
       cardData: [],
-      saved: false
+      saved: false,
+      initState: true
     };
     this.moreCards = this.moreCards.bind(this);
     this.saveSpread = this.saveSpread.bind(this);
@@ -15,7 +16,7 @@ class Spread extends Component {
   }
 
   componentDidMount() {
-    this.moreCards();
+    // this.moreCards();
   }
 
   transformCards = (cards) => {
@@ -27,7 +28,7 @@ class Spread extends Component {
   }
 
   moreCards = () => {
-    this.setState({ cardData: [] });
+    this.setState({ cardData: [], initState: false });
     fetch("spreads/cards")
       .then(res => res.json())
       .then(cards => this.setState({ cardData: this.transformCards(cards) }))
@@ -61,7 +62,7 @@ class Spread extends Component {
       return (
         <div className="Spread">
           <h2>wisdom below</h2>
-          <button onClick={this.moreCards}>more cards</button>
+          <button onClick={this.moreCards}>{this.state.initState ? 'draw cards' : 'more cards'}</button>
           <button
             onClick={this.saveSpread}
             disabled={this.state.saved ? true : false}
@@ -69,7 +70,7 @@ class Spread extends Component {
             save spread
           </button>
           <div className="card-container flex flex-center flex-wrap">
-            loading...
+            {this.state.initState ? "set your intention and click 'draw cards'" : 'loading...'}
           </div>
         </div>
       );
