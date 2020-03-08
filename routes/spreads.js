@@ -37,12 +37,26 @@ router.post('/save', function (req, res, next) {
 
   newSpread.save(function (err, newSpread) {
     if (err) return console.error(err);
-    console.log(`newSpread has been saved`);
+    console.log('newSpread has been saved');
   });
 
 
   res.send(newSpread);
 
+});
+
+
+
+router.delete("/delete/:id", function (req, res, next) {
+
+  console.log(req.params);
+
+  Spread.deleteOne({ _id: req.params.id }, function(err) {
+    if (err) return console.error(err);
+    console.log('spread has been deleted');
+  });
+
+  res.send('success');
 });
 
 

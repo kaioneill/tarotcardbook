@@ -11,10 +11,24 @@ export class SpreadList extends Component {
     };
     this.listSpreads = this.listSpreads.bind(this);
     this.transformCards = this.transformCards.bind(this);
+    this.delete = this.delete.bind(this);
   }
 
   componentDidMount() {
     this.listSpreads();
+  }
+
+  delete = (id) => {
+    fetch("/spreads/delete/" + id, {
+      method: "DELETE"
+    })
+      .then(data => {
+        if (data) {
+          console.log("spread deleted");
+          this.setState({ spreads: this.state.spreads.filter(spread => spread._id !== id) });
+        }
+      })
+      .catch(e => console.log(e));
   }
 
   transformCards = (cards, reversals) => {
@@ -47,7 +61,12 @@ export class SpreadList extends Component {
           <div className="spread-container flex flex-center flex-wrap">
             {this.state.spreads.map(spread => (
               <div key={spread._id}>
-                <h2>{moment(spread.createdAt).format("MMMM D, YYYY")}</h2>
+                <div className="flex flex-center">
+                  <h2>{moment(spread.createdAt).format("MMMM D, YYYY")}</h2>
+                  <div className="pad">
+                    <button onClick={() => this.delete(spread._id)}>delete</button>
+                  </div>
+                </div>
                 <div className="flex flex-center">
                   {this.transformCards(spread._cards, spread.reversals).map(
                     cardData => (
