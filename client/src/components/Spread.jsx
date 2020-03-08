@@ -69,7 +69,7 @@ class Spread extends Component {
           >
             save spread
           </button>
-          <div className="card-container flex flex-center flex-wrap">
+          <div className="card-container flex flex-center flex-wrap pad">
             {this.state.initState ? "set your intention and click 'draw cards'" : 'loading...'}
           </div>
         </div>

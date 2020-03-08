@@ -42,7 +42,7 @@ export class CardList extends Component {
           <button className="" onClick={(e) => this.getSuit(e, 'Swords')}>swords</button>
           <button className="" onClick={(e) => this.getSuit(e, 'Pentacles')}>pentacles</button>
           <button className="" onClick={(e) => this.getSuit(e, 'Wands')}>wands</button>
-          <div className="card-container flex flex-center flex-wrap">
+          <div className="card-container flex flex-center flex-wrap pad">
             loading...
           </div>
         </div>

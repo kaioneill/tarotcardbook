@@ -50,7 +50,7 @@ export class SpreadList extends Component {
     if (this.state.spreads.length === 0) {
       return (
         <div className="SpreadList">
-          <div className="spread-container flex flex-center flex-wrap">
+          <div className="spread-container flex flex-center flex-wrap pad">
             loading...
           </div>
         </div>
