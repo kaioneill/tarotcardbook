@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "../App.css";
 import Card from "./Card";
+import moment from 'moment';
 
 export class SpreadList extends Component {
   constructor(props) {
@@ -45,10 +46,19 @@ export class SpreadList extends Component {
         <div className="SpreadList">
           <div className="spread-container flex flex-center flex-wrap">
             {this.state.spreads.map(spread => (
-              <div className="flex" key={spread._id}>
-                {this.transformCards(spread._cards, spread.reversals).map(cardData => (
-                  <Card card={cardData.card} key={cardData.card.name} reversed={cardData.reversed} />
-                ))}
+              <div key={spread._id}>
+                <h2>{moment(spread.createdAt).format("MMMM D, YYYY")}</h2>
+                <div className="flex flex-center">
+                  {this.transformCards(spread._cards, spread.reversals).map(
+                    cardData => (
+                      <Card
+                        card={cardData.card}
+                        key={cardData.card.name}
+                        reversed={cardData.reversed}
+                      />
+                    )
+                  )}
+                </div>
               </div>
             ))}
           </div>
