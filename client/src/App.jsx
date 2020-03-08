@@ -88,10 +88,10 @@ class App extends Component {
               spread
             </button>
             <button className="" onClick={e => this.setPage(e, "card_list")}>
-              list
+              all cards
             </button>
             <button className="" onClick={e => this.setPage(e, "spread_list")}>
-              spread list
+              past spreads
             </button>
           </div>
           {this.state.page === "spread" ? <Spread /> : ""}

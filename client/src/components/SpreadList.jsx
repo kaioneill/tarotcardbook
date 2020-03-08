@@ -64,7 +64,7 @@ export class SpreadList extends Component {
                 <div className="flex flex-center">
                   <h2>{moment(spread.createdAt).format("MMMM D, YYYY")}</h2>
                   <div className="pad">
-                    <button onClick={() => this.delete(spread._id)}>delete</button>
+                    <button onClick={() => this.delete(spread._id)}>remove</button>
                   </div>
                 </div>
                 <div className="flex flex-center">
