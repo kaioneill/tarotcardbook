@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "../App.css";
 import Card from "./Card";
 
-export class List extends Component {
+export class CardList extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -27,7 +27,7 @@ export class List extends Component {
 
   toggleDepressed = (e) => {
     if (e) {
-      document.querySelector(".depressed").classList.remove("depressed");
+      document.querySelector(".CardList > .depressed").classList.remove("depressed");
       e.target.classList.add("depressed");
     }
   }
@@ -35,7 +35,7 @@ export class List extends Component {
   render() {
     if (this.state.cards.length === 0) {
       return (
-        <div className="List">
+        <div className="CardList">
           <h2>all the things</h2>
           <button className="depressed" onClick={(e) => this.getSuit(e, 'Trump')}>major arcana</button>
           <button className="" onClick={(e) => this.getSuit(e, 'Cups')}>cups</button>
@@ -49,7 +49,7 @@ export class List extends Component {
       );
     } else {
       return (
-        <div className="List">
+        <div className="CardList">
           <h2>all the things</h2>
           <button className="depressed" onClick={(e) => this.getSuit(e, 'Trump')}>major arcana</button>
           <button className="" onClick={(e) => this.getSuit(e, 'Cups')}>cups</button>
@@ -58,7 +58,7 @@ export class List extends Component {
           <button className="" onClick={(e) => this.getSuit(e, 'Wands')}>wands</button>
           <div className="card-container flex flex-center flex-wrap">
             {this.state.cards.map(card => (
-              <Card card={card} key={card.name} noReverse={true} />
+              <Card card={card} key={card.name} reversed={false} />
             ))}
           </div>
         </div>
@@ -67,4 +67,4 @@ export class List extends Component {
   }
 }
 
-export default List;
+export default CardList;

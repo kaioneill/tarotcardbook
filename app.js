@@ -41,11 +41,13 @@ app.set("trustproxy", true);
 var indexRouter = require('./routes/index');
 var cardsRouter = require('./routes/cards');
 var usersRouter = require('./routes/users');
+var spreadsRouter = require('./routes/spreads');
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/cards", cardsRouter);
 app.use("/users", usersRouter);
+app.use("/spreads", spreadsRouter);
 app.use(express.static("public"));
 
 
