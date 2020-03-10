@@ -7,13 +7,34 @@ class BuildSpread extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      whichCards: [],
       cardData: [],
       saved: false,
       initState: true
     };
-    this.moreCards = this.moreCards.bind(this);
     this.saveSpread = this.saveSpread.bind(this);
     this.transformCards = this.transformCards.bind(this);
+    this.addCard = this.addCard.bind(this);
+    this.updateCardData = this.updateCardData.bind(this);
+  }
+
+  addCard = (card, which, reversed) => {
+    let whichCards = this.state.whichCards.filter(obj => obj.which !== which);
+    whichCards.push({ which: which, card: card, reversed: reversed });
+    whichCards = whichCards.sort((a, b) => a.which.localeCompare(b.which));
+    this.setState({ whichCards: whichCards }, () => {
+      console.log(this.state.whichCards);
+      if (this.state.whichCards.length === 3) {
+        this.updateCardData();
+      };
+    });
+  }
+
+  removeCard = (which) => {
+    let whichCards = this.state.whichCards.filter(obj => obj.which !== which);
+    this.setState({ whichCards: whichCards }, () => {
+      console.log(this.state.whichCards);
+    });
   }
 
   transformCards = (cards) => {
@@ -24,12 +45,12 @@ class BuildSpread extends Component {
     return cardData;
   }
 
-  moreCards = () => {
-    this.setState({ cardData: [], initState: false });
-    fetch("spreads/cards")
-      .then(res => res.json())
-      .then(cards => this.setState({ cardData: this.transformCards(cards) }))
-      .catch(e => console.log(e));
+  updateCardData = () => {
+    let cardData = [];
+    this.state.whichCards.forEach((obj) => {
+      cardData.push({ card: obj.card, reversed: obj.reversed });
+    });
+    this.setState({ cardData: cardData })
   }
 
   saveSpread = () => {
@@ -58,8 +79,16 @@ class BuildSpread extends Component {
     return (
       <div className="BuildSpread">
         <h2>build spread</h2>
+        <button
+          onClick={this.saveSpread}
+          disabled={this.state.saved ? true : false}
+        >
+          save spread
+        </button>
         <div className="card-container flex flex-center flex-wrap">
-          <BuildCard />
+          <BuildCard index="card1" addCard={this.addCard} removeCard={this.removeCard} />
+          <BuildCard index="card2" addCard={this.addCard} removeCard={this.removeCard} />
+          <BuildCard index="card3" addCard={this.addCard} removeCard={this.removeCard} />
         </div>
       </div>
     );

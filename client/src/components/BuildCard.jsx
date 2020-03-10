@@ -14,6 +14,7 @@ class BuildCard extends Component {
     this.updateResults = this.updateResults.bind(this);
     this.checkMatch = this.checkMatch.bind(this);
     this.setCard = this.setCard.bind(this);
+    this.setReversed = this.setReversed.bind(this);
   }
 
   updateResults = (event) => {
@@ -31,21 +32,35 @@ class BuildCard extends Component {
   };
 
   checkMatch = (element, value) => {
-    let datalist = element.parentNode.querySelector("#results");
+    let datalist = element.parentNode.querySelector(`#results${this.props.index}`);
     if (!datalist.options.length) return;
     if(Array.from(datalist.options).filter(option => option.value.toLowerCase() === value.toLowerCase()).length) {
       this.setCard(value);
     } else {
       this.state.card = {};
+      this.props.removeCard(this.props.index);
     }
   };
 
   setCard = (value) => {
-    let matches = this.state.results.filter(card => card.name === value.replace("Reversed", ""));
+    let matches = this.state.results.filter(card => card.name === value.replace(" Reversed", ""));
     if (matches.length) {
       this.setState({ card: matches[0] });
+      this.props.addCard(matches[0], this.props.index, this.state.reversed);
     }
   };
+
+
+  setReversed = (event) => {
+    if (this.state.card.name) {
+      this.setState({ reversed: event.target.checked }, () => {
+        this.props.addCard(this.state.card, this.props.index, this.state.reversed);
+      });
+    } else {
+      this.setState({ reversed: event.target.checked });
+    }
+  }
+
 
   render() {
     return (
@@ -54,33 +69,30 @@ class BuildCard extends Component {
         <div className="flex flex-center vertical">
           <div>
             <input
-              list="results"
+              list={`results${this.props.index}`}
               placeholder="search for a card"
               type="text"
               value={this.state.query}
               onChange={event => this.updateResults(event)}
             ></input>
-            <datalist id="results">
+            <datalist id={`results${this.props.index}`}>
               {this.state.results.map(card => (
                 <option
                   key={card.name}
-                  value={card.name + (this.state.reversed ? "Reversed" : "")}
+                  value={card.name + (this.state.reversed ? " Reversed" : "")}
                 />
               ))}
             </datalist>
             <input
               type="checkbox"
-              onChange={event =>
-                this.setState({ reversed: event.target.checked })
-              }
+              onChange={(event) => this.setReversed(event)}
             ></input>
             reversed
-            {this.state.card.name ? 
-              <Card
-                card={this.state.card}
-                reversed={this.state.reversed}
-              />
-            : ""}
+            {this.state.card.name ? (
+              <Card card={this.state.card} reversed={this.state.reversed} />
+            ) : (
+              <div className="card-size"></div>
+            )}
           </div>
         </div>
       </div>
