@@ -19,6 +19,7 @@ export class SpreadList extends Component {
   }
 
   delete = (id) => {
+    if (!window.confirm("are you sure you want to remove this day?")) return
     fetch("/spreads/delete/" + id, {
       method: "DELETE"
     })
