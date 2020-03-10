@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
 import Card from "./Card";
+import BuildSpread from "./BuildSpread";
 
 class Spread extends Component {
   constructor(props) {
@@ -72,6 +73,8 @@ class Spread extends Component {
           <div className="card-container flex flex-center flex-wrap pad">
             {this.state.initState ? "set your intention and click 'draw cards'" : 'loading...'}
           </div>
+
+          <BuildSpread />
         </div>
       );
     } else {
