@@ -16,15 +16,19 @@ class BuildCard extends Component {
   }
 
   componentDidMount() {
-    this.updateResults();
   }
 
   updateResults = (event) => {
+    let timeout = null;
     if (event) this.setState({ query: event.target.value });
-    fetch("cards/search?query=" + this.state.query)
-      .then(res => res.json())
-      .then(results => this.setState({ results: results }))
-      .catch(e => console.log(e));
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      fetch("cards/search?query=" + this.state.query)
+        .then(res => res.json())
+        .then(results => this.setState({ results: results }))
+        .then(_ => (this.state.query === '' ? this.setState({ results: [] }) : null))
+        .catch(e => console.log(e));
+    }, 500);
   };
 
   saveCard = () => {
