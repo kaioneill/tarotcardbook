@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../App.css";
 import Card from "./Card";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 class Spread extends Component {
   constructor(props) {
@@ -8,7 +10,9 @@ class Spread extends Component {
     this.state = {
       cardData: [],
       saved: false,
-      initState: true
+      initState: true,
+      notes: "",
+      date: new Date()
     };
     this.moreCards = this.moreCards.bind(this);
     this.saveSpread = this.saveSpread.bind(this);
@@ -28,7 +32,7 @@ class Spread extends Component {
   }
 
   moreCards = () => {
-    this.setState({ cardData: [], initState: false });
+    this.setState({ cardData: [], initState: false, saved: false });
     fetch("spreads/cards")
       .then(res => res.json())
       .then(cards => this.setState({ cardData: this.transformCards(cards) }))
@@ -43,8 +47,10 @@ class Spread extends Component {
       },
       credentials: "include",
       body: JSON.stringify({
-        cards: this.state.cardData.map((cardData) => cardData.card),
-        reversals: this.state.cardData.map((cardData) => cardData.reversed)
+        cards: this.state.cardData.map(cardData => cardData.card),
+        reversals: this.state.cardData.map(cardData => cardData.reversed),
+        notes: this.state.notes,
+        date: this.state.date
       })
     })
       .then(res => res.json())
@@ -79,13 +85,24 @@ class Spread extends Component {
       return (
         <div className="Spread">
           <h2>wisdom below</h2>
-          <button onClick={this.moreCards}>more cards</button>
-          <button
-            onClick={this.saveSpread}
-            disabled={this.state.saved ? true : false}
-          >
-            save spread
-          </button>
+          <div className="flex vertical">
+            <div>
+              <button onClick={this.moreCards}>more cards</button>
+              <button
+                onClick={this.saveSpread}
+                disabled={this.state.saved ? true : false}
+              >
+                save spread
+              </button>
+            </div>
+            <div className="pad" >
+              <DatePicker selected={this.state.date} onChange={(date) => this.setState({ date: date })} />
+            </div>
+            <div>
+              <textarea className="spread-notes" placeholder="write notes here" onChange={(event) => this.setState({ notes: event.target.value})}>
+              </textarea>
+            </div>
+          </div>
           <div className="card-container flex flex-center flex-wrap">
             {this.state.cardData.map(cardData => (
               <Card
