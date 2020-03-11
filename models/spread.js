@@ -14,6 +14,12 @@ const spreadSchema = new mongoose.Schema(
     reversals: {
       type: [Boolean]
     },
+    date: {
+      type: Date
+    },
+    notes: {
+      type: String
+    }
   },
   { timestamps: true }
 );

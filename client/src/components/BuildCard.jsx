@@ -37,7 +37,7 @@ class BuildCard extends Component {
     if(Array.from(datalist.options).filter(option => option.value.toLowerCase() === value.toLowerCase()).length) {
       this.setCard(value);
     } else {
-      this.state.card = {};
+      this.setState({ card: {} });
       this.props.removeCard(this.props.index);
     }
   };

@@ -32,7 +32,9 @@ router.post('/save', function (req, res, next) {
   let newSpread = new Spread({
     _user: req.user._id,
     _cards: cardIds,
-    reversals: req.body.reversals
+    reversals: req.body.reversals,
+    notes: req.body.notes,
+    date: req.body.date
   });
 
   newSpread.save(function (err, newSpread) {
