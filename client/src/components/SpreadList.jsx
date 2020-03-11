@@ -63,11 +63,12 @@ export class SpreadList extends Component {
             {this.state.spreads.map(spread => (
               <div key={spread._id}>
                 <div className="flex flex-center">
-                  <h2>{moment(spread.createdAt).format("MMMM D, YYYY")}</h2>
+                  <h2>{moment(spread.date).format("MMMM D, YYYY")}</h2>
                   <div className="pad">
                     <button onClick={() => this.delete(spread._id)}>remove</button>
                   </div>
                 </div>
+                <div>{spread.notes}</div>
                 <div className="flex flex-center">
                   {this.transformCards(spread._cards, spread.reversals).map(
                     cardData => (

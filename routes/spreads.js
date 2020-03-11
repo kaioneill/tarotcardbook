@@ -64,7 +64,7 @@ router.delete("/delete/:id", function (req, res, next) {
 
 router.get('/list', function (req, res, next) {
 
-  Spread.find({ _user: req.user._id }).populate('_cards').sort([['createdAt', -1]]).exec(function (err, spreads) {
+  Spread.find({ _user: req.user._id }).populate('_cards').sort([['date', -1]]).exec(function (err, spreads) {
     if (err) return console.error(err);
     console.log(spreads);
     res.send(spreads);
