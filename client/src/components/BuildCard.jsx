@@ -65,7 +65,7 @@ class BuildCard extends Component {
   render() {
     return (
       <div className="BuildCard">
-        <h2>build card</h2>
+        <h2>{this.props.index}</h2>
         <div className="flex flex-center vertical">
           <div>
             <input
@@ -85,7 +85,7 @@ class BuildCard extends Component {
             </datalist>
             <input
               type="checkbox"
-              onChange={(event) => this.setReversed(event)}
+              onChange={event => this.setReversed(event)}
             ></input>
             reversed
             {this.state.card.name ? (
