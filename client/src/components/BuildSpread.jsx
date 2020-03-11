@@ -9,8 +9,7 @@ class BuildSpread extends Component {
     this.state = {
       whichCards: [],
       cardData: [],
-      saved: false,
-      initState: true
+      enoughCards: false
     };
     this.saveSpread = this.saveSpread.bind(this);
     this.transformCards = this.transformCards.bind(this);
@@ -26,6 +25,9 @@ class BuildSpread extends Component {
       console.log(this.state.whichCards);
       if (this.state.whichCards.length === 3) {
         this.updateCardData();
+        this.setState({ enoughCards: true })
+      } else {
+        this.setState({ enoughCards: false });
       };
     });
   }
@@ -54,6 +56,7 @@ class BuildSpread extends Component {
   }
 
   saveSpread = () => {
+    this.setState({ enoughCards: false });
     fetch("/spreads/save", {
       method: "POST",
       headers: {
@@ -81,7 +84,7 @@ class BuildSpread extends Component {
         <h2>build spread</h2>
         <button
           onClick={this.saveSpread}
-          disabled={this.state.saved ? true : false}
+          disabled={this.state.enoughCards ? false : true}
         >
           save spread
         </button>
