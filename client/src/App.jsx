@@ -5,12 +5,14 @@ import CardList from "./components/CardList";
 import SpreadList from "./components/SpreadList";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+import BuildSpread from "./components/BuildSpread";
+
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: "spread",
+      page: "pull_cards",
       loggedIn: false,
       signup: false
     };
@@ -81,22 +83,23 @@ class App extends Component {
           <h1>tarot</h1>
           {/* <Signup /> */}
           <div className="main-select ">
-            <button
-              className="depressed"
-              onClick={e => this.setPage(e, "spread")}
-            >
-              spread
+            <button className="depressed" onClick={e => this.setPage(e, "pull_cards")}>
+              pull cards
             </button>
-            <button className="" onClick={e => this.setPage(e, "card_list")}>
-              all cards
+            <button className="" onClick={e => this.setPage(e, "build_spread")}>
+              build spread
             </button>
             <button className="" onClick={e => this.setPage(e, "spread_list")}>
               past spreads
             </button>
+            <button className="" onClick={e => this.setPage(e, "card_list")}>
+              all cards
+            </button>
           </div>
-          {this.state.page === "spread" ? <Spread /> : ""}
-          {this.state.page === "card_list" ? <CardList /> : ""}
+          {this.state.page === "pull_cards" ? <Spread /> : ""}
+          {this.state.page === "build_spread" ? <BuildSpread /> : ""}
           {this.state.page === "spread_list" ? <SpreadList /> : ""}
+          {this.state.page === "card_list" ? <CardList /> : ""}
         </div>
       );
     } else {
