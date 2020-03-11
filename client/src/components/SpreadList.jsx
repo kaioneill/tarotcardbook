@@ -68,7 +68,9 @@ export class SpreadList extends Component {
                     <button onClick={() => this.delete(spread._id)}>remove</button>
                   </div>
                 </div>
-                <div>{spread.notes}</div>
+                <div className="flex flex-center">
+                  <div className="limit-width">{spread.notes}</div>
+                </div>
                 <div className="flex flex-center">
                   {this.transformCards(spread._cards, spread.reversals).map(
                     cardData => (
