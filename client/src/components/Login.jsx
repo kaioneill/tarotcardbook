@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 class Login extends Component {
   constructor(props) {
@@ -44,6 +45,11 @@ class Login extends Component {
   render() {
     return (
       <div className="flex flex-center vertical">
+        <Link to="/signup">
+          <button>
+            signup
+          </button>
+        </Link>
         <h2>login</h2>
         <label>
           username:
@@ -62,7 +68,7 @@ class Login extends Component {
           />
         </label>
         <div>
-          <input onClick={this.handleSubmit} type="button" value="Submit" />
+          <input onClick={this.handleSubmit} type="button" value="submit" />
         </div>
       </div>
     );
