@@ -6,7 +6,7 @@ import SpreadList from "./SpreadList";
 import Signup from "./Signup";
 import Login from "./Login";
 import BuildSpread from "./BuildSpread";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 
 
 
@@ -18,11 +18,9 @@ class Tarot extends Component {
       loggedIn: false,
       signup: false
     };
-    this.setPage = this.setPage.bind(this);
     this.updateUser = this.updateUser.bind(this);
     this.logout = this.logout.bind(this);
     this.toggleSignUp = this.toggleSignUp.bind(this);
-    this.toggleDepressed = this.toggleDepressed.bind(this);
   }
 
   componentDidMount() {
@@ -35,18 +33,6 @@ class Tarot extends Component {
       })
       .catch(e => console.log(e));
   }
-
-  setPage = (e, page) => {
-    this.setState({ page: page });
-    this.toggleDepressed(e);
-  };
-
-  toggleDepressed = e => {
-    if (e) {
-      document.querySelector(".main-select .depressed").classList.remove("depressed");
-      e.target.classList.add("depressed");
-    }
-  };
 
   updateUser = user => {
     console.log(`updateUser ${user.loggedIn}`);
@@ -86,38 +72,26 @@ class Tarot extends Component {
             <h1>tarot</h1>
             {/* <Signup /> */}
             <div className="main-select ">
-              <Link to="/">
-                <button
-                  className="depressed"
-                  onClick={e => this.setPage(e, "pull_cards")}
-                >
+              <NavLink activeClassName="depressed" exact to="/">
+                <button>
                   pull cards
                 </button>
-              </Link>
-              <Link to="/build_spread">
-                <button
-                  className=""
-                  onClick={e => this.setPage(e, "build_spread")}
-                >
+              </NavLink>
+              <NavLink activeClassName="depressed" to="/build_spread">
+                <button>
                   build spread
                 </button>
-              </Link>
-              <Link to="/past_spreads">
-                <button
-                  className=""
-                  onClick={e => this.setPage(e, "spread_list")}
-                >
+              </NavLink>
+              <NavLink activeClassName="depressed" to="/past_spreads">
+                <button>
                   past spreads
                 </button>
-              </Link>
-              <Link to="/all_cards">
-                <button
-                  className=""
-                  onClick={e => this.setPage(e, "card_list")}
-                >
+              </NavLink>
+              <NavLink activeClassName="depressed" to="/all_cards">
+                <button>
                   all cards
                 </button>
-              </Link>
+              </NavLink>
             </div>
             <Switch>
               <Route path="/" exact component={Spread} />
