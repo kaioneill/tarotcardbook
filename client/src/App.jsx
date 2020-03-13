@@ -3,7 +3,6 @@ import "./App.css";
 import Tarot from "./components/Tarot";
 
 
-
 class App extends Component {
 
   render() {

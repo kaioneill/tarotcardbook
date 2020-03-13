@@ -6,6 +6,8 @@ import SpreadList from "./SpreadList";
 import Signup from "./Signup";
 import Login from "./Login";
 import BuildSpread from "./BuildSpread";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 
 
 class Tarot extends Component {
@@ -41,7 +43,7 @@ class Tarot extends Component {
 
   toggleDepressed = e => {
     if (e) {
-      document.querySelector(".main-select > .depressed").classList.remove("depressed");
+      document.querySelector(".main-select .depressed").classList.remove("depressed");
       e.target.classList.add("depressed");
     }
   };
@@ -78,29 +80,53 @@ class Tarot extends Component {
   render() {
     if (this.state.loggedIn) {
       return (
-        <div className="Tarot">
-          <button onClick={this.logout}>logout</button>
-          <h1>tarot</h1>
-          {/* <Signup /> */}
-          <div className="main-select ">
-            <button className="depressed" onClick={e => this.setPage(e, "pull_cards")}>
-              pull cards
-            </button>
-            <button className="" onClick={e => this.setPage(e, "build_spread")}>
-              build spread
-            </button>
-            <button className="" onClick={e => this.setPage(e, "spread_list")}>
-              past spreads
-            </button>
-            <button className="" onClick={e => this.setPage(e, "card_list")}>
-              all cards
-            </button>
+        <Router>
+          <div className="Tarot">
+            <button onClick={this.logout}>logout</button>
+            <h1>tarot</h1>
+            {/* <Signup /> */}
+            <div className="main-select ">
+              <Link to="/">
+                <button
+                  className="depressed"
+                  onClick={e => this.setPage(e, "pull_cards")}
+                >
+                  pull cards
+                </button>
+              </Link>
+              <Link to="/build_spread">
+                <button
+                  className=""
+                  onClick={e => this.setPage(e, "build_spread")}
+                >
+                  build spread
+                </button>
+              </Link>
+              <Link to="/past_spreads">
+                <button
+                  className=""
+                  onClick={e => this.setPage(e, "spread_list")}
+                >
+                  past spreads
+                </button>
+              </Link>
+              <Link to="/all_cards">
+                <button
+                  className=""
+                  onClick={e => this.setPage(e, "card_list")}
+                >
+                  all cards
+                </button>
+              </Link>
+            </div>
+            <Switch>
+              <Route path="/" exact component={Spread} />
+              <Route path="/build_spread" component={BuildSpread} />
+              <Route path="/past_spreads" component={SpreadList} />
+              <Route path="/all_cards" component={CardList} />
+            </Switch>
           </div>
-          {this.state.page === "pull_cards" ? <Spread /> : ""}
-          {this.state.page === "build_spread" ? <BuildSpread /> : ""}
-          {this.state.page === "spread_list" ? <SpreadList /> : ""}
-          {this.state.page === "card_list" ? <CardList /> : ""}
-        </div>
+        </Router>
       );
     } else {
       return (
