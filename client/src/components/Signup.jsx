@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
+import { withRouter, Link } from "react-router-dom";
 
 class Signup extends Component {
   constructor(props) {
@@ -14,8 +15,7 @@ class Signup extends Component {
   }
 
   handleSubmit(event) {
-    console.log("signpup username: " + this.state.username);
-
+    console.log("signup username: " + this.state.username);
     fetch("/users/signup", {
       method: "POST",
       headers: {
@@ -29,6 +29,7 @@ class Signup extends Component {
     })
     .then(res => res.json())
     .then(data => {
+      this.props.history.push("/login");
       console.log("Success:", data);
     })
     .catch(error => {
@@ -38,7 +39,12 @@ class Signup extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} className="flex flex-center vertical">
+      <div className="flex flex-center vertical">
+        <Link to="/login">
+          <button>
+            login
+          </button>
+        </Link>
         <h2>signup</h2>
         <label>
           email:
@@ -65,11 +71,11 @@ class Signup extends Component {
           />
         </label>
         <div>
-          <input type="submit" value="Submit" />
+          <input onClick={this.handleSubmit} type="submit" value="submit" />
         </div>
-      </form>
+      </div>
     );
   }
 }
 
-export default Signup;
+export default withRouter(Signup);

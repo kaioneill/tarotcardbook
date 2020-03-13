@@ -53,7 +53,7 @@ router.post("/logout", function (req, res, next) {
 router.get("/", function(req, res, next) {
   if (req.user) {
     res.send({ user: req.user });
-    return console.log('user already logged in');
+    return console.log(`${req.user.username} already logged in`);
   }
   res.send({});
   return console.log('no user');
