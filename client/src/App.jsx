@@ -10,7 +10,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      loggedIn: false
+      loggedIn: false,
+      redirect: window.location.pathname
     };
     this.updateUser = this.updateUser.bind(this);
     this.logout = this.logout.bind(this);
@@ -65,7 +66,7 @@ class App extends Component {
               {this.state.loggedIn ? <Redirect to="/" /> : <Login updateUser={this.updateUser} />}
             </Route>
             <Route path="/">
-              {this.state.loggedIn ? <Tarot /> : <Redirect to="/login" />}
+              {this.state.loggedIn ? <Tarot redirect={this.state.redirect} /> : <Redirect to={{ pathname: "/login", state: { path: this.state.redirect } }} />}
             </Route>
           </Switch>
         </div>

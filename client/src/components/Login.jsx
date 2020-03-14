@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import "../App.css";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 class Login extends Component {
   constructor(props) {
     super(props);
     this.state = { 
       username: '',
-      password: ''
+      password: '',
+      redirect: this.props.location.state.path
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -34,6 +35,9 @@ class Login extends Component {
         this.props.updateUser({
           loggedIn: true
         })
+        if (this.state.redirect) {
+          this.props.history.push(`${this.state.redirect}`);
+        }
       }
       console.log("Success:", data);
     })
@@ -75,4 +79,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default withRouter(Login);
