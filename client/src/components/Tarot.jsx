@@ -4,7 +4,7 @@ import Spread from "./Spread";
 import CardList from "./CardList";
 import SpreadList from "./SpreadList";
 import BuildSpread from "./BuildSpread";
-import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, NavLink, Redirect, withRouter } from "react-router-dom";
 
 
 
@@ -43,4 +43,4 @@ class Tarot extends Component {
   }
 }
 
-export default Tarot;
+export default withRouter(Tarot);

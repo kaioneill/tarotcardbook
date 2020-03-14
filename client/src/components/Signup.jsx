@@ -15,7 +15,6 @@ class Signup extends Component {
   }
 
   handleSubmit(event) {
-    console.log("signup username: " + this.state.username);
     fetch("/users/signup", {
       method: "POST",
       headers: {
@@ -28,9 +27,18 @@ class Signup extends Component {
       })
     })
     .then(res => res.json())
+    .then(res => {
+      if (res.status === 200) {
+        res.json();
+      } else {
+        alert(res.message);
+      }
+    })
     .then(data => {
-      this.props.history.push("/login");
-      console.log("Success:", data);
+      if (data) { 
+        this.props.history.push("/login");
+        console.log("user created:", data);
+      }
     })
     .catch(error => {
       console.error("Error:", error);

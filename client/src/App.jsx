@@ -59,12 +59,13 @@ class App extends Component {
         <div className="App">
           {this.state.loggedIn ? <button onClick={this.logout}>logout</button> : ''}
           <Switch>
-            <Route exact path="/">
-              {this.state.loggedIn ? <Tarot /> : <Redirect to="/login" />}
-            </Route>
+            
             <Route path="/signup" component={Signup} />
             <Route path="/login">
               {this.state.loggedIn ? <Redirect to="/" /> : <Login updateUser={this.updateUser} />}
+            </Route>
+            <Route path="/">
+              {this.state.loggedIn ? <Tarot /> : <Redirect to="/login" />}
             </Route>
           </Switch>
         </div>

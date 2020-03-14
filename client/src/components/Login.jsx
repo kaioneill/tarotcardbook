@@ -29,7 +29,7 @@ class Login extends Component {
     })
     .then(res => res.json())
     .then(data => {
-      if (data.username) {
+      if (data) {
         console.log("data.username present")
         this.props.updateUser({
           loggedIn: true

@@ -11,12 +11,16 @@ router.post('/signup', function (req, res, next) {
     password: req.body.password
   });
 
+
   console.log(newUser);
 
   newUser.save(function(err, newUser) {
-    if (err) return console.error(err);
+    if (err) {
+      res.status(400).json({ message:'user already exists' });
+      return console.error(err);
+    }
     console.log(`${newUser.username} has been saved`);
-    res.send(newUser);
+    res.status(200).send('user created');
   });
 
 });
@@ -29,17 +33,18 @@ router.post("/login", passport.authenticate('local'), function(req, res, next) {
   User.findOne({
     username: req.body.username
   }).exec(function(err, user) {
-    if (err) return console.error(err);
-    if (!user) {
-      return console.log(`${req.body.username} does not exist`);
-    }
-    if (!user.checkPassword(req.body.password)) {
-      return console.log(`${req.body.username} password incorrect`);
-    }
+    // if (err) {
+    //   res.status(401).json({ message:'user does not exist' });
+    //   return console.error(err);
+    // }
+    // if (!user.checkPassword(req.body.password)) {
+    //   res.status(400).json({ message:'password incorrect' });
+    //   return console.log(`${req.body.username} password incorrect`);
+    // }
     req.session.save();
     console.log(req.user);
     console.log(`${user.username} logged in`);
-    res.send(user);
+    res.status(200).send(user);
   });
 });
 
