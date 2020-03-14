@@ -79,9 +79,10 @@ class Spread extends Component {
       .then(data => {
         if (data) {
           console.log("spread deleted");
-          this.setState({
-            spreads: this.state.spreads.filter(spread => spread._id !== id)
-          });
+          // this.setState({
+          //   spreads: this.state.spreads.filter(spread => spread._id !== id)
+          // });
+          this.props.listSpreads();
         }
       })
       .catch(e => console.log(e));

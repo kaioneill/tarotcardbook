@@ -61,7 +61,7 @@ export class SpreadList extends Component {
           <h2>past spreads</h2>
           <div className="spread-container flex flex-center flex-wrap">
             {this.state.spreads.map(spread => (
-              <Spread key={spread._id} spreadId={spread._id} cardData={this.transformCards(spread._cards, spread.reversals)} initState={false} notes={spread.notes} date={new Date(spread.date)} update={true} />
+              <Spread key={spread._id} spreadId={spread._id} cardData={this.transformCards(spread._cards, spread.reversals)} initState={false} notes={spread.notes} date={new Date(spread.date)} update={true} listSpreads={this.listSpreads} />
             ))}
           </div>
         </div>
