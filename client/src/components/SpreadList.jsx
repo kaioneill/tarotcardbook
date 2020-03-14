@@ -6,7 +6,8 @@ export class SpreadList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      spreads: []
+      spreads: [],
+      loading: true
     };
     this.listSpreads = this.listSpreads.bind(this);
     this.transformCards = this.transformCards.bind(this);
@@ -42,15 +43,19 @@ export class SpreadList extends Component {
   listSpreads = () => {
     fetch("spreads/list")
       .then(res => res.json())
-      .then(spreads => this.setState({ spreads: spreads }))
+      .then(spreads => {
+        this.setState({ spreads: spreads });
+        this.setState({ loading: false });
+      })
       .catch(e => console.log(e));
   }
 
   render() {
-    if (this.state.spreads.length === 0) {
+    if (this.state.loading) {
       return (
         <div className="SpreadList">
-          <div className="spread-container flex flex-center flex-wrap pad">
+          <h2>past spreads</h2>
+          <div className="spread-container flex flex-center flex-wrap">
             loading...
           </div>
         </div>
@@ -60,9 +65,27 @@ export class SpreadList extends Component {
         <div className="SpreadList">
           <h2>past spreads</h2>
           <div className="spread-container flex flex-center flex-wrap">
-            {this.state.spreads.map(spread => (
-              <Spread key={spread._id} spreadId={spread._id} cardData={this.transformCards(spread._cards, spread.reversals)} initState={false} notes={spread.notes} date={new Date(spread.date)} update={true} listSpreads={this.listSpreads} />
-            ))}
+            {this.state.spreads.length === 0 ? (
+              <div>no spreads yet</div>
+            ) : (
+              <div>
+                {this.state.spreads.map(spread => (
+                  <Spread
+                    key={spread._id}
+                    spreadId={spread._id}
+                    cardData={this.transformCards(
+                      spread._cards,
+                      spread.reversals
+                    )}
+                    initState={false}
+                    notes={spread.notes}
+                    date={new Date(spread.date)}
+                    update={true}
+                    listSpreads={this.listSpreads}
+                  />
+                ))}
+              </div>
+            )}
           </div>
         </div>
       );
