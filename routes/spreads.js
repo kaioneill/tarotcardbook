@@ -29,13 +29,26 @@ router.post('/save', function (req, res, next) {
     cardIds.push(card._id)
   });
 
-  let newSpread = new Spread({
+  let newData = {
     _user: req.user._id,
     _cards: cardIds,
     reversals: req.body.reversals,
     notes: req.body.notes,
     date: req.body.date
-  });
+  };
+
+  if (req.body.id) {
+    Spread.findOneAndUpdate({ _id: req.body.id }, newData).exec(function (err, spread) {
+      if (err) return console.error(err);
+      console.log(spread);
+      res.send(spread);
+    });
+    return;
+  }
+
+
+
+  let newSpread = new Spread(newData);
 
   newSpread.save(function (err, newSpread) {
     if (err) return console.error(err);

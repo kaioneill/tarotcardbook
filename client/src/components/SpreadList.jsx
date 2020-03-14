@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import "../App.css";
-import Card from "./Card";
-import moment from 'moment';
+import Spread from "./Spread"
 
 export class SpreadList extends Component {
   constructor(props) {
@@ -59,30 +58,10 @@ export class SpreadList extends Component {
     } else {
       return (
         <div className="SpreadList">
+          <h2>past spreads</h2>
           <div className="spread-container flex flex-center flex-wrap">
             {this.state.spreads.map(spread => (
-              <div key={spread._id}>
-                <div className="flex flex-center">
-                  <h2>{moment(spread.date).format("MMMM D, YYYY")}</h2>
-                  <div className="pad">
-                    <button onClick={() => this.delete(spread._id)}>remove</button>
-                  </div>
-                </div>
-                <div className="flex flex-center">
-                  <div className="limit-width">{spread.notes}</div>
-                </div>
-                <div className="flex flex-center">
-                  {this.transformCards(spread._cards, spread.reversals).map(
-                    cardData => (
-                      <Card
-                        card={cardData.card}
-                        key={cardData.card.name}
-                        reversed={cardData.reversed}
-                      />
-                    )
-                  )}
-                </div>
-              </div>
+              <Spread key={spread._id} spreadId={spread._id} cardData={this.transformCards(spread._cards, spread.reversals)} initState={false} notes={spread.notes} date={new Date(spread.date)} update={true} />
             ))}
           </div>
         </div>
