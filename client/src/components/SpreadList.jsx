@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import "../App.css";
-import Card from "./Card";
-import moment from 'moment';
+import Spread from "./Spread"
 
 export class SpreadList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      spreads: []
+      spreads: [],
+      loading: true
     };
     this.listSpreads = this.listSpreads.bind(this);
     this.transformCards = this.transformCards.bind(this);
@@ -43,15 +43,19 @@ export class SpreadList extends Component {
   listSpreads = () => {
     fetch("spreads/list")
       .then(res => res.json())
-      .then(spreads => this.setState({ spreads: spreads }))
+      .then(spreads => {
+        this.setState({ spreads: spreads });
+        this.setState({ loading: false });
+      })
       .catch(e => console.log(e));
   }
 
   render() {
-    if (this.state.spreads.length === 0) {
+    if (this.state.loading) {
       return (
         <div className="SpreadList">
-          <div className="spread-container flex flex-center flex-wrap pad">
+          <h2>past spreads</h2>
+          <div className="spread-container flex flex-center flex-wrap">
             loading...
           </div>
         </div>
@@ -59,31 +63,29 @@ export class SpreadList extends Component {
     } else {
       return (
         <div className="SpreadList">
+          <h2>past spreads</h2>
           <div className="spread-container flex flex-center flex-wrap">
-            {this.state.spreads.map(spread => (
-              <div key={spread._id}>
-                <div className="flex flex-center">
-                  <h2>{moment(spread.date).format("MMMM D, YYYY")}</h2>
-                  <div className="pad">
-                    <button onClick={() => this.delete(spread._id)}>remove</button>
-                  </div>
-                </div>
-                <div className="flex flex-center">
-                  <div className="limit-width">{spread.notes}</div>
-                </div>
-                <div className="flex flex-center">
-                  {this.transformCards(spread._cards, spread.reversals).map(
-                    cardData => (
-                      <Card
-                        card={cardData.card}
-                        key={cardData.card.name}
-                        reversed={cardData.reversed}
-                      />
-                    )
-                  )}
-                </div>
+            {this.state.spreads.length === 0 ? (
+              <div>no spreads yet</div>
+            ) : (
+              <div>
+                {this.state.spreads.map(spread => (
+                  <Spread
+                    key={spread._id}
+                    spreadId={spread._id}
+                    cardData={this.transformCards(
+                      spread._cards,
+                      spread.reversals
+                    )}
+                    initState={false}
+                    notes={spread.notes}
+                    date={new Date(spread.date)}
+                    update={true}
+                    listSpreads={this.listSpreads}
+                  />
+                ))}
               </div>
-            ))}
+            )}
           </div>
         </div>
       );

@@ -36,7 +36,7 @@ export class CardList extends Component {
     if (this.state.cards.length === 0) {
       return (
         <div className="CardList">
-          <h2>all the things</h2>
+          <h2>all cards</h2>
           <button className="depressed" onClick={(e) => this.getSuit(e, 'Trump')}>major arcana</button>
           <button className="" onClick={(e) => this.getSuit(e, 'Cups')}>cups</button>
           <button className="" onClick={(e) => this.getSuit(e, 'Swords')}>swords</button>
@@ -50,7 +50,7 @@ export class CardList extends Component {
     } else {
       return (
         <div className="CardList">
-          <h2>all the things</h2>
+          <h2>all cards</h2>
           <button className="depressed" onClick={(e) => this.getSuit(e, 'Trump')}>major arcana</button>
           <button className="" onClick={(e) => this.getSuit(e, 'Cups')}>cups</button>
           <button className="" onClick={(e) => this.getSuit(e, 'Swords')}>swords</button>
