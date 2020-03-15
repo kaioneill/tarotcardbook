@@ -6,10 +6,10 @@ class BuildCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      query: "",
+      query: this.props.card ? this.props.card.name : "",
       results: [],
-      card: {},
-      reversed: false
+      card: this.props.card || {},
+      reversed: this.props.reversed || false
     };
     this.updateResults = this.updateResults.bind(this);
     this.checkMatch = this.checkMatch.bind(this);
@@ -86,6 +86,7 @@ class BuildCard extends Component {
             <input
               type="checkbox"
               onChange={event => this.setReversed(event)}
+              checked={this.state.reversed}
             ></input>
             reversed
             {this.state.card.name ? (
