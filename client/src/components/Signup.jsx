@@ -28,16 +28,11 @@ class Signup extends Component {
     })
     .then(res => res.json())
     .then(res => {
-      if (res.status === 200) {
-        res.json();
-      } else {
-        alert(res.message);
-      }
-    })
-    .then(data => {
-      if (data) { 
+      if (res.username) {
         this.props.history.push("/login");
-        console.log("user created:", data);
+        console.log("user created:", res);
+      } else {
+        console.log("error");
       }
     })
     .catch(error => {

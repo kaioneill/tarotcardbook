@@ -81,7 +81,7 @@ app.use(function(err, req, res, next) {
 connectDb().then(async () => {
   app.listen(process.env.PORT, () => {
     console.log(`tarot listening on port ${process.env.PORT}!`);
-    saveCards();
+    // saveCards();
     // deleteCards();
     // updateCards();
     // addTarotData();
