@@ -1,5 +1,5 @@
 import models, { connectDb } from './models/index';
-import { saveCards, deleteCards } from "./models/card";
+import { saveCards, deleteCards, addTarotData, updateCards } from "./models/card";
 import userSchema from "./models/user";
 import session from "express-session";
 import passport from "./passport";
@@ -81,8 +81,10 @@ app.use(function(err, req, res, next) {
 connectDb().then(async () => {
   app.listen(process.env.PORT, () => {
     console.log(`tarot listening on port ${process.env.PORT}!`);
-    // saveCards();
+    saveCards();
     // deleteCards();
+    // updateCards();
+    // addTarotData();
   });
 }).catch((e) => {
   console.log(e)

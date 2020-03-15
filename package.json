@@ -6,6 +6,7 @@
     "start": "PORT=3001 nodemon app.js --exec babel-node --presets babel-preset-env"
   },
   "dependencies": {
+    "async": "^3.2.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cookie-parser": "~1.4.4",
@@ -15,6 +16,7 @@
     "express-session": "^1.17.0",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
+    "jsdom": "^16.2.1",
     "mongodb": "^3.5.3",
     "mongoose": "^5.9.1",
     "mongoose-simple-random": "^0.4.1",

@@ -5,7 +5,7 @@
 			"name": "The Fool",
 			"link": "https://www.elliotoracle.com/blog/2018/11/5/the-card-of-the-day-the-fool",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/11/the-card-of-the-day-the-fool-reversed",
-			"number": "0",
+      "number": "0",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m00.jpg",
@@ -48,15 +48,13 @@
 				"What would I do if I felt free to take a leap?",
 				"How willing am I to be vulnerable and open?",
 				"How might past experiences help in this new situation?"
-			],
-			"quote": " \"Uninhibited freedom.\"",
-			"quote_r": "\"What do you need to learn more about?\""
+			]
 		},
 		{
 			"name": "The Magician",
 			"link": "https://www.elliotoracle.com/blog/2018/1/30/the-card-of-the-day-the-magician",
 			"link_r": "https://www.elliotoracle.com/blog/2018/6/25/the-card-of-the-day-the-magician-reversed",
-			"number": "1",
+      "number": "1",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m01.jpg",
@@ -94,15 +92,13 @@
 				"What am I empowered to do?",
 				"How might my abilities come into play?",
 				"To what extent am I making the most of my talents?"
-			],
-			"quote": "\"Tap into what is limitless within you.\"",
-			"quote_r": "\"Throw out any thoughts that don’t contribute to your empowerment.\""
+			]
 		},
 		{
 			"name": "The High Priestess",
 			"link": "https://www.elliotoracle.com/blog/2018/10/2/the-card-of-the-day-the-high-priestess",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/13/the-card-of-the-day-the-high-priestess-reversed",
-			"number": "2",
+      "number": "2",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m02.jpg",
@@ -143,15 +139,13 @@
 				"What might a rebel against tradition do?",
 				"What isn't being said or revealed?",
 				"What could be achieved by observing and reflecting?"
-			],
-			"quote": "\"Trust your inner knowing.\" ",
-			"quote_r": "\"Notice recurring signs and signals.\""
+			]
 		},
 		{
 			"name": "The Empress",
 			"link": "https://www.elliotoracle.com/blog/2017/7/10/the-card-of-the-day-the-empress",
 			"link_r": "https://www.elliotoracle.com/blog/2017/8/18/the-card-of-the-day-the-empress-reversed",
-			"number": "3",
+      "number": "3",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m03.jpg",
@@ -193,15 +187,13 @@
 				"What would a concerned and capable mother do?",
 				"What can I do that would emphasize growth?",
 				"How can I celebrate my own sensuality and sexuality?"
-			],
-			"quote": "\"Unconditional love and nurturing.\"",
-			"quote_r": "\"What needs nurturing today?\""
+			]
 		},
 		{
 			"name": "The Emperor",
 			"link": "https://www.elliotoracle.com/blog/2018/10/11/the-card-of-the-day-the-emperor",
 			"link_r": "https://www.elliotoracle.com/blog/2017/8/17/the-card-of-the-day-the-emperor-reversed",
-			"number": "4",
+      "number": "4",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m04.jpg",
@@ -240,15 +232,13 @@
 				"How does the issue of control or regulation impact this situation?",
 				"What would a compassionate but strict father do?",
 				"What needs more control?"
-			],
-			"quote": "\"Establishing foundations for success.\" ",
-			"quote_r": "\"Identify what needs to be reinforced.\""
+			]
 		},
 		{
 			"name": "The Hierophant",
 			"link": "https://www.elliotoracle.com/blog/2018/12/26/the-card-of-the-day-the-hierophant",
 			"link_r": "https://www.elliotoracle.com/blog/2017/11/14/the-card-of-the-day-the-hierophant-reversed",
-			"number": "5",
+      "number": "5",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m05.jpg",
@@ -289,15 +279,13 @@
 				"What role might tradition or religion play in this situation?",
 				"Who authored the rules? Who enforces them? Why?",
 				"How might an experienced guide impact this situation?"
-			],
-			"quote": "\"Seeking the sacred.\" ",
-			"quote_r": "\"Be more flexible.\""
+			]
 		},
 		{
 			"name": "The Lovers",
 			"link": "https://www.elliotoracle.com/blog/2019/4/11/the-card-of-the-day-the-lovers",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/17/the-card-of-the-day-the-lovers-reversed",
-			"number": "6",
+      "number": "6",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m06.jpg",
@@ -336,15 +324,13 @@
 				"What guides my choices?",
 				"What is my heart leading me to do?",
 				"How might this decision transform me as a person?"
-			],
-			"quote": " \"The recipe for inner harmony.\"",
-			"quote_r": "\"Healing relationships.\""
+			]
 		},
 		{
 			"name": "The Chariot",
 			"link": "https://www.elliotoracle.com/blog/2017/6/8/the-card-of-the-day-the-chariot",
 			"link_r": "https://www.elliotoracle.com/blog/2018/1/10/the-card-of-the-day-the-chariot-reversed",
-			"number": "7",
+      "number": "7",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m07.jpg",
@@ -382,15 +368,13 @@
 				"To what extent have I arrived? What will my next challenge be?",
 				"How can I use past achievements to their best advantage?",
 				"What would the criteria for real and meaningful success be?"
-			],
-			"quote": "\"Courage in the face of the unknown.\"",
-			"quote_r": "\"Be confident! Release indecision.\""
+			]
 		},
 		{
 			"name": "Strength",
 			"link": "https://www.elliotoracle.com/blog/2018/1/31/the-card-of-the-day-strength",
 			"link_r": "https://www.elliotoracle.com/blog/2018/10/27/the-card-of-the-day-strength-reversed",
-			"number": "8",
+      "number": "8",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m08.jpg",
@@ -427,15 +411,13 @@
 				"To what extent is your life (or work) balanced?",
 				"How can you achieve greater objectivity?",
 				"What course of action would be fair to everyone concerned?"
-			],
-			"quote": "\"You are stronger than you know.\"",
-			"quote_r": "\"Remember your strength!\" "
+			]
 		},
 		{
 			"name": "The Hermit",
 			"link": "https://www.elliotoracle.com/blog/2017/10/30/the-card-of-the-day-the-hermit",
 			"link_r": "https://www.elliotoracle.com/blog/2017/9/21/the-card-of-the-day-the-hermit-reversed",
-			"number": "9",
+      "number": "9",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m09.jpg",
@@ -473,15 +455,13 @@
 				"What would happen if I simply withdrew and took no action?",
 				"How can I get some perspective on the situation?",
 				"Who has walked this path before me? How can I enlist his or her help?"
-			],
-			"quote": "\"Follow your own path.\"",
-			"quote_r": "\"Time to share your authentic self with others.\""
+			]
 		},
 		{
 			"name": "Wheel of Fortune",
 			"link": "https://www.elliotoracle.com/blog/2017/10/27/the-card-of-the-day-the-wheel-of-fortune",
 			"link_r": "https://www.elliotoracle.com/blog/2017/8/17/the-card-of-the-day-the-wheel-of-fortune-reversed",
-			"number": "10",
+      "number": "10",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m10.jpg",
@@ -520,15 +500,13 @@
 				"How does this challenge fit into a larger pattern?",
 				"What role does luck play in my circumstances?",
 				"What can I control? How should I know when to relinquish control?"
-			],
-			"quote": "\"Making Peace with life's unpredictability.\"",
-			"quote_r": "\"Make peace with life’s unpredictability.\""
+			]
 		},
 		{
 			"name": "Justice",
 			"link": "https://www.elliotoracle.com/blog/2017/10/30/the-card-of-the-day-justice",
 			"link_r": "https://www.elliotoracle.com/blog/2017/9/22/the-card-of-the-day-justice-reversed",
-			"number": "11",
+      "number": "11",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m11.jpg",
@@ -567,15 +545,13 @@
 				"How can I enhance my self-discipline?",
 				"What behaviors tempt me? How can I resist?",
 				"What instincts do I continue to struggle with today?"
-			],
-			"quote": "\"Honesty is the quickest way to balance.\"",
-			"quote_r": "\"Restore your equilibrium.\""
+			]
 		},
 		{
 			"name": "The Hanged Man",
 			"link": "https://www.elliotoracle.com/blog/2018/3/8/the-card-of-the-day-the-hanged-man",
 			"link_r": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-hanged-man-reversed",
-			"number": "12",
+      "number": "12",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m12.jpg",
@@ -614,15 +590,13 @@
 				"How can I radically alter my perspective?",
 				"How might being stuck actually be a blessing in disguise?",
 				"How can I help myself see the glass as half full?"
-			],
-			"quote": "\"Sacrificing for success.\"",
-			"quote_r": "\"The Hanged Man is back on his feet!\""
+			]
 		},
 		{
 			"name": "Death",
 			"link": "https://www.elliotoracle.com/blog/2018/1/23/the-card-of-the-day-death",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/9/the-card-of-the-day-the-death-card-reversed",
-			"number": "13",
+      "number": "13",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m13.jpg",
@@ -661,15 +635,13 @@
 				"What needs to end?",
 				"How might an ending actually be a blessing in this situation?",
 				"What's next?"
-      ],
-      "quote": "\"Accepting inevitable change.\"",
-			"quote_r": "\"What changes are you resisting?\""
+			]
 		},
 		{
 			"name": "Temperance",
 			"link": "https://www.elliotoracle.com/blog/2017/10/30/the-card-of-the-day-temperance",
 			"link_r": "https://www.elliotoracle.com/blog/2017/8/18/the-card-of-the-day-temperance-reversed",
-			"number": "14",
+      "number": "14",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m14.jpg",
@@ -710,15 +682,13 @@
 				"How can I avoid extremes?",
 				"What does everyone involved have in common?",
 				"How might combining familiar things help me create something new?"
-			],
-			"quote": "\"Ask yourself what you need.\"",
-			"quote_r": "\"Be patient, it’s all working out.\""
+			]
 		},
 		{
 			"name": "The Devil",
 			"link": "https://www.elliotoracle.com/blog/2017/9/4/the-card-of-the-day-the-devil",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/12/the-card-of-the-day-the-devil-reversed",
-			"number": "15",
+      "number": "15",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m15.jpg",
@@ -758,15 +728,13 @@
 				"What enslaves me? How can I set myself free?",
 				"How can I re-evaluate the importance I assign to material things?",
 				"To what extent do my cravings define me?"
-      ],
-      "quote": "\"Stand up to your inner saboteur!\"",
-			"quote_r": "\"Free yourself from your inner saboteur.\""
+			]
 		},
 		{
 			"name": "The Tower",
 			"link": "https://www.elliotoracle.com/blog/2017/11/17/the-card-of-the-day-the-tower",
 			"link_r": "https://www.elliotoracle.com/blog/2018/9/23/the-card-of-the-day-the-tower-reversed",
-			"number": "16",
+      "number": "16",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m16.jpg",
@@ -807,15 +775,13 @@
 				"How might the current situation dramatically alter my perspective?",
 				"How might this loss open the door for new growth?",
 				"What attitudes need to be struck down before I proceed?"
-			],
-			"quote": "\"Stand up to your inner saboteur!\"",
-			"quote_r": "\"Shaky foundations are a sign that something has to be released.\" "
+			]
 		},
 		{
 			"name": "The Star",
 			"link": "https://www.elliotoracle.com/blog/2018/1/8/the-card-of-the-day-the-star",
 			"link_r": "https://www.elliotoracle.com/blog/2019/1/27/the-card-of-the-day-the-star-reversed",
-			"number": "17",
+      "number": "17",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m17.jpg",
@@ -857,15 +823,13 @@
 				"What would my higher power direct me to do?",
 				"How can I be less self-conscious and guarded?",
 				"How can I better attune myself to the abundance of life's blessings?"
-			],
-			"quote": "\"Touch the starlight within.\"",
-			"quote_r": "\"Remembering transcendence.\" "
+			]
 		},
 		{
 			"name": "The Moon",
 			"link": "https://www.elliotoracle.com/blog/2019/2/12/the-card-of-the-day-the-moon",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/5/the-card-of-the-day-the-moon-reversed",
-			"number": "18",
+      "number": "18",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m18.jpg",
@@ -904,15 +868,13 @@
 				"How can I face my fears and move forward?",
 				"What helpers can serve me as guides through my personal darkness?",
 				"How can I deal with the unknown in healthy ways?"
-      ],
-      "quote": "\"Unconscious influences.\"",
-			"quote_r": "\"Listen to your instincts.\""
+			]
 		},
 		{
 			"name": "The Sun",
 			"link": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-sun",
 			"link_r": "https://www.elliotoracle.com/blog/2018/1/5/the-card-ofvthe-day-the-sun-reversed",
-			"number": "19",
+      "number": "19",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m19.jpg",
@@ -950,15 +912,13 @@
 				"How can I take best advantage of the attention coming my way?",
 				"What are my highest spiritual goals?",
 				"How can I avoid being bedazzled by the energy swirling around me?"
-			],
-			"quote": "\"The best card in the deck!\"",
-			"quote_r": "\"Upright or reversed, this is always the best card in the deck!\""
+			]
 		},
 		{
 			"name": "Judgement",
 			"link": "https://www.elliotoracle.com/blog/2017/7/8/the-card-of-the-day-judgment",
 			"link_r": "https://www.elliotoracle.com/blog/2018/7/7/the-card-of-the-day-judgment-reversed",
-			"number": "20",
+      "number": "20",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m20.jpg",
@@ -998,15 +958,13 @@
 				"What is the main thing I need to realize about myself?",
 				"In what way might the universe be trying to get my attention?",
 				"If I were to reinvent myself, what would I become?"
-			],
-			"quote": "Don't give up, wake up!",
-			"quote_r": "\"Snapping our of trance.\""
+			]
 		},
 		{
 			"name": "The World",
 			"link": "https://www.elliotoracle.com/blog/2019/3/26/the-card-of-the-day-the-world",
 			"link_r": "https://www.elliotoracle.com/blog/2018/1/29/the-card-of-the-day-the-world-reversed",
-			"number": "21",
+      "number": "21",
 			"arcana": "Major Arcana",
 			"suit": "Trump",
 			"img": "m21.jpg",
@@ -1045,15 +1003,13 @@
 				"For me, what would having it all mean?",
 				"How aware am I of my own connectedness to the world around me?",
 				"What keeps me from having it all right now, today?"
-      ],
-      "quote": "\"Completion.\"",
-			"quote_r": "\"What needs completion or closure?\""
+			]
 		},
 		{
 			"name": "Ace of Cups",
 			"link": "https://www.elliotoracle.com/blog/2019/1/15/the-card-of-the-day-the-ace-of-cups",
 			"link_r": "https://www.elliotoracle.com/blog/2017/9/16/the-card-of-the-day-the-ace-of-cups-reversed",
-			"number": "1",
+      "number": "1",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c01.jpg",
@@ -1091,15 +1047,13 @@
 				"What am I feeling right now?",
 				"How would I go about opening myself to spiritual guidance?",
 				"What motivates me the most - pleasure or pain? Why?"
-			],
-			"quote": " \"Completion.\"",
-			"quote_r": "\"Replenish your spirit.\""
+			]
 		},
 		{
 			"name": "Two of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-two-of-cups",
 			"link_r": "https://www.elliotoracle.com/blog/2017/10/25/the-card-of-the-day-the-two-of-cups-reversed",
-			"number": "2",
+      "number": "2",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c02.jpg",
@@ -1137,15 +1091,13 @@
 			"questions": [
 				"How can I make sure that what I'm feeling is mutual?\",\"When was the last time I felt \"in love\" with someone or something?",
 				"What do you need in order to feel emotionally stable?"
-			],
-			"quote": "\"The people you love most are your best teachers.\"",
-			"quote_r": "\"No need to exacerbate a wounded ego.\""
+			]
 		},
 		{
 			"name": "Three of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/6/13/the-card-of-the-day-the-three-of-cups",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/22/the-card-of-the-day-the-three-of-cups-reversed",
-			"number": "3",
+      "number": "3",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c03.jpg",
@@ -1179,15 +1131,13 @@
 				"What's worth celebrating in my life?",
 				"How can I demonstrate my feelings in appropriate ways?",
 				"What can I do to show my partner how I really feel?"
-			],
-			"quote": "\"Radiance, warmth,and charisma.\"&nbsp;",
-			"quote_r": "\"Find the place within where there is joy.\""
+			]
 		},
 		{
 			"name": "Four of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/8/17/the-card-of-the-day-the-four-of-cups",
 			"link_r": "https://www.elliotoracle.com/blog/2017/11/19/the-card-of-the-day-the-four-of-cups-reversed",
-			"number": "4",
+      "number": "4",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c04.jpg",
@@ -1224,15 +1174,13 @@
 				"How can I use this \"downtime\" to my best advantage?",
 				"How can I show my partner that I don't take him or her for granted?",
 				"To what extent is my mood blinding me to new opportunities?"
-			],
-			"quote": "\"Open yourself to present blessings.\"",
-			"quote_r": "\"Saying thank you instead of no.\""
+			]
 		},
 		{
 			"name": "Five of Cups",
 			"link": "https://www.elliotoracle.com/blog/2018/12/28/the-card-of-the-day-the-five-of-cups",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/20/the-card-of-the-day-the-five-of-cups-reversed",
-			"number": "5",
+      "number": "5",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c05.jpg",
@@ -1273,15 +1221,13 @@
 				"How do I tend to deal with loss?",
 				"What life lesson might I be learning now?",
 				"How can I shift my attention from the past to the future?"
-      ],
-      "quote": "\"The trance of negative thinking.\"",
-			"quote_r": "\"Snap out of it!\""
+			]
 		},
 		{
 			"name": "Six of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/7/6/the-card-of-the-day-the-six-of-cups",
 			"link_r": "https://www.elliotoracle.com/blog/2019/5/27/the-card-of-the-day-the-six-of-cups-reversed",
-			"number": "6",
+      "number": "6",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c06.jpg",
@@ -1318,15 +1264,13 @@
 				"What gifts do I possess? How freely do I give them?",
 				"How can I practice unconditional giving?",
 				"How would things change if I became a more charitable person?"
-			],
-			"quote": "\"Remember what brings you joy.\"",
-			"quote_r": " \"Making peace with the past.\""
+			]
 		},
 		{
 			"name": "Seven of Cups",
 			"link": "https://www.elliotoracle.com/blog/2018/1/26/the-card-of-the-day-the-seven-of-cups",
 			"link_r": "https://www.elliotoracle.com/blog/2017/8/31/the-card-of-the-day-the-seven-of-cups-reversed",
-			"number": "7",
+      "number": "7",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c07.jpg",
@@ -1361,15 +1305,13 @@
 				"What do you want most? What do you fear most? How are these related?",
 				"How is your imagination working for you? Against you?",
 				"How might a clearer personal vision help you choose a single cup from the many available?"
-			],
-			"quote": "\"Seeing past misty illusions.\"",
-			"quote_r": "\"Awakening.\""
+			]
 		},
 		{
 			"name": "Eight of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/8/12/the-card-of-the-day-the-eight-of-cups",
 			"link_r": "https://www.elliotoracle.com/blog/2019/1/29/the-card-of-the-day-the-eight-of-cups-reversed",
-			"number": "8",
+      "number": "8",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c08.jpg",
@@ -1410,15 +1352,13 @@
 				"What do I need to leave behind once and for all?",
 				"If I left in search of \"more,\" what would I be looking for, exactly?",
 				"How might a retreat enhance my perspective?"
-			],
-			"quote": "\"Let your instincts be your guide.\"",
-			"quote_r": "\"Seeking your authentic self.\" "
+			]
 		},
 		{
 			"name": "Nine of Cups",
 			"link": "https://www.elliotoracle.com/blog/2018/12/11/the-card-of-the-day-the-nine-of-cups",
 			"link_r": "https://www.elliotoracle.com/blog/2018/2/5/the-card-of-the-day-the-nine-of-cups-reversed",
-			"number": "9",
+      "number": "9",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c09.jpg",
@@ -1455,15 +1395,13 @@
 				"What is true happiness?",
 				"If I could have anything, what would I have?",
 				"What is my attitude toward luxury? Do I deserve it?"
-      ],
-      "quote": "\"Plenty.\"",
-			"quote_r": "\"Nothing in Excess.\""
+			]
 		},
 		{
 			"name": "Ten of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/8/13/the-card-of-the-day-the-ten-of-cups",
 			"link_r": "https://www.elliotoracle.com/blog/2017/11/16/the-card-of-the-day-the-ten-of-cups-reversed",
-			"number": "10",
+      "number": "10",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c10.jpg",
@@ -1497,15 +1435,13 @@
 				"Who gets to define what \"joy\" consists of?",
 				"What course of action is available when you feel overwhelmed?",
 				"How might vows or promises play a role in achieving a greater level of joy in your life?"
-			],
-			"quote": "\"Magic is weaving through your life...right now.\"",
-			"quote_r": "\"Bring some magic back to this moment.\""
+			]
 		},
 		{
 			"name": "Page of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-page-of-cups",
 			"link_r": "https://www.elliotoracle.com/blog/2019/4/2/the-card-of-the-day-the-page-of-cups-reversed",
-			"number": "11",
+      "number": "11",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c11.jpg",
@@ -1541,15 +1477,13 @@
 				"How worried are you that others will see you as foolish or inexperienced?",
 				"To what extent can you be honest about your lack of experience in love and faith?",
 				"How can you maintain enthusiasm over time?"
-			],
-			"quote": "\"Your creativity needs an outlet.\"",
-			"quote_r": "\"Overcoming creative blockages.\" "
+			]
 		},
 		{
 			"name": "Knight of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/7/3/the-card-of-the-day-the-knight-of-cups",
 			"link_r": "https://www.elliotoracle.com/blog/2017/8/16/the-card-of-the-day-the-knight-of-cups-reversed",
-			"number": "12",
+      "number": "12",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c12.jpg",
@@ -1583,15 +1517,13 @@
 				"How prone to emotional extremes are you?",
 				"What's the difference in driving passion and blind zeal?",
 				"How can you inspire others without inciting a riot?"
-			],
-			"quote": "\"The Messenger of Love.\"",
-			"quote_r": "\"Communicating unresolved emotions is the first step to releasing them.\""
+			]
 		},
 		{
 			"name": "Queen of Cups",
 			"link": "https://www.elliotoracle.com/blog/2017/6/29/the-card-of-the-day-the-queen-of-cups",
 			"link_r": "https://www.elliotoracle.com/blog/2017/10/16/the-card-of-the-day-the-queen-of-cups-reversed",
-			"number": "13",
+      "number": "13",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c13.jpg",
@@ -1625,15 +1557,13 @@
 				"How do I handle strong emotions?",
 				"To what extent am I a victim of my own feelings?",
 				"How can I move from reflection to action?"
-			],
-			"quote": "\"Opening yourself to feeling life,reveals life.\"&nbsp;",
-			"quote_r": "\"Feel your feelings.\""
+			]
 		},
 		{
 			"name": "King of Cups",
 			"link": "https://www.elliotoracle.com/blog/2019/4/19/the-card-of-the-day-the-king-of-cups",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/18/the-card-of-the-day-the-king-of-cups-reversed",
-			"number": "14",
+      "number": "14",
 			"arcana": "Minor Arcana",
 			"suit": "Cups",
 			"img": "c14.jpg",
@@ -1666,15 +1596,13 @@
 				"What wise person could be consulted for good advice?",
 				"How can I make sure I'm being as objective and fair as possible?",
 				"To what extent am I capable of keeping a \"stiff upper lip?\""
-			],
-			"quote": " \"Feelings are fuel.\"",
-			"quote_r": "\"Get your house in order.\""
+			]
 		},
 		{
 			"name": "Ace of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/11/9/the-card-of-the-day-the-ace-of-swords",
 			"link_r": "https://www.elliotoracle.com/blog/2017/10/17/the-card-of-the-day-the-ace-of-swords-reversed",
-			"number": "1",
+      "number": "1",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s01.jpg",
@@ -1712,15 +1640,13 @@
 				"If I made my decision purely based on reason and logic, what would my decision be?",
 				"What do I think about my own problem-solving ability?",
 				"Who can supply me with the pure and simple facts?"
-			],
-			"quote": "\"Reclaim your personal power.\"",
-			"quote_r": "\"Time to take action.\""
+			]
 		},
 		{
 			"name": "Two of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/9/19/the-card-of-the-day-the-two-of-swords",
 			"link_r": "https://www.elliotoracle.com/blog/2018/1/5/the-card-of-the-day-the-two-of-swords-reversed",
-			"number": "2",
+      "number": "2",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s02.jpg",
@@ -1756,15 +1682,13 @@
 				"What information do I need to get past this impasse?",
 				"How can I get past being defensive and see the facts?",
 				"What viewpoints, other than my own, play a role in this situation?"
-			],
-			"quote": "\"Making peace with in-between.\"",
-			"quote_r": "\"Stepping our of limbo.\""
+			]
 		},
 		{
 			"name": "Three of Swords",
 			"link": "https://www.elliotoracle.com/blog/2019/3/26/the-card-of-the-day-the-three-of-swords",
 			"link_r": "https://www.elliotoracle.com/blog/2017/9/18/the-card-of-the-day-the-three-of-swords-reversed",
-			"number": "3",
+      "number": "3",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s03.jpg",
@@ -1800,15 +1724,13 @@
 				"How can I get past my depression?",
 				"To what extent are my emotions a matter of choice?",
 				"How can I learn from the mistakes of the past?"
-			],
-			"quote": " \"Forgiveness.\"",
-			"quote_r": "\"Stop self-inflicting wounds.\""
+			]
 		},
 		{
 			"name": "Four of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/9/28/the-card-of-the-day-the-four-of-swords",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/13/the-card-of-the-day-the-four-of-swords-reversed",
-			"number": "4",
+      "number": "4",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s04.jpg",
@@ -1842,15 +1764,13 @@
 				"How long has it been since you deliberately took a \"time out?\"",
 				"How difficult is it for you to meditate?",
 				"What would happen if you simply refused to make a decision today?"
-			],
-			"quote": "\"Peace.\"",
-			"quote_r": "\"Restlessness.\""
+			]
 		},
 		{
 			"name": "Five of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/7/4/the-card-of-the-day-the-five-of-swords",
 			"link_r": "https://www.elliotoracle.com/blog/2017/11/20/the-card-of-the-day-the-five-of-swords-reversed",
-			"number": "5",
+      "number": "5",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s05.jpg",
@@ -1889,15 +1809,13 @@
 				"How do I behave when I win? What does that say about me?",
 				"How can I do what's necessary without making others feel defeated?",
 				"What's the difference between selfish action and acting in my own best interest?"
-			],
-			"quote": "\"Don’t get defeated, get organized!\"",
-			"quote_r": "\"Pace yourself.\""
+			]
 		},
 		{
 			"name": "Six of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/6/24/the-card-of-the-day-the-six-of-swords",
 			"link_r": "https://www.elliotoracle.com/blog/2017/8/30/the-card-of-the-day-the-six-of-swords-reversed",
-			"number": "6",
+      "number": "6",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s06.jpg",
@@ -1934,15 +1852,13 @@
 				"What assumptions govern my thinking?",
 				"How willing am I to lend aid to others? To request it when I need it?",
 				"How prepared am I to deal with change? With unexpected outcomes?"
-			],
-			"quote": "\"Positive changes are happening now, surrender to them.\"",
-			"quote_r": "\"What in your life needs to get moving?\""
+			]
 		},
 		{
 			"name": "Seven of Swords",
 			"link": "https://www.elliotoracle.com/blog/2019/2/26/the-card-of-the-day-the-seven-of-swords",
 			"link_r": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-seven-of-swords-reversed",
-			"number": "7",
+      "number": "7",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s07.jpg",
@@ -1977,15 +1893,13 @@
 				"What assumptions am I making?",
 				"How well-defined is my sense of ethics?",
 				"How should I respond when I know others are breaking the rules?"
-      ],
-      "quote": "\"Use your wits.\"",
-			"quote_r": "\"Don't be fooled.\""
+			]
 		},
 		{
 			"name": "Eight of Swords",
 			"link": "https://www.elliotoracle.com/blog/2019/2/21/the-card-of-the-day-the-eight-of-swords",
 			"link_r": "https://www.elliotoracle.com/blog/2017/9/28/the-card-of-the-day-the-eight-of-swords-reversed",
-			"number": "8",
+      "number": "8",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s08.jpg",
@@ -2025,15 +1939,13 @@
 				"Who's empowered to cut through the red tape?",
 				"What, exactly, are the obstacles? What resources, exactly, are needed to move them?",
 				"To what extent is your powerlessness a matter of attitude?"
-			],
-			"quote": " \"Freedom from fear that binds and blinds.\"",
-			"quote_r": "\"Take off the blindfold to see all that you are.\""
+			]
 		},
 		{
 			"name": "Nine of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/6/28/the-card-of-the-day-the-nine-of-swords",
 			"link_r": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-nine-of-swords-reversed",
-			"number": "9",
+      "number": "9",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s09.jpg",
@@ -2071,15 +1983,13 @@
 				"What role does worry play in your current situation?",
 				"To what other ends might you devote the energy you're giving to anxiety?",
 				"How can you know when it's time to stop thinking and start acting?"
-			],
-			"quote": "\"Stand up to your inner-saboteur.\"",
-			"quote_r": "\"Overcoming shadows.\""
+			]
 		},
 		{
 			"name": "Ten of Swords",
 			"link": "https://www.elliotoracle.com/blog/2018/10/18/the-card-of-the-day-the-ten-of-swords",
 			"link_r": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-ten-of-swords-reversed",
-			"number": "10",
+      "number": "10",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s10.jpg",
@@ -2118,15 +2028,13 @@
 				"What are the signs that the time for debate is over?",
 				"How can you tell when interest has given way to obsession?",
 				"When your own limits are reached, where can you turn for aid?"
-			],
-			"quote": "\"To surrender fear you must first stop avoiding it.\"",
-			"quote_r": "\"Stop running and face your fears.\""
+			]
 		},
 		{
 			"name": "Page of Swords",
 			"link": "https://www.elliotoracle.com/blog/2019/1/29/the-card-of-the-day-the-page-of-swords",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/7/the-card-of-the-day-the-page-of-swords-reversed",
-			"number": "11",
+      "number": "11",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s11.jpg",
@@ -2162,15 +2070,13 @@
 				"How comfortable are you with revealing your own ignorance?",
 				"What are the marks of a good student?",
 				"To what extent are you open to new information?"
-			],
-			"quote": "\"Lowering unnecessary defenses.\" ",
-			"quote_r": "\"Choose your words wisely.\""
+			]
 		},
 		{
 			"name": "Knight of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/11/29/the-card-of-the-day-the-knight-of-swords",
 			"link_r": "https://www.elliotoracle.com/blog/2017/8/5/the-card-of-the-day-the-knight-of-swords-reversed",
-			"number": "12",
+      "number": "12",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s12.jpg",
@@ -2211,15 +2117,13 @@
 				"What do I really need to know?",
 				"To what extent have I investigated the facts behind my situation?",
 				"How can I share what I know without alienating others?"
-			],
-			"quote": "\"Be kinder to your mind and body.\"",
-			"quote_r": "\"Be kinder to yourself\""
+			]
 		},
 		{
 			"name": "Queen of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/12/22/the-card-of-the-day-the-queen-of-swords",
 			"link_r": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-queen-of-swords-reversed",
-			"number": "13",
+      "number": "13",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s13.jpg",
@@ -2259,15 +2163,13 @@
 				"What do I have a knack for? How might my special gift prove useful now?",
 				"To what extent am I capable of saying what needs to be said?",
 				"What is the best possible way to say what I want to say?"
-			],
-			"quote": "\"Assertiveness.\"",
-			"quote_r": "\"Honor your inner warrior queen.\""
+			]
 		},
 		{
 			"name": "King of Swords",
 			"link": "https://www.elliotoracle.com/blog/2017/12/22/the-card-of-the-day-the-king-of-swords",
 			"link_r": "https://www.elliotoracle.com/blog/2017/9/17/the-card-of-the-day-the-king-of-swords-reversed",
-			"number": "14",
+      "number": "14",
 			"arcana": "Minor Arcana",
 			"suit": "Swords",
 			"img": "s14.jpg",
@@ -2303,15 +2205,13 @@
 				"What would your decision be if you had to render a binding verdict right now?",
 				"How comfortable are you saying exactly what you mean? How often do you temper what you have to say for fear of offending others?",
 				"If you were to ask others, \"What's my area of expertise?\" what would they say?"
-			],
-			"quote": "\"Challenging assumptions.\"",
-			"quote_r": "\"Challenge your assumptions.\""
+			]
 		},
 		{
 			"name": "Ace of Wands",
 			"link": "https://www.elliotoracle.com/blog/2017/8/4/the-card-of-the-day-the-ace-of-wands",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/8/the-card-of-the-day-the-ace-of-wands-reversed",
-			"number": "1",
+      "number": "1",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w01.jpg",
@@ -2351,15 +2251,13 @@
 				"What do I really want, more than anything else?",
 				"What happens if I let this opportunity pass me by?",
 				"How clearly have I defined my directions, values, and goals?"
-      ],
-      "quote": "\"Inspiration.\"",
-			"quote_r": "\"Don’t just wish it, do it!\""
+			]
 		},
 		{
 			"name": "Two of Wands",
 			"link": "https://www.elliotoracle.com/blog/2017/9/14/the-card-of-the-day-the-two-of-wands",
 			"link_r": "https://www.elliotoracle.com/blog/2017/11/18/the-card-of-the-day-the-two-of-wands-reversed",
-			"number": "2",
+      "number": "2",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w02.jpg",
@@ -2395,15 +2293,13 @@
 				"In a conflict, how do you decide who wins?",
 				"What values govern your decision-making process?",
 				"What choice will you make if you make no choice at all?"
-			],
-			"quote": "\"I'll finally be happy when....\"",
-			"quote_r": "\"Snap out of the trance of a future that hasn't even manifested yet.\""
+			]
 		},
 		{
 			"name": "Three of Wands",
 			"link": "https://www.elliotoracle.com/blog/2017/7/25/the-card-of-the-day-the-three-of-wands",
 			"link_r": "https://www.elliotoracle.com/blog/2018/12/13/the-card-of-the-day-the-three-of-wands-reversed",
-			"number": "3",
+      "number": "3",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w03.jpg",
@@ -2439,15 +2335,13 @@
 				"How can you make a habit of breaking your habits?",
 				"How can you be a decisive leader in this circumstance?",
 				"What's your action plan for the next week, month, year, or decade?"
-      ],
-      "quote": "\"Life is still wide open and waiting.\"",
-			"quote_r": "\"Presence.\""
+			]
 		},
 		{
 			"name": "Four of Wands",
 			"link": "https://www.elliotoracle.com/blog/2019/3/20/the-card-of-the-day-the-four-of-wands",
 			"link_r": "https://www.elliotoracle.com/blog/2018/10/2/the-card-of-the-day-the-four-of-wands-reversed",
-			"number": "4",
+      "number": "4",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w04.jpg",
@@ -2483,15 +2377,13 @@
 				"To what extent am I doing my part?",
 				"What kind of recognition would be most meaningful?",
 				"How might a celebration now impact community morale?"
-			],
-			"quote": "\"Celebrate",
-			"quote_r": "\"Kick your addiction to worry.\" "
+			]
 		},
 		{
 			"name": "Five of Wands",
 			"link": "https://www.elliotoracle.com/blog/2017/6/22/the-card-of-the-day-the-five-of-wands",
 			"link_r": "https://www.elliotoracle.com/blog/2017/11/26/the-card-of-the-day-the-five-of-wands-reversed",
-			"number": "5",
+      "number": "5",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w05.jpg",
@@ -2526,15 +2418,13 @@
 				"To what extent is your current issue worth fighting for?",
 				"What alternatives are there to outright conflict?",
 				"What happens in a \"fair fight?\" How can you keep this fight fair?"
-      ],
-      "quote": "\"The immaturity of the comparison game.\"",
-			"quote_r": "\"Stop comparing yourself with others.\""
+			]
 		},
 		{
 			"name": "Six of Wands",
 			"link": "https://www.elliotoracle.com/blog/2019/2/26/the-card-of-the-day-the-six-of-wands",
 			"link_r": "https://www.elliotoracle.com/blog/2017/8/14/the-card-of-the-day-the-six-of-wands-reversed",
-			"number": "6",
+      "number": "6",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w06.jpg",
@@ -2573,15 +2463,13 @@
 				"What kind of recognition do I crave? Why?",
 				"How freely do I praise the achievements of others?",
 				"What happens when the parade is over?"
-			],
-			"quote": " \"The fame card.\"",
-			"quote_r": "\"Only you can truly validate yourself.\""
+			]
 		},
 		{
 			"name": "Seven of Wands",
 			"link": "https://www.elliotoracle.com/blog/2017/9/27/the-card-of-the-day-the-seven-of-wands",
 			"link_r": "https://www.elliotoracle.com/blog/2018/11/13/the-card-of-the-day-the-seven-of-wands-reversed",
-			"number": "7",
+      "number": "7",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w07.jpg",
@@ -2616,15 +2504,13 @@
 				"When do you feel most threatened? When do you get defensive?",
 				"How capable are you of defending yourself?",
 				"What kinds of beliefs are worth defending?"
-			],
-			"quote": "\"Taking the high road.\"",
-			"quote_r": "\"It’s not you against the world.\""
+			]
 		},
 		{
 			"name": "Eight of Wands",
 			"link": "https://www.elliotoracle.com/blog/2018/12/13/the-card-of-the-day-the-eight-of-wands",
 			"link_r": "https://www.elliotoracle.com/blog/2017/11/28/the-card-of-the-day-the-eight-of-wands-reversed",
-			"number": "8",
+      "number": "8",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w08.jpg",
@@ -2662,15 +2548,13 @@
 				"How quickly to you adapt to change?",
 				"What would your response be to overwhelming, sudden change?",
 				"What changes are on your horizon? How well have you prepared for them?"
-			],
-			"quote": "\"Events are speeding up.\" ",
-			"quote_r": "\"Find your center before tackling the 'to do' list.\""
+			]
 		},
 		{
 			"name": "Nine of Wands",
 			"link": "https://www.elliotoracle.com/blog/2018/11/20/the-card-of-the-day-the-nine-of-wands",
 			"link_r": "https://www.elliotoracle.com/blog/2017/10/1/the-card-of-the-day-the-nine-of-wands-reversed",
-			"number": "9",
+      "number": "9",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w09.jpg",
@@ -2710,15 +2594,13 @@
 				"How do you cope when things get really tough?",
 				"When you get low, what encourages you to go on?",
 				"At what point should you be able to let this situation go?"
-			],
-			"quote": "\"Standing up for yourself.\"",
-			"quote_r": "\"Releasing the chip on your shoulder.\""
+			]
 		},
 		{
 			"name": "Ten of Wands",
 			"link": "https://www.elliotoracle.com/blog/2019/4/11/the-card-of-the-day-the-ten-of-wands",
 			"link_r": "https://www.elliotoracle.com/blog/2017/10/20/the-card-of-the-day-the-ten-of-wands-reversed",
-			"number": "10",
+      "number": "10",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w10.jpg",
@@ -2753,15 +2635,13 @@
 				"How will you know when you reach the end of your rope?",
 				"How easily do you say no to new projects and requests?",
 				"What projects could you delegate...or eliminate?"
-			],
-			"quote": "\"Service.\" ",
-			"quote_r": "\"Enjoy the harvest.\""
+			]
 		},
 		{
 			"name": "Page of Wands",
 			"link": "https://www.elliotoracle.com/blog/2017/7/14/the-card-of-the-day-the-page-of-wands",
 			"link_r": "https://www.elliotoracle.com/blog/2017/11/29/the-card-of-the-day-the-page-of-wands-reversed",
-			"number": "11",
+      "number": "11",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w11.jpg",
@@ -2795,15 +2675,13 @@
 				"How easily do you admit your own inexperience?",
 				"How can you be a better student or employee?",
 				"What qualities would make a total beginner's voyage of discovery easier?"
-			],
-			"quote": "\"What you admire in others, you have in yourself.\"",
-			"quote_r": "\"Patience when cultivating talents.\""
+			]
 		},
 		{
 			"name": "Knight of Wands",
 			"link": "https://www.elliotoracle.com/blog/2017/6/10/the-card-of-the-day-the-knight-of-wands",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/31/the-card-of-the-day-the-knight-of-wands-reversed",
-			"number": "12",
+      "number": "12",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w12.jpg",
@@ -2839,15 +2717,13 @@
 				"To what extent have you defined your ultimate goal?",
 				"What's the fastest way to get the job done? Is this necessarily the best way?",
 				"How long has it been since you looked back to see if others really are following your lead?"
-			],
-			"quote": "\"Exploration and adventure.\"",
-			"quote_r": "\"Focusing your energy.\""
+			]
 		},
 		{
 			"name": "Queen of Wands",
 			"link": "https://www.elliotoracle.com/blog/2019/4/19/the-card-of-the-day-the-queen-of-wands",
 			"link_r": "https://www.elliotoracle.com/blog/2017/10/17/the-card-of-the-day-the-queen-of-wands-reversed",
-			"number": "13",
+      "number": "13",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w13.jpg",
@@ -2879,15 +2755,13 @@
 				"How attentive am I?",
 				"How can I draw people's attention to what we have in common?",
 				"To what extent am I able to convince people to do what I want them to do?"
-			],
-			"quote": "\"Be your authentic self.\" ",
-			"quote_r": "\"Be confident.\""
+			]
 		},
 		{
 			"name": "King of Wands",
 			"link": "https://www.elliotoracle.com/blog/2018/12/13/the-card-of-the-day-the-king-of-wands",
 			"link_r": "https://www.elliotoracle.com/blog/2017/11/21/the-king-of-wands-reversed",
-			"number": "14",
+      "number": "14",
 			"arcana": "Minor Arcana",
 			"suit": "Wands",
 			"img": "w14.jpg",
@@ -2919,15 +2793,13 @@
 				"How confident a leader am I?",
 				"How can I project more confidence?",
 				"How can I offer my expertise in ways that inspire others to follow me?"
-			],
-			"quote": "\"Trust in your own competency.\" ",
-			"quote_r": "\"Believe in yourself.\""
+			]
 		},
 		{
 			"name": "Ace of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2019/1/4/the-card-of-the-day-the-ace-of-pentacles",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/22/the-card-of-the-day-the-ace-of-pentacles-reversed",
-			"number": "1",
+      "number": "1",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p01.jpg",
@@ -2963,15 +2835,13 @@
 				"If I made my decision based solely on practical concerns, what would my decision be?",
 				"What resources are available to me?",
 				"What will be the physical and financial impact of my decisions?"
-			],
-			"quote": "\"Prosperity.\" ",
-			"quote_r": "\"Weed your mental garden.\""
+			]
 		},
 		{
 			"name": "Two of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/11/27/the-card-of-the-day-the-two-of-pentacles",
 			"link_r": "https://www.elliotoracle.com/blog/2017/9/9/the-card-of-the-day-the-two-of-pentacles-reversed",
-			"number": "2",
+      "number": "2",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p02.jpg",
@@ -3008,15 +2878,13 @@
 				"What values govern my decisions?",
 				"How willing am I to sacrifice a little pleasure now in order to have more pleasure later on?",
 				"Given my current situation, which course of action will give me more of what I really need?"
-			],
-			"quote": "\"Be flexible.\"",
-			"quote_r": "\"Details matter.\""
+			]
 		},
 		{
 			"name": "Three of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/10/30/the-card-of-the-day-the-three-of-pentacles",
 			"link_r": "https://www.elliotoracle.com/blog/2018/11/12/the-card-of-the-day-the-three-of-pentacles-reversed",
-			"number": "3",
+      "number": "3",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p03.jpg",
@@ -3054,20 +2922,18 @@
 				"How can I get more done?",
 				"What's expected of me? How large a role do I play in controlling those expectations?",
 				"What's been agreed to? How well has that agreement been followed?"
-			],
-			"quote": "\"Enjoy the learning process.\"",
-			"quote_r": "\"Reviewing old lessons.\""
+			]
 		},
 		{
 			"name": "Four of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/10/19/the-card-of-the-day-the-four-of-pentacles",
 			"link_r": "https://www.elliotoracle.com/blog/2017/10/27/the-card-of-the-day-the-four-of-pentacles-reversed",
-			"number": "4",
+      "number": "4",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p04.jpg",
 			"fortune_telling": [
-				"A rainy day is coming—it's time to save"
+				"A rainy day is coming\u2014it's time to save"
 			],
 			"keywords": [
 				"protection",
@@ -3099,15 +2965,13 @@
 				"What factors determine how conservative or generous you are?",
 				"What kinds of things must be preserved at all costs?",
 				"When is greediness or stinginess a good trait to have? When might generosity work against you?"
-			],
-			"quote": "\"True security comes from within.\"",
-			"quote_r": "\"Tuning inward.\""
+			]
 		},
 		{
 			"name": "Five of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/6/1/the-card-of-the-day-the-five-of-pentacles",
 			"link_r": "https://www.elliotoracle.com/blog/2019/1/7/the-card-of-the-day-the-five-of-pentacles-reversed",
-			"number": "5",
+      "number": "5",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p05.jpg",
@@ -3145,15 +3009,13 @@
 				"What critical resources do I lack?",
 				"What people or groups would come to my aid if I asked?",
 				"How might an impoverished spirit be impacting my physical or financial condition?"
-			],
-			"quote": "\"Banishing Poverty Conciousness.\"",
-			"quote_r": "\"Identifying where your energy is being wasted.\""
+			]
 		},
 		{
 			"name": "Six of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2019/3/19/the-card-of-the-day-the-six-of-pentacles",
 			"link_r": "https://www.elliotoracle.com/blog/2017/11/12/the-card-of-the-day-the-six-of-pentacles-reversed",
-			"number": "6",
+      "number": "6",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p06.jpg",
@@ -3191,15 +3053,13 @@
 				"How do I feel about charity? About giving it? About receiving it?",
 				"How can I know if I'm treating others fairly?",
 				"What could I give that no one else can?"
-			],
-			"quote": "\"Entertaining angels unaware.\" ",
-			"quote_r": "\"Giving without expectation.\""
+			]
 		},
 		{
 			"name": "Seven of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/6/20/the-card-of-the-day-the-seven-of-pentacles",
 			"link_r": "https://www.elliotoracle.com/blog/2017/11/29/the-card-of-the-day-the-seven-of-pentacles-reversed",
-			"number": "7",
+      "number": "7",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p07.jpg",
@@ -3236,15 +3096,13 @@
 				"To what extent have I fulfilled my own expectations?",
 				"What are the terms of success?",
 				"How can I be happier with the progress I've made?"
-      ],
-      "quote": "\"My accomplishments are proof I am something.\"",
-			"quote_r": "\"Acknowledge your progress.\""
+			]
 		},
 		{
 			"name": "Eight of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/12/5/the-card-of-the-day-the-eight-of-pentacles",
 			"link_r": "https://www.elliotoracle.com/blog/2017/9/11/the-card-of-the-day-the-eight-of-pentacles-reversed",
-			"number": "8",
+      "number": "8",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p08.jpg",
@@ -3283,15 +3141,13 @@
 				"How long has it been since you were \"lost in your work?\"",
 				"How can you improve your level of dedication and focus?",
 				"What work do you do best? What about that work appeals to you?"
-			],
-			"quote": "\"My accomplishments are proof that I am powerful.\"",
-			"quote_r": "\"Work smarter, not harder.\""
+			]
 		},
 		{
 			"name": "Nine of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/7/27/the-card-of-the-day-the-nine-of-pentacles",
 			"link_r": "https://www.elliotoracle.com/blog/2018/11/25/the-card-of-the-day-the-nine-of-pentacles-reversed",
-			"number": "9",
+      "number": "9",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p09.jpg",
@@ -3326,15 +3182,13 @@
 				"If you could not have what you want, how would you make do?",
 				"Could you make a complex task easier by breaking it down into smaller steps?",
 				"How patient are you during the learning process? With yourself? With others?"
-			],
-			"quote": "Slow down, and savor your riches.\"",
-			"quote_r": "\"Raise your standards.\""
+			]
 		},
 		{
 			"name": "Ten of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2019/4/11/the-card-of-the-day-the-ten-of-pentacles",
 			"link_r": "https://www.elliotoracle.com/blog/2018/1/31/the-card-of-the-day-the-ten-of-pentacles-reversed",
-			"number": "10",
+      "number": "10",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p10.jpg",
@@ -3370,15 +3224,13 @@
 				"How much stuff do I really need?",
 				"How do I feel about wealth and abundance? How do I define these terms?",
 				"How might shedding some possessions open room for growth?"
-			],
-			"quote": "\"Legacy.\" ",
-			"quote_r": "\"Legacy.\""
+			]
 		},
 		{
 			"name": "Page of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/9/28/the-card-of-the-day-the-page-of-pentacles",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/22/the-card-of-the-day-the-page-of-pentacles-reversed",
-			"number": "11",
+      "number": "11",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p11.jpg",
@@ -3414,15 +3266,13 @@
 				"How can you get more financial or sexual experience without risking your livelihood or health?",
 				"How might hands-on learning play a role in your situation?",
 				"What's the most practical choice you could make?"
-      ],
-      "quote": "\"Passion for learning.\"",
-			"quote_r": "\"What are you re-learning about yourself?\""
+			]
 		},
 		{
 			"name": "Knight of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/6/14/the-card-of-the-day-the-knight-of-pentacles",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/22/the-card-of-the-day-the-knight-of-pentacles-reversed",
-			"number": "12",
+      "number": "12",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p12.jpg",
@@ -3461,15 +3311,13 @@
 				"What's the difference between caution and fear?",
 				"How can I evaluate the practicality of my own ideas and methods?",
 				"How realistic are my goals?"
-			],
-			"quote": "\"Getting back to basics.\"",
-			"quote_r": "\"Managing expectations.\""
+			]
 		},
 		{
 			"name": "Queen of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/10/30/the-card-of-the-day-the-queen-of-pentacles",
 			"link_r": "https://www.elliotoracle.com/blog/2017/9/4/the-card-of-the-day-the-queen-of-pentacles-reversed",
-			"number": "13",
+      "number": "13",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p13.jpg",
@@ -3504,15 +3352,13 @@
 				"How do I define luxury?",
 				"To what extent am I capable of reveling in sensual pleasure?",
 				"What would I have to give up in order to \"have it all?\""
-			],
-			"quote": "\"Relax, everything is working out in perfect timing.\"",
-			"quote_r": "\"Relax, the blossoms will still open whether you worry about them or not.\""
+			]
 		},
 		{
 			"name": "King of Pentacles",
 			"link": "https://www.elliotoracle.com/blog/2017/8/18/the-card-of-the-day-the-king-of-pentacles",
 			"link_r": "https://www.elliotoracle.com/blog/2017/12/22/the-card-of-the-day-the-knight-of-pentacles-reversed",
-			"number": "14",
+      "number": "14",
 			"arcana": "Minor Arcana",
 			"suit": "Pentacles",
 			"img": "p14.jpg",
@@ -3548,9 +3394,7 @@
 				"How can you handle expenses with greater confidence and maturity?",
 				"How dependable are you? How dependable would others say you are?",
 				"To what extent is a conservative viewpoint valuable? At what point does it become more of a burden than a blessing?"
-      ],
-      "quote": "\"Success.\"",
-			"quote_r": "\"Managing expectations.\""
+			]
 		}
 	]
 }

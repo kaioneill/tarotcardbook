@@ -15,7 +15,7 @@ class Card extends Component {
         <h4>
           {this.props.card.name + (this.props.reversed ? " Reversed" : "")}
         </h4>
-        <div>"{this.props.card.light[0]}"</div>
+        <div>{this.props.reversed ? this.props.card.quote_r : this.props.card.quote}</div>
         <a
           href={this.props.reversed ? this.props.card.link_r : this.props.card.link}
           rel="noopener noreferrer"

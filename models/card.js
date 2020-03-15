@@ -1,6 +1,8 @@
 import mongoose from "mongoose";
 import random from "mongoose-simple-random";
 import tarot_data from "./tarot_info.json";
+import jsdom from "jsdom";
+import async from "async";
 
 
 const cardSchema = new mongoose.Schema(
@@ -13,6 +15,12 @@ const cardSchema = new mongoose.Schema(
       type: String,
     },
     link_r: {
+      type: String,
+    },
+    quote: {
+      type: String,
+    },
+    quote_r: {
       type: String,
     },
     number: {
@@ -90,5 +98,53 @@ const saveCards = () => {
   });
 }
 
-export { deleteCards, saveCards }
+const updateCards = () => {
+
+  tarot_data.cards.forEach(function (card) {
+    let newData = card
+
+    Card.findOneAndUpdate({ name: card.name }, newData).exec(function (err, card) {
+      if (err) return console.error(err);
+      console.log(`${card.name} has been updated`);
+    });
+  });
+}
+
+async function addTarotData() {
+
+  let newCard = {};
+  let newCards = [];
+
+
+  await async.eachSeries(tarot_data.cards, function(card, done) {
+    newCard = card;
+    
+    jsdom.JSDOM.fromURL(card.link).then(dom => {
+      setTimeout(() => {
+        let quote = dom.window.document.querySelector('meta[property="og:description"]').content.replace("&nbsp;", "");
+        newCard.quote = quote;
+      }, 1000);
+    }).catch(err => console.log(err));
+
+
+    jsdom.JSDOM.fromURL(card.link_r).then(dom => {
+      setTimeout(() => {
+        let quote_r = dom.window.document.querySelector('meta[property="og:description"]').content.replace("&nbsp;", "");
+        newCard.quote_r = quote_r;
+        newCards.push(newCard);
+        console.log("next");
+        done();
+      }, 1000);
+    }).catch(err => console.log(err));
+
+  });
+
+
+
+  console.log(JSON.stringify(newCards));
+}
+
+
+
+export { deleteCards, saveCards, addTarotData, updateCards }
 export default Card;
