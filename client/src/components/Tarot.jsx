@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Switch, Route, NavLink, Redirect, withRouter }
 class Tarot extends Component {
   constructor(props) {
     super(props);
-    this.props.history.push(`${this.props.redirect}`);
+    if (!this.props.redirect == '/login') this.props.history.push(`${this.props.redirect}`);
   }
 
   render() {

@@ -11,7 +11,7 @@ class App extends Component {
     super(props);
     this.state = {
       loggedIn: false,
-      redirect: window.location.pathname
+      redirect: window.location.pathname || "/"
     };
     this.updateUser = this.updateUser.bind(this);
     this.logout = this.logout.bind(this);
@@ -29,9 +29,9 @@ class App extends Component {
       .catch(e => console.log(e));
   }
 
-  updateUser = user => {
-    console.log(`updateUser ${user.loggedIn}`);
-    this.setState({ loggedIn: user.loggedIn });
+  updateUser = data => {
+    console.log(`updateUser ${data.loggedIn}`);
+    this.setState({ loggedIn: data.loggedIn });
   };
 
   logout = () => {
