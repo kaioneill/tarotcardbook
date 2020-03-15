@@ -8,7 +8,7 @@ class Login extends Component {
     this.state = { 
       username: '',
       password: '',
-      redirect: this.props.location.state.path
+      redirect: (this.props.location.state ? this.props.location.state.path : '')
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
