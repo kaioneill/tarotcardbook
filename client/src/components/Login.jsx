@@ -8,7 +8,6 @@ class Login extends Component {
     this.state = { 
       username: '',
       password: '',
-      redirect: (this.props.location.state ? this.props.location.state.path : '/')
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -35,7 +34,9 @@ class Login extends Component {
         this.props.updateUser({
           loggedIn: true
         });
-        this.props.history.push(`${this.state.redirect}`);
+        if (this.props.location.state) {
+          this.props.history.push(`${this.props.location.state.path}`);
+        }
       }
       console.log("Success:", data);
     })
