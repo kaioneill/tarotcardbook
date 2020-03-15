@@ -21,7 +21,8 @@ class BuildSpread extends Component {
       notes: this.props.notes || "",
       date: this.props.date || new Date(),
       update: this.props.update || false,
-      saved: false
+      saved: false,
+      spread: this.props.spread || {}
     };
     this.saveSpread = this.saveSpread.bind(this);
     this.transformCards = this.transformCards.bind(this);
@@ -96,7 +97,18 @@ class BuildSpread extends Component {
           if (!this.state.update) {
             this.setState({ saved: true });
           }
-          this.setState({ spread: data });
+          this.setState({ spread: data }, () => {
+            if (this.props.toggleEdit) {
+              this.props.toggleEdit({
+                _id: this.state.id,
+                _cards: this.state.cardData.map(cardData => cardData.card),
+                reversals: this.state.cardData.map(cardData => cardData.reversed),
+                notes: this.state.notes,
+                date: this.state.date
+              });
+            }
+          });
+          
         }
       })
       .catch(e => console.log(e));
@@ -123,7 +135,7 @@ class BuildSpread extends Component {
     return (
       <div className="BuildSpread">
         {!this.state.update ? (
-          <h2>pull cards</h2>
+          <h2>build spread</h2>
         ) : (
           <h3>{moment(this.state.date).format("MMMM D, YYYY")}</h3>
         )}
@@ -134,7 +146,7 @@ class BuildSpread extends Component {
             </button>
             <button
               onClick={this.saveSpread}
-              disabled={this.state.enoughCards ? false : true}
+              disabled={this.state.enoughCards && !this.state.saved ? false : true}
             >
               {this.state.update ? "save changes" : "save spread"}
             </button>

@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import "../App.css";
 import Spread from "./Spread";
 import BuildSpread from "./BuildSpread";
+import SpreadContainer from "./SpreadContainer";
 
 export class SpreadList extends Component {
   constructor(props) {
     super(props);
     this.state = {
       spreads: [],
-      loading: true,
-      edit: false
+      loading: true
     };
     this.listSpreads = this.listSpreads.bind(this);
     this.transformCards = this.transformCards.bind(this);
@@ -18,11 +18,6 @@ export class SpreadList extends Component {
 
   componentDidMount() {
     this.listSpreads();
-  }
-
-
-  toggleEdit = () => {
-    this.setState({ edit: !this.state.edit });
   }
 
   delete = (id) => {
@@ -77,34 +72,14 @@ export class SpreadList extends Component {
             ) : (
               <div>
                 {this.state.spreads.map(spread => (
-                  this.state.edit ?
-                    <BuildSpread
-                      key={spread._id}
-                      spreadId={spread._id}
-                      cardData={this.transformCards(
-                        spread._cards,
-                        spread.reversals
-                      )}
-                      initState={false}
-                      notes={spread.notes}
-                      date={new Date(spread.date)}
-                      update={true}
-                      listSpreads={this.listSpreads}
-                    />
-                  :
-                    <Spread
-                      key={spread._id}
-                      spreadId={spread._id}
-                      cardData={this.transformCards(
-                        spread._cards,
-                        spread.reversals
-                      )}
-                      initState={false}
-                      notes={spread.notes}
-                      date={new Date(spread.date)}
-                      update={true}
-                      listSpreads={this.listSpreads}
-                    />
+                  <SpreadContainer
+                    spread={spread}
+                    key={spread._id}
+                    transformCards={this.transformCards}
+                    initState={false}
+                    update={true}
+                    listSpreads={this.listSpreads}
+                  />
                 ))}
               </div>
             )}

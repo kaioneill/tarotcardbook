@@ -16,7 +16,8 @@ class Spread extends Component {
       initState: this.props.initState || true,
       notes: this.props.notes || "",
       date: this.props.date || new Date(),
-      update: this.props.update || false
+      update: this.props.update || false,
+      spread: this.props.spread || {}
     };
     this.moreCards = this.moreCards.bind(this);
     this.saveSpread = this.saveSpread.bind(this);
@@ -45,6 +46,10 @@ class Spread extends Component {
   };
 
   saveSpread = () => {
+    if (this.state.update) {
+      this.props.toggleEdit(this.state.spread);
+      return;
+    }
     fetch("/spreads/save", {
       method: "POST",
       headers: {
@@ -128,22 +133,36 @@ class Spread extends Component {
                 onClick={this.saveSpread}
                 disabled={this.state.saved ? true : false}
               >
-                {this.state.update ? "save changes" : "save spread"}
+                {this.state.update ? "edit" : "save spread"}
               </button>
             </div>
-            <div className="pad">
-              <DatePicker
-                selected={this.state.date}
-                onChange={date => this.setState({ date: date })}
-              />
-            </div>
+
+            {!this.state.update ? (
+              <div className="pad">
+                <DatePicker
+                  selected={this.state.date}
+                  onChange={date => this.setState({ date: date })}
+                />
+              </div>
+            ) : (
+              ""
+            )}
+
             <div>
-              <textarea
-                className="spread-notes"
-                placeholder="write notes here"
-                value={this.state.notes}
-                onChange={event => this.setState({ notes: event.target.value })}
-              ></textarea>
+              {!this.state.update ? (
+                <textarea
+                  className="spread-notes"
+                  placeholder="write notes here"
+                  value={this.state.notes}
+                  onChange={event =>
+                    this.setState({ notes: event.target.value })
+                  }
+                ></textarea>
+              ) : (
+                <div className="flex flex-center">
+                  <div className="pad limit-width">{this.state.notes}</div>
+                </div>
+              )}
             </div>
           </div>
           <div className="card-container flex flex-center flex-wrap">
