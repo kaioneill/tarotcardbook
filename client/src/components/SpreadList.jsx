@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import "../App.css";
-import Spread from "./Spread";
-import BuildSpread from "./BuildSpread";
 import SpreadContainer from "./SpreadContainer";
 
 export class SpreadList extends Component {
