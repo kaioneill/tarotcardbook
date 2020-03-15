@@ -141,9 +141,11 @@ class BuildSpread extends Component {
         )}
         <div className="flex vertical">
           <div>
-            <button onClick={() => this.deleteSpread(this.state.id)}>
-              remove
-            </button>
+             {this.state.update ? (
+              <button onClick={() => this.deleteSpread(this.state.id)}>
+                remove
+              </button>
+             ) : "" }
             <button
               onClick={this.saveSpread}
               disabled={this.state.enoughCards && !this.state.saved ? false : true}
