@@ -98,12 +98,14 @@ class Spread extends Component {
       return (
         <div className="Spread">
           <h2>pull cards</h2>
-          <button onClick={this.moreCards}>
-            {this.state.initState ? "draw cards" : "more cards"}
-          </button>
-          <button onClick={this.saveSpread} disabled={true}>
-            save spread
-          </button>
+          <div className="btn-group">
+            <button onClick={this.moreCards}>
+              {this.state.initState ? "draw cards" : "more cards"}
+            </button>
+            <button onClick={this.saveSpread} disabled={true}>
+              save spread
+            </button>
+          </div>
           <div className="card-container flex flex-center flex-wrap pad">
             {this.state.initState
               ? "set your intention and click 'draw cards'"
@@ -120,7 +122,7 @@ class Spread extends Component {
             <h3>{moment(this.state.date).format("MMMM D, YYYY")}</h3>
           )}
           <div className="flex vertical">
-            <div>
+            <div className="btn-group">
               {!this.state.update ? (
                 <button onClick={this.moreCards}>more cards</button>
               ) : (

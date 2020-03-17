@@ -120,3 +120,25 @@
     width: 50%;
   }
 }
+
+button {
+  background-color: white;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+}
+
+
+.btn-group a:not(:last-child) button {
+  border-right: none;
+}
+
+a.more-info {
+  color: grey;
+}
+
+a.more-info:hover {
+  color: black;
+}
+

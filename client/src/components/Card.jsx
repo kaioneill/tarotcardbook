@@ -20,6 +20,7 @@ class Card extends Component {
           href={this.props.reversed ? this.props.card.link_r : this.props.card.link}
           rel="noopener noreferrer"
           target="_blank"
+          className="more-info"
         >
           more info
         </a>

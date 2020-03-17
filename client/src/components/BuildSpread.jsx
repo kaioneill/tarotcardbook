@@ -140,7 +140,7 @@ class BuildSpread extends Component {
           <h3>{moment(this.state.date).format("MMMM D, YYYY")}</h3>
         )}
         <div className="flex vertical">
-          <div>
+          <div className="btn-group">
              {this.state.update ? (
               <button onClick={() => this.deleteSpread(this.state.id)}>
                 remove

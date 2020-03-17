@@ -27,7 +27,7 @@ export class CardList extends Component {
 
   toggleDepressed = (e) => {
     if (e) {
-      document.querySelector(".CardList > .depressed").classList.remove("depressed");
+      document.querySelector(".CardList .depressed").classList.remove("depressed");
       e.target.classList.add("depressed");
     }
   }
@@ -37,11 +37,13 @@ export class CardList extends Component {
       return (
         <div className="CardList">
           <h2>all cards</h2>
-          <button className="depressed" onClick={(e) => this.getSuit(e, 'Trump')}>major arcana</button>
-          <button className="" onClick={(e) => this.getSuit(e, 'Cups')}>cups</button>
-          <button className="" onClick={(e) => this.getSuit(e, 'Swords')}>swords</button>
-          <button className="" onClick={(e) => this.getSuit(e, 'Pentacles')}>pentacles</button>
-          <button className="" onClick={(e) => this.getSuit(e, 'Wands')}>wands</button>
+          <div className="btn-group">
+            <button className="depressed" onClick={(e) => this.getSuit(e, 'Trump')}>major arcana</button>
+            <button className="" onClick={(e) => this.getSuit(e, 'Cups')}>cups</button>
+            <button className="" onClick={(e) => this.getSuit(e, 'Swords')}>swords</button>
+            <button className="" onClick={(e) => this.getSuit(e, 'Pentacles')}>pentacles</button>
+            <button className="" onClick={(e) => this.getSuit(e, 'Wands')}>wands</button>
+          </div>
           <div className="card-container flex flex-center flex-wrap pad">
             loading...
           </div>
@@ -51,11 +53,13 @@ export class CardList extends Component {
       return (
         <div className="CardList">
           <h2>all cards</h2>
-          <button className="depressed" onClick={(e) => this.getSuit(e, 'Trump')}>major arcana</button>
-          <button className="" onClick={(e) => this.getSuit(e, 'Cups')}>cups</button>
-          <button className="" onClick={(e) => this.getSuit(e, 'Swords')}>swords</button>
-          <button className="" onClick={(e) => this.getSuit(e, 'Pentacles')}>pentacles</button>
-          <button className="" onClick={(e) => this.getSuit(e, 'Wands')}>wands</button>
+          <div className="btn-group">
+            <button className="depressed" onClick={(e) => this.getSuit(e, 'Trump')}>major arcana</button>
+            <button className="" onClick={(e) => this.getSuit(e, 'Cups')}>cups</button>
+            <button className="" onClick={(e) => this.getSuit(e, 'Swords')}>swords</button>
+            <button className="" onClick={(e) => this.getSuit(e, 'Pentacles')}>pentacles</button>
+            <button className="" onClick={(e) => this.getSuit(e, 'Wands')}>wands</button>
+          </div>
           <div className="card-container flex flex-center flex-wrap">
             {this.state.cards.map(card => (
               <Card card={card} key={card.name} reversed={false} />
