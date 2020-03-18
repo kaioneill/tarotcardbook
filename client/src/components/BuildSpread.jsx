@@ -133,7 +133,7 @@ class BuildSpread extends Component {
 
   render() {
     return (
-      <div className="BuildSpread">
+      <div className="BuildSpread shadow-box">
         {!this.state.update ? (
           <h2>build spread</h2>
         ) : (
@@ -141,20 +141,25 @@ class BuildSpread extends Component {
         )}
         <div className="flex vertical">
           <div className="btn-group">
-             {this.state.update ? (
+            {this.state.update ? (
               <button onClick={() => this.deleteSpread(this.state.id)}>
                 remove
               </button>
-             ) : "" }
+            ) : (
+              ""
+            )}
             <button
               onClick={this.saveSpread}
-              disabled={this.state.enoughCards && !this.state.saved ? false : true}
+              disabled={
+                this.state.enoughCards && !this.state.saved ? false : true
+              }
             >
               {this.state.update ? "save changes" : "save spread"}
             </button>
           </div>
           <div className="pad">
             <DatePicker
+              showPopperArrow={false}
               selected={this.state.date}
               onChange={date => this.setState({ date: date })}
             />

@@ -96,7 +96,7 @@ class Spread extends Component {
   render() {
     if (this.state.cardData.length === 0) {
       return (
-        <div className="Spread">
+        <div className="Spread shadow-box">
           <h2>pull cards</h2>
           <div className="btn-group">
             <button onClick={this.moreCards}>
@@ -115,11 +115,13 @@ class Spread extends Component {
       );
     } else {
       return (
-        <div className="Spread">
+        <div className="Spread shadow-box">
           {!this.state.update ? (
             <h2>pull cards</h2>
           ) : (
-            <h3>{moment(this.state.date).format("MMMM D, YYYY")}</h3>
+            <h3 className="pad">
+              {moment(this.state.date).format("MMMM D, YYYY")}
+            </h3>
           )}
           <div className="flex vertical">
             <div className="btn-group">
@@ -141,6 +143,7 @@ class Spread extends Component {
             {!this.state.update ? (
               <div className="pad">
                 <DatePicker
+                  showPopperArrow={false}
                   selected={this.state.date}
                   onChange={date => this.setState({ date: date })}
                 />

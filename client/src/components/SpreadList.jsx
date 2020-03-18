@@ -53,7 +53,7 @@ export class SpreadList extends Component {
   render() {
     if (this.state.loading) {
       return (
-        <div className="SpreadList">
+        <div className="SpreadList shadow-box">
           <h2>past spreads</h2>
           <div className="spread-container flex flex-center flex-wrap">
             loading...
@@ -62,13 +62,13 @@ export class SpreadList extends Component {
       );
     } else {
       return (
-        <div className="SpreadList">
+        <div className="SpreadList shadow-box">
           <h2>past spreads</h2>
-          <div className="spread-container flex flex-center flex-wrap">
+          <div className="spread-container flex flex-center">
             {this.state.spreads.length === 0 ? (
               <div>no spreads yet</div>
             ) : (
-              <div>
+              <div className="flex flex-center flex-wrap full-width">
                 {this.state.spreads.map(spread => (
                   <SpreadContainer
                     spread={spread}

@@ -57,20 +57,34 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          {this.state.loggedIn ? <button onClick={this.logout}>logout</button> : ''}
+          {this.state.loggedIn ? (
+            <button onClick={this.logout}>logout</button>
+          ) : (
+            ""
+          )}
           <Switch>
-            
             <Route path="/signup" component={Signup} />
             <Route path="/login">
-              {this.state.loggedIn ? <Redirect to="/" /> : <Login updateUser={this.updateUser} />}
+              {this.state.loggedIn ? (
+                <Redirect to="/" />
+              ) : (
+                <Login updateUser={this.updateUser} />
+              )}
             </Route>
             {/* <Route path="/:path" render={({match}) => 
               this.state.loggedIn ? <Tarot redirect={match.params.path} /> : <Redirect to={{ pathname: "/login", state: { path: match.params.path } }} />
             } /> */}
             <Route path="/">
-              {this.state.loggedIn ? <Tarot redirect="/" /> : <Redirect to={{ pathname: "/login", state: { path: "/" } }} />}
+              {this.state.loggedIn ? (
+                <Tarot redirect="/" />
+              ) : (
+                <Redirect to={{ pathname: "/login", state: { path: "/" } }} />
+              )}
             </Route>
           </Switch>
+        </div>
+        <div className="footer">
+          <div>kai o'neill 2020</div>
         </div>
       </Router>
     );

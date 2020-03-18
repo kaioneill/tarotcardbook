@@ -33,15 +33,17 @@ class Tarot extends Component {
               <button>all cards</button>
             </NavLink>
           </div>
-          <Switch>
-            <Route path="/" exact>
-              <Redirect to="/pull_cards" />
-            </Route>
-            <Route path="/pull_cards" component={Spread} />
-            <Route path="/build_spread" component={BuildSpread} />
-            <Route path="/past_spreads" component={SpreadList} />
-            <Route path="/all_cards" component={CardList} />
-          </Switch>
+          <div className="flex flex-center sticky">
+            <Switch>
+              <Route path="/" exact>
+                <Redirect to="/pull_cards" />
+              </Route>
+              <Route path="/pull_cards" component={Spread} />
+              <Route path="/build_spread" component={BuildSpread} />
+              <Route path="/past_spreads" component={SpreadList} />
+              <Route path="/all_cards" component={CardList} />
+            </Switch>
+          </div>
         </div>
       </Router>
     );
