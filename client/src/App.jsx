@@ -57,11 +57,15 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          {this.state.loggedIn ? (
-            <button onClick={this.logout}>logout</button>
-          ) : (
-            ""
-          )}
+          <div className="top-bar flex flex-center">
+            {this.state.loggedIn ? (
+              <div className="logout">
+                <button onClick={this.logout}>logout</button>
+              </div>
+            ) : (
+              ""
+            )}
+          </div>
           <Switch>
             <Route path="/signup" component={Signup} />
             <Route path="/login">

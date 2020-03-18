@@ -18,20 +18,22 @@ class Tarot extends Component {
     return (
       <Router>
         <div className="Tarot">
-          <h1>cardbook</h1>
-          <div className="main-select btn-group">
-            <NavLink activeClassName="depressed" exact to="/pull_cards">
-              <button>pull cards</button>
-            </NavLink>
-            <NavLink activeClassName="depressed" to="/build_spread">
-              <button>build spread</button>
-            </NavLink>
-            <NavLink activeClassName="depressed" to="/past_spreads">
-              <button>past spreads</button>
-            </NavLink>
-            <NavLink activeClassName="depressed" to="/all_cards">
-              <button>all cards</button>
-            </NavLink>
+          <div className="header">
+            <h1>cardbook</h1>
+            <div className="main-select btn-group">
+              <NavLink activeClassName="depressed" exact to="/pull_cards">
+                <button>pull cards</button>
+              </NavLink>
+              <NavLink activeClassName="depressed" to="/build_spread">
+                <button>build spread</button>
+              </NavLink>
+              <NavLink activeClassName="depressed" to="/past_spreads">
+                <button>past spreads</button>
+              </NavLink>
+              <NavLink activeClassName="depressed" to="/all_cards">
+                <button>all cards</button>
+              </NavLink>
+            </div>
           </div>
           <div className="flex flex-center sticky">
             <Switch>

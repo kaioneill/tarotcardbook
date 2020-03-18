@@ -18,7 +18,7 @@ body {
   text-align: center;
   width: 100%;
   flex: 1 0 auto;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 
@@ -68,10 +68,16 @@ body {
   flex-direction: column;
 }
 
+.card-size {
+  width: 175px;
+  height: 300px;
+  margin: 20px 57px;
+  background-color: lightgrey;
+}
 
 .Card {
   padding: 20px;
-  width: 300px;
+  width: 250px;
 }
 
 .card-image {
@@ -101,13 +107,6 @@ body {
 }
 
 
-.card-size {
-  width: 175px;
-  height: 300px;
-  margin: 20px 82px;
-  background-color: lightgrey;
-}
-
 .spread-notes {
   width: 300px;
   height: 100px;
@@ -135,9 +134,7 @@ a.more-info:hover {
   color: black;
 }
 
-.main-select {
-  padding: 20px;
-}
+
 
 
 @media only screen and (max-width: 800px) {
@@ -163,6 +160,23 @@ a.more-info:hover {
     padding-bottom: 30px;
   }
 
+  .header {
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 50px;
+  }
+
+  .main-select {
+    padding: 20px;
+  }
+
+  .logout {
+    
+  }
+
+  h1 {
+    margin-bottom: 0px;
+  }
+
   
 }
 
@@ -186,6 +200,27 @@ a.more-info:hover {
     padding-bottom: 30px;
   }
 
+  .header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 50px;
+  }
+
+  .main-select {
+    padding: 35px 20px 20px 20px;
+  }
+
+  .top-bar {
+  }
+
+  .logout {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
 }
 
 .SpreadList .shadow-box {
@@ -204,7 +239,7 @@ a.more-info:hover {
   width: 100%;
 }
 
-input[type="text"] {
+input[type="text"].react-datepicker-ignore-onclickoutside {
   text-align: center;
 }
 
