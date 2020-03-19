@@ -19,7 +19,7 @@ class Tarot extends Component {
       <Router>
         <div className="Tarot">
           <div className="header">
-            <h1>cardbook</h1>
+            <h1>tarot garden</h1>
             <div className="main-select btn-group">
               <NavLink activeClassName="depressed" exact to="/pull_cards">
                 <button>pull cards</button>
