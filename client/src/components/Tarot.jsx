@@ -21,17 +21,17 @@ class Tarot extends Component {
           <div className="header">
             <h1>tarot garden</h1>
             <div className="main-select btn-group">
-              <NavLink activeClassName="depressed" exact to="/pull_cards">
-                <button>pull cards</button>
+              <NavLink className="button" activeClassName="depressed" exact to="/pull_cards">
+                pull cards
               </NavLink>
-              <NavLink activeClassName="depressed" to="/build_spread">
-                <button>build spread</button>
+              <NavLink className="button" activeClassName="depressed" to="/build_spread">
+                build spread
               </NavLink>
-              <NavLink activeClassName="depressed" to="/past_spreads">
-                <button>past spreads</button>
+              <NavLink className="button" activeClassName="depressed" to="/past_spreads">
+                past spreads
               </NavLink>
-              <NavLink activeClassName="depressed" to="/all_cards">
-                <button>all cards</button>
+              <NavLink className="button" activeClassName="depressed" to="/all_cards">
+                all cards
               </NavLink>
             </div>
           </div>

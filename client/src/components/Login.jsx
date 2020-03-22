@@ -49,9 +49,9 @@ class Login extends Component {
     return (
       <div className="flex flex-center vertical">
         <Link to="/signup">
-          <button>
+          <div className="button">
             signup
-          </button>
+          </div>
         </Link>
         <h2>login</h2>
         <label>
@@ -71,7 +71,7 @@ class Login extends Component {
           />
         </label>
         <div>
-          <input onClick={this.handleSubmit} type="button" value="submit" />
+          <div className="button" onClick={this.handleSubmit}>submit</div>
         </div>
       </div>
     );

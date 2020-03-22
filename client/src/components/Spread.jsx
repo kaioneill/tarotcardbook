@@ -99,12 +99,12 @@ class Spread extends Component {
         <div className="Spread shadow-box">
           <h2>pull cards</h2>
           <div className="btn-group">
-            <button onClick={this.moreCards}>
+            <div className="button" onClick={this.moreCards}>
               {this.state.initState ? "draw cards" : "more cards"}
-            </button>
-            <button onClick={this.saveSpread} disabled={true}>
+            </div>
+            <div className="button" onClick={this.saveSpread} disabled={true}>
               save spread
-            </button>
+            </div>
           </div>
           <div className="card-container flex flex-center flex-wrap pad">
             {this.state.initState
@@ -126,18 +126,18 @@ class Spread extends Component {
           <div className="flex vertical">
             <div className="btn-group">
               {!this.state.update ? (
-                <button onClick={this.moreCards}>more cards</button>
+                <div className="button" onClick={this.moreCards}>more cards</div>
               ) : (
-                <button onClick={() => this.deleteSpread(this.state.id)}>
+                <div className="button" onClick={() => this.deleteSpread(this.state.id)}>
                   remove
-                </button>
+                </div>
               )}
-              <button
+              <div className="button"
                 onClick={this.saveSpread}
                 disabled={this.state.saved ? true : false}
               >
                 {this.state.update ? "edit" : "save spread"}
-              </button>
+              </div>
             </div>
 
             {!this.state.update ? (

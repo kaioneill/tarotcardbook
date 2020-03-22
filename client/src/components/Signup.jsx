@@ -44,9 +44,9 @@ class Signup extends Component {
     return (
       <div className="flex flex-center vertical">
         <Link to="/login">
-          <button>
+          <div className="button">
             login
-          </button>
+          </div>
         </Link>
         <h2>signup</h2>
         <label>

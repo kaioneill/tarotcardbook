@@ -92,14 +92,60 @@ body {
   transform: rotate(180deg);
 }
 
+.button {
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 3px;
+  color: black;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+}
 
-.depressed, .depressed button {
+.btn-group .button {
+  border-radius: 0;
+}
+
+.depressed, .depressed .button {
   background: #e5e5e5;
   outline: none;
   -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
   -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
   box-shadow: inset 0px 0px 5px #c1c1c1;
 }
+
+.btn-group .button:not(:last-child) {
+  border-right: none;
+}
+
+.btn-group .button:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.btn-group .button:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.btn-group a:not(:last-child) .button {
+  border-right: none;
+}
+
+.btn-group a:first-child .button {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.btn-group a:last-child .button {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+
 
 
 .pad {
@@ -113,18 +159,7 @@ body {
 }
 
 
-button {
-  background-color: white;
-}
 
-.btn-group button:not(:last-child) {
-  border-right: none;
-}
-
-
-.btn-group a:not(:last-child) button {
-  border-right: none;
-}
 
 a.more-info {
   color: grey;
@@ -255,3 +290,5 @@ textarea {
 .react-datepicker-popper {
   left: -55px !important;
 }
+
+

@@ -142,20 +142,20 @@ class BuildSpread extends Component {
         <div className="flex vertical">
           <div className="btn-group">
             {this.state.update ? (
-              <button onClick={() => this.deleteSpread(this.state.id)}>
+              <div className="button" onClick={() => this.deleteSpread(this.state.id)}>
                 remove
-              </button>
+              </div>
             ) : (
               ""
             )}
-            <button
+            <div className="button"
               onClick={this.saveSpread}
               disabled={
                 this.state.enoughCards && !this.state.saved ? false : true
               }
             >
               {this.state.update ? "save changes" : "save spread"}
-            </button>
+            </div>
           </div>
           <div className="pad">
             <DatePicker
