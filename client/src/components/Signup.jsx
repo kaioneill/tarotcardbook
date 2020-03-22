@@ -15,6 +15,7 @@ class Signup extends Component {
   }
 
   handleSubmit(event) {
+    event.preventDefault();
     fetch("/users/signup", {
       method: "POST",
       headers: {
@@ -49,33 +50,35 @@ class Signup extends Component {
           </div>
         </Link>
         <h2>signup</h2>
-        <label>
-          email:
-          <input
-            type="text"
-            value={this.state.email}
-            onChange={event => this.setState({ email: event.target.value })}
-          />
-        </label>
-        <label>
-          username:
-          <input
-            type="text"
-            value={this.state.username}
-            onChange={event => this.setState({ username: event.target.value })}
-          />
-        </label>
-        <label>
-          password:
-          <input
-            type="password"
-            value={this.state.password}
-            onChange={event => this.setState({ password: event.target.value })}
-          />
-        </label>
-        <div>
-          <input onClick={this.handleSubmit} type="submit" value="submit" />
-        </div>
+        <form className="flex flex-center vertical" onSubmit={this.handleSubmit}>
+          <label>
+            email:
+            <input
+              type="text"
+              value={this.state.email}
+              onChange={event => this.setState({ email: event.target.value })}
+            />
+          </label>
+          <label>
+            username:
+            <input
+              type="text"
+              value={this.state.username}
+              onChange={event => this.setState({ username: event.target.value })}
+            />
+          </label>
+          <label>
+            password:
+            <input
+              type="password"
+              value={this.state.password}
+              onChange={event => this.setState({ password: event.target.value })}
+            />
+          </label>
+          <div className="small-pad">
+            <button className="button" type="submit">submit</button>
+          </div>
+        </form>
       </div>
     );
   }

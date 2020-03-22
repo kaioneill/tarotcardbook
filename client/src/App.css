@@ -146,10 +146,12 @@ body {
 }
 
 
-
-
 .pad {
   padding: 23px;
+}
+
+.small-pad {
+  padding: 10px;
 }
 
 

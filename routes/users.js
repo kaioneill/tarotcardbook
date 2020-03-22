@@ -14,22 +14,28 @@ router.post('/signup', function (req, res, next) {
 
   console.log(newUser);
 
-  // newUser.save(function(err, newUser) {
-  //   if (newUser) {
-  //     res.status(400).json({ message:'user already exists' });
-  //     return console.error(err);
-  //   }
-  //   console.log(`${newUser.username} has been saved`);
-  //   res.status(200).json({ message: 'user created' });
-  // });
-
-  newUser.save(function (err, newUser) {
-    if (newUser) {
-      res.send(newUser);
+  User.findOne({
+      $or: [{
+        'username': req.body.username
+      }, {
+        'email': req.body.email
+      }]
+    }).exec(function (err, user) {
+    if (user) {
+      res.send({});
+      return console.error("user found");
+    } else {
+      newUser.save(function (err, newUser) {
+        if (newUser) {
+          res.send(newUser);
+        }
+        console.log(`${newUser.username} has been saved`);
+        return console.error(err);
+      });
     }
-    console.log(`${newUser.username} has been saved`);
-    return console.error(err);
   });
+
+  
 
 });
 

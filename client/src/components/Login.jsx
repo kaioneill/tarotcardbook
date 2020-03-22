@@ -15,7 +15,7 @@ class Login extends Component {
 
   handleSubmit = (event) => {
     console.log("login username: " + this.state.username);
-
+    event.preventDefault();
     fetch("/users/login", {
       method: "POST",
       headers: {
@@ -54,25 +54,27 @@ class Login extends Component {
           </div>
         </Link>
         <h2>login</h2>
-        <label>
-          username:
-          <input
-            type="text"
-            value={this.state.username}
-            onChange={event => this.setState({ username: event.target.value })}
-          />
-        </label>
-        <label>
-          password:
-          <input
-            type="password"
-            value={this.state.password}
-            onChange={event => this.setState({ password: event.target.value })}
-          />
-        </label>
-        <div>
-          <div className="button" onClick={this.handleSubmit}>submit</div>
-        </div>
+        <form className="flex flex-center vertical" onSubmit={this.handleSubmit}>
+          <label>
+            username:
+            <input
+              type="text"
+              value={this.state.username}
+              onChange={event => this.setState({ username: event.target.value })}
+            />
+          </label>
+          <label>
+            password:
+            <input
+              type="password"
+              value={this.state.password}
+              onChange={event => this.setState({ password: event.target.value })}
+            />
+          </label>
+          <div className="small-pad">
+            <button className="button" type="submit">submit</button>
+          </div>
+        </form>
       </div>
     );
   }
