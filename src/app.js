@@ -52,10 +52,16 @@ app.use(bodyParser.json());
 app.set("trustproxy", true);
 
 // routes
-var indexRouter = require('./routes/index');
-var cardsRouter = require('./routes/cards');
-var usersRouter = require('./routes/users');
-var spreadsRouter = require('./routes/spreads');
+import indexRouter from './routes/index';
+import cardsRouter from './routes/cards';
+import usersRouter from './routes/users';
+import spreadsRouter from './routes/spreads';
+
+
+// var indexRouter = require('./routes/index');
+// var cardsRouter = require('./routes/cards');
+// var usersRouter = require('./routes/users');
+// var spreadsRouter = require('./routes/spreads');
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
