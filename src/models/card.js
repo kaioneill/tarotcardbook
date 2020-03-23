@@ -145,6 +145,6 @@ const updateCards = () => {
 // }
 
 
-
-export { deleteCards, saveCards, addTarotData, updateCards }
+// export { deleteCards, saveCards, addTarotData, updateCards }
+export { deleteCards, saveCards, updateCards }
 export default Card;
