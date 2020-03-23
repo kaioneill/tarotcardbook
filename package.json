@@ -3,8 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "clean": "rm -rf build && mkdir build",
+    "build-babel": "babel -d ./build ./app.js -s",
+    "build": "npm run clean && npm run build-babel",
+    "start": "npm run build && node ./build/app.js",
     "dev": "PORT=3001 nodemon app.cjs --exec babel-node --presets babel-preset-env",
-    "start": "node app.cjs --exec babel-node --presets babel-preset-env",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
