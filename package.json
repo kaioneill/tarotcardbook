@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "PORT=3001 nodemon app.cjs --exec babel-node --presets babel-preset-env",
-    "start": "node app.cjs",
+    "start": "node app.cjs --exec babel-node --presets babel-preset-env",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
@@ -24,7 +24,11 @@
     "mongoose-simple-random": "^0.4.1",
     "morgan": "~1.9.1",
     "passport": "^0.4.1",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

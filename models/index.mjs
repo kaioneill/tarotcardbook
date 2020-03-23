@@ -15,5 +15,6 @@ const models = {
   Card,
   User
 };
+
 export { connectDb };
 export default models;
