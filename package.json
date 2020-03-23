@@ -2,7 +2,6 @@
   "name": "tarot",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "PORT=3001 nodemon app.cjs --exec babel-node --presets babel-preset-env",
     "start": "node app.cjs",
