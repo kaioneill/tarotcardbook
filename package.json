@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "PORT=3001 nodemon app.js --exec babel-node --presets babel-preset-env",
-    "start": "node app.js",
+    "dev": "PORT=3001 nodemon app.cjs --exec babel-node --presets babel-preset-env",
+    "start": "node app.cjs",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {

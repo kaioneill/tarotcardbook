@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-import app from '../app';
+var app = require('../app');
 import debugF from 'debug';
 var debug = debugF('tarot:server');
 import http from 'http';

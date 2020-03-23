@@ -90,4 +90,4 @@ connectDb().then(async () => {
   console.log(e)
 });
 
-export default app;
+module.exports = app;
