@@ -198,7 +198,7 @@ a.more-info:hover {
   }
 
   .header {
-    border-bottom: 1px solid lightgrey;
+    /* border-bottom: 1px solid lightgrey; */
     margin-bottom: 50px;
   }
 
