@@ -1,16 +1,17 @@
-import models, { connectDb } from './models/index';
-import { saveCards, deleteCards, addTarotData, updateCards } from "./models/card";
-import userSchema from "./models/user";
-import session from "express-session";
-import passport from "./passport";
-import Strategy from 'passport-local';
-import bodyParser from 'body-parser';
+// import models, { connectDb } from './models/index';
+var connectDb = require('./models/index').connectDb;
+// import { saveCards, deleteCards, addTarotData, updateCards } from "./models/card";
+var userSchema = require("./models/user");
+var session = require("express-session");
+var passport = require("./passport");
+var Strategy = require('passport-local');
+var bodyParser = require('body-parser');
 
-import createError from 'http-errors';
-import express from 'express';
-import path from 'path';
-import cookieParser from 'cookie-parser';
-import logger from 'morgan';
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
 
 var app = express();
 
