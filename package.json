@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test-start": "PORT=3001 nodemon app.js --exec babel-node --presets babel-preset-env",
+    "dev": "PORT=3001 nodemon app.js --exec babel-node --presets babel-preset-env",
     "start": "node app.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
