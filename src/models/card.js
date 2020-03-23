@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import random from "mongoose-simple-random";
-import tarot_data from "./tarot_info.json";
+// import tarot_data from "./tarot_info.json";
 import jsdom from "jsdom";
 import async from "async";
 
