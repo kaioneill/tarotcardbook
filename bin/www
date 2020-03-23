@@ -4,9 +4,10 @@
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('tarot:server');
-var http = require('http');
+import app from '../app';
+import debugF from 'debug';
+var debug = debugF('tarot:server');
+import http from 'http';
 
 /**
  * Get port from environment and store in Express.
