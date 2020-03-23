@@ -6,11 +6,11 @@ import passport from "./passport";
 import Strategy from 'passport-local';
 import bodyParser from 'body-parser';
 
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+import createError from 'http-errors';
+import express from 'express';
+import path from 'path';
+import cookieParser from 'cookie-parser';
+import logger from 'morgan';
 
 var app = express();
 
@@ -38,10 +38,10 @@ app.use(bodyParser.json());
 app.set("trustproxy", true);
 
 // routes
-var indexRouter = require('./routes/index');
-var cardsRouter = require('./routes/cards');
-var usersRouter = require('./routes/users');
-var spreadsRouter = require('./routes/spreads');
+import indexRouter from './routes/index';
+import cardsRouter from './routes/cards';
+import usersRouter from './routes/users';
+import spreadsRouter from './routes/spreads';
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
@@ -90,4 +90,4 @@ connectDb().then(async () => {
   console.log(e)
 });
 
-module.exports = app;
+export default app;

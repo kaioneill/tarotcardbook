@@ -78,5 +78,4 @@ router.get("/", function(req, res, next) {
   return console.log('no user');
 });
 
-
-module.exports = router;
+export default router;
