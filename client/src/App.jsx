@@ -12,20 +12,26 @@ class App extends Component {
     this.state = {
       loggedIn: false
     };
+    localStorage.setItem("redirect", window.location.pathname);
     this.updateUser = this.updateUser.bind(this);
     this.logout = this.logout.bind(this);
   }
 
   componentDidMount() {
-    fetch("/users", { credentials: "include" })
-      .then(res => res.json())
-      .then(res => {
-        if (res.user) {
-          this.setState({ loggedIn: true });
-          console.log(`${res.user.username} logged in`)
-        }
-      })
-      .catch(e => console.log(e));
+    if (localStorage.auth) {
+      this.setState({ loggedIn: true });  
+    } else {
+      fetch("/users", { credentials: "include" })
+        .then(res => res.json())
+        .then(res => {
+          if (res.user) {
+            this.setState({ loggedIn: true });
+            localStorage.setItem("auth", "true");
+            console.log(`${res.user.username} logged in`);
+          }
+        })
+        .catch(e => console.log(e));
+      }
   }
 
   updateUser = data => {
@@ -46,6 +52,7 @@ class App extends Component {
         this.setState({
           loggedIn: false
         });
+        localStorage.removeItem("auth");
         console.log("logged out");
       })
       .catch(error => {
@@ -82,7 +89,7 @@ class App extends Component {
               {this.state.loggedIn ? (
                 <Tarot redirect="/" />
               ) : (
-                <Redirect to={{ pathname: "/login", state: { path: "/" } }} />
+                <Redirect to="/login" />
               )}
             </Route>
           </Switch>

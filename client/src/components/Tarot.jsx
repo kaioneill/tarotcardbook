@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
+import Dashboard from "./Dashboard";
 import Spread from "./Spread";
 import CardList from "./CardList";
 import SpreadList from "./SpreadList";
@@ -11,7 +12,9 @@ import { BrowserRouter as Router, Switch, Route, NavLink, Redirect, withRouter }
 class Tarot extends Component {
   constructor(props) {
     super(props);
-    if (!this.props.redirect === '/login') this.props.history.push(`${this.props.redirect}`);
+    // console.log(this.props.redirect);
+    // if (this.props.redirect !== '/login') this.props.history.push(`${this.props.redirect}`);
+    if (localStorage.redirect) this.props.history.push(`${localStorage.redirect}`);
   }
 
   render() {
@@ -21,16 +24,41 @@ class Tarot extends Component {
           <div className="header">
             <h1>tarot garden</h1>
             <div className="main-select btn-group">
-              <NavLink className="button" activeClassName="depressed" exact to="/pull_cards">
+              <NavLink
+                className="button"
+                activeClassName="depressed"
+                exact
+                to="/dashboard"
+              >
+                dashboard
+              </NavLink>
+              <NavLink
+                className="button"
+                activeClassName="depressed"
+                exact
+                to="/pull_cards"
+              >
                 pull cards
               </NavLink>
-              <NavLink className="button" activeClassName="depressed" to="/build_spread">
+              <NavLink
+                className="button"
+                activeClassName="depressed"
+                to="/build_spread"
+              >
                 build spread
               </NavLink>
-              <NavLink className="button" activeClassName="depressed" to="/past_spreads">
+              <NavLink
+                className="button"
+                activeClassName="depressed"
+                to="/past_spreads"
+              >
                 past spreads
               </NavLink>
-              <NavLink className="button" activeClassName="depressed" to="/all_cards">
+              <NavLink
+                className="button"
+                activeClassName="depressed"
+                to="/all_cards"
+              >
                 all cards
               </NavLink>
             </div>
@@ -38,8 +66,9 @@ class Tarot extends Component {
           <div className="flex flex-center sticky">
             <Switch>
               <Route path="/" exact>
-                <Redirect to="/pull_cards" />
+                <Redirect to="/dashboard" />
               </Route>
+              <Route path="/dashboard" component={Dashboard} />
               <Route path="/pull_cards" component={Spread} />
               <Route path="/build_spread" component={BuildSpread} />
               <Route path="/past_spreads" component={SpreadList} />
