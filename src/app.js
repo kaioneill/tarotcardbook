@@ -88,7 +88,7 @@ app.use("/users", usersRouter);
 app.use("/spreads", spreadsRouter);
 app.use(express.static("public"));
 
-if (true || process.env.HEROKU === true) {
+if (process.env.HEROKU === 'true') {
   app.use(express.static(path.join(__dirname, "/../client/build")));
   /*React root*/
   app.get("*", (req, res) => {

@@ -102,7 +102,7 @@ class Spread extends Component {
             <div className="button" onClick={this.moreCards}>
               {this.state.initState ? "draw cards" : "more cards"}
             </div>
-            <div className="button" onClick={this.saveSpread} disabled={true}>
+            <div className="button disabled" onClick={this.saveSpread}>
               save spread
             </div>
           </div>
@@ -132,9 +132,8 @@ class Spread extends Component {
                   remove
                 </div>
               )}
-              <div className="button"
+              <div className={this.state.saved ? "button disabled" : "button"}
                 onClick={this.saveSpread}
-                disabled={this.state.saved ? true : false}
               >
                 {this.state.update ? "edit" : "save spread"}
               </div>

@@ -148,11 +148,8 @@ class BuildSpread extends Component {
             ) : (
               ""
             )}
-            <div className="button"
+            <div className={this.state.enoughCards && !this.state.saved ? "button" : "button disabled"}
               onClick={this.saveSpread}
-              disabled={
-                this.state.enoughCards && !this.state.saved ? false : true
-              }
             >
               {this.state.update ? "save changes" : "save spread"}
             </div>
