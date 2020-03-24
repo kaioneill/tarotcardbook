@@ -81,11 +81,13 @@ import spreadsRouter from './routes/spreads';
 // var usersRouter = require('./routes/users');
 // var spreadsRouter = require('./routes/spreads');
 
-app.use(express.static(path.join(__dirname, "../client/build")));
-/*React root*/
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "../client/build/index.html"));
-});
+if (process.env.HEROKU) {
+  app.use(express.static(path.join(__dirname, "../client/build")));
+  /*React root*/
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname + "../client/build/index.html"));
+  });
+}
 
 
 app.use("/", indexRouter);
