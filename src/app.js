@@ -65,7 +65,13 @@ import spreadsRouter from './routes/spreads';
 // var usersRouter = require('./routes/users');
 // var spreadsRouter = require('./routes/spreads');
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "../client/build")));
+/*React root*/
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "../client/build/index.html"));
+});
+
+
 app.use("/", indexRouter);
 app.use("/cards", cardsRouter);
 app.use("/users", usersRouter);
@@ -74,7 +80,7 @@ app.use(express.static("public"));
 
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+// app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(logger('dev'));
