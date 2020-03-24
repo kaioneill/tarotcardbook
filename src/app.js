@@ -81,6 +81,13 @@ import spreadsRouter from './routes/spreads';
 // var usersRouter = require('./routes/users');
 // var spreadsRouter = require('./routes/spreads');
 
+
+app.use("/", indexRouter);
+app.use("/cards", cardsRouter);
+app.use("/users", usersRouter);
+app.use("/spreads", spreadsRouter);
+app.use(express.static("public"));
+
 if (process.env.HEROKU === true) {
   app.use(express.static(path.join(__dirname, "/../client/build")));
   /*React root*/
@@ -89,12 +96,6 @@ if (process.env.HEROKU === true) {
   });
 }
 
-
-app.use("/", indexRouter);
-app.use("/cards", cardsRouter);
-app.use("/users", usersRouter);
-app.use("/spreads", spreadsRouter);
-app.use(express.static("public"));
 
 
 
