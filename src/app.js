@@ -82,7 +82,7 @@ import spreadsRouter from './routes/spreads';
 // var spreadsRouter = require('./routes/spreads');
 
 
-app.use("/", indexRouter);
+// app.use("/", indexRouter);
 app.use("/cards", cardsRouter);
 app.use("/users", usersRouter);
 app.use("/spreads", spreadsRouter);
