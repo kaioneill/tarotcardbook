@@ -12,6 +12,8 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 
+import "regenerator-runtime/runtime";
+
 
 // var connectDb = require('./models/index').connectDb;
 // var userSchema = require("./models/user");
