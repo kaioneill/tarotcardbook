@@ -105,6 +105,11 @@ body {
   cursor: pointer;
 }
 
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 .btn-group .button {
   border-radius: 0;
 }
