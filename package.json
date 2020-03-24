@@ -6,7 +6,7 @@
     "clean": "rm -rf build && mkdir build",
     "build-babel": "babel -d ./build ./src -s",
     "build": "npm run clean && npm run build-babel",
-    "start": "npm run build && node ./build/bin/www",
+    "start": "npm run build && node ./build/app.js",
     "dev": "PORT=3001 nodemon src/app.js --exec babel-node --presets babel-preset-env",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
