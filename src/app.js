@@ -15,6 +15,7 @@ import logger from 'morgan';
 import "regenerator-runtime/runtime";
 
 
+
 // var connectDb = require('./models/index').connectDb;
 // var userSchema = require("./models/user");
 // var session = require("express-session");
@@ -29,6 +30,16 @@ import "regenerator-runtime/runtime";
 // var logger = require('morgan');
 
 var app = express();
+
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'DELETE, PUT, GET, POST');
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept'
+  );
+  next();
+});
 
 app.use(cookieParser("lol-it-me-ayy"));
 
