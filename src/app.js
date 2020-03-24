@@ -82,11 +82,7 @@ import spreadsRouter from './routes/spreads';
 // var spreadsRouter = require('./routes/spreads');
 
 if (process.env.HEROKU === true) {
-  app.use(express.static(path.join(__dirname, "/../../client/build")));
-  /*React root*/
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname + "/../../client/build/index.html"));
-  });
+  app.use(express.static(path.join(__dirname, "../client/build")));xw
 }
 
 
@@ -95,6 +91,12 @@ app.use("/cards", cardsRouter);
 app.use("/users", usersRouter);
 app.use("/spreads", spreadsRouter);
 app.use(express.static("public"));
+
+if (process.env.HEROKU === true) {
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname + "../client/build/index.html"));
+  });
+}
 
 
 // view engine setup
