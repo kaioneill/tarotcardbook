@@ -108,7 +108,7 @@ class Spread extends Component {
           </div>
           <div className="card-container flex flex-center flex-wrap pad">
             {this.state.initState
-              ? "set your intention and click 'draw cards'"
+              ? 'set your intention and click "draw cards"'
               : "loading..."}
           </div>
         </div>

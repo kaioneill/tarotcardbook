@@ -22,7 +22,13 @@ class Tarot extends Component {
       <Router>
         <div className="Tarot">
           <div className="header">
-            <h1>tarot garden</h1>
+            <NavLink
+              className="dull"
+              exact
+              to="/dashboard"
+            >
+              <h1>tarot garden</h1>
+            </NavLink>
             <div className="main-select btn-group">
               <NavLink
                 className="button"

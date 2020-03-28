@@ -298,4 +298,16 @@ textarea {
   left: -55px !important;
 }
 
+.bold {
+  font-weight: bold;
+}
 
+a.dull {
+  color: black;
+  text-decoration: none;
+}
+
+a.dull:visited {
+  color: black;
+  text-decoration: none;
+}
