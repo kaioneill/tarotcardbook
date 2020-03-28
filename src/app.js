@@ -73,7 +73,6 @@ app.set("trustproxy", true);
 import cardsRouter from './routes/cards';
 import usersRouter from './routes/users';
 import spreadsRouter from './routes/spreads';
-import dashboardRouter from './routes/dashboard';
 
 
 // var indexRouter = require('./routes/index');

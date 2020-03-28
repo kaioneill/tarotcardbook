@@ -54,22 +54,35 @@ class Dashboard extends Component {
   };
 
   render() {
-    return (
-      <div className="Dashboard shadow-box">
-        <h2>dashboard</h2>
-        <div>
-          <div className="card-container flex flex-center flex-wrap">
-            {this.state.loading ? 
-              "loading..."
-            :
-              this.state.cardData.map(cardData => (
-                <Card card={cardData.card} key={cardData.card.name} reversed={cardData.reversed} />
-              ))
-            }
+    if (this.state.loading) {
+      return (
+        <div className="Dashboard shadow-box">
+          <h2>dashboard</h2>
+          <div>
+            <div className="card-container flex flex-center flex-wrap">
+              loading...
+            </div>
           </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div className="Dashboard shadow-box">
+          <h2>dashboard</h2>
+          <div>
+            <div className="card-container flex flex-center flex-wrap">
+              {this.state.cardData.map(cardData => (
+                <Card
+                  card={cardData.card}
+                  key={cardData.card.name}
+                  reversed={cardData.reversed}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      );
+    }
   }
 }
 
