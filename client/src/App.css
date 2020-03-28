@@ -68,22 +68,6 @@ body {
   flex-direction: column;
 }
 
-.card-size {
-  width: 175px;
-  height: 300px;
-  margin: 20px 57px;
-  background-color: lightgrey;
-}
-
-.Card {
-  padding: 20px;
-  width: 250px;
-}
-
-.card-image {
-  height: 300px;
-}
-
 .rotate-180 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -179,7 +163,7 @@ a.more-info:hover {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .Tarot {
     text-align: center;
     width: 100%;
@@ -208,7 +192,7 @@ a.more-info:hover {
   }
 
   .main-select {
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .logout {
@@ -219,10 +203,26 @@ a.more-info:hover {
     margin-bottom: 0px;
   }
 
+  .card-size {
+    width: 175px;
+    height: 300px;
+    margin: 20px 57px;
+    background-color: lightgrey;
+  }
+
+  .Card {
+    padding: 20px;
+    width: 250px;
+  }
+
+  .card-image {
+    height: 300px;
+  }
+
   
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
   .Tarot {
     text-align: center;
     width: 100%;
@@ -262,11 +262,85 @@ a.more-info:hover {
     justify-content: flex-end;
   }
 
+  .card-size {
+    width: 15vw;
+    height: 25vw;
+    margin: 20px 4vw;
+    background-color: lightgrey;
+  }
+
+  .Card {
+    padding: 20px;
+    width: 20vw;
+  }
+
+  .card-image {
+    height: 25vw;
+  }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .Tarot {
+    text-align: center;
+    width: 100%;
+  }
+
+
+  .limit-width {
+    width: 70%;
+  }
+
+  .shadow-box {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+    padding-bottom: 30px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 50px;
+  }
+
+  .main-select {
+    padding: 35px 20px 20px 20px;
+  }
+
+  .top-bar {}
+
+  .logout {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .card-size {
+    width: 175px;
+    height: 300px;
+    margin: 20px 57px;
+    background-color: lightgrey;
+  }
+
+  .Card {
+    padding: 20px;
+    width: 250px;
+  }
+
+  .card-image {
+    height: 300px;
+  }
 
 }
 
 .SpreadList .shadow-box {
-  width: 90%;
+  width: 100%;
   border-radius: 10px;
   box-shadow: none;
   margin-bottom: 0px;
