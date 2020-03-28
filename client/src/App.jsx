@@ -28,6 +28,8 @@ class App extends Component {
             this.setState({ loggedIn: true });
             localStorage.setItem("auth", "true");
             console.log(`${res.user.username} logged in`);
+          } else {
+            localStorage.removeItem("auth");
           }
         })
         .catch(e => console.log(e));
