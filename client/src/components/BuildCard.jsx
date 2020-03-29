@@ -83,6 +83,7 @@ class BuildCard extends Component {
                 />
               ))}
             </datalist>
+            <br/>
             <input
               type="checkbox"
               onChange={event => this.setReversed(event)}

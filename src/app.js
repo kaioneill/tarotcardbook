@@ -70,7 +70,6 @@ app.use(bodyParser.json());
 app.set("trustproxy", true);
 
 // routes
-import indexRouter from './routes/index';
 import cardsRouter from './routes/cards';
 import usersRouter from './routes/users';
 import spreadsRouter from './routes/spreads';

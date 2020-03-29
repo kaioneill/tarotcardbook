@@ -1,5 +1,5 @@
-import express from "express"
-import Card from '../models/card'
+import express from "express";
+import Card from '../models/card';
 var router = express.Router();
 
 
