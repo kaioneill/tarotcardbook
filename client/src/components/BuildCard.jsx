@@ -32,12 +32,7 @@ class BuildCard extends Component {
   }
 
   moveDropdown = (event) => {
-    if (
-      event.target.parentNode.querySelector(
-        `#results${this.props.index} .dropdown-option`
-      ) &&
-      event.keyCode === 40
-    ) {
+    if (event.target.parentNode.querySelector(`#results${this.props.index} .dropdown-option`) && event.keyCode === 40) {
       event.preventDefault();
       event.target.parentNode
         .querySelector(`#results${this.props.index} .dropdown-option`)
@@ -51,7 +46,7 @@ class BuildCard extends Component {
       if (event.target.previousSibling) {
         event.target.previousSibling.focus();
       } else {
-        event.target.parentNode.previousSibling.previousSibling.focus();
+        event.target.parentNode.parentNode.previousSibling.previousSibling.focus();
       }
     } else if (event.keyCode === 40 && event.target.nextSibling) {
       event.target.nextSibling.focus();
@@ -68,6 +63,8 @@ class BuildCard extends Component {
       this.setState({ query: event.target.value });
       if (event.target.value === "") {
         this.setState({ results: [], card: {} });
+        this.hideDropdown();
+        return;
       }
     }
     // this.checkMatch(event.target, event.target.value);
@@ -77,6 +74,7 @@ class BuildCard extends Component {
       fetch("cards/search?query=" + this.state.query)
         .then((res) => res.json())
         .then((results) => this.setState({ results: results }))
+        .then((_) => document.querySelector(`#results${this.props.index}`).style.display = "flex")
         .catch((e) => console.log(e));
     }, 500);
   };
@@ -141,10 +139,8 @@ class BuildCard extends Component {
               value={this.state.query}
               onChange={(event) => this.updateResults(event)}
               onKeyUp={(event) => this.moveDropdown(event)}
-              onClick={() =>
-                (document.querySelector(
-                  `#results${this.props.index}`
-                ).style.display = "flex")
+              onClick={(event) =>
+                (document.querySelector(`#results${this.props.index}`).style.display = "flex")
               }
             ></input>
             <br />

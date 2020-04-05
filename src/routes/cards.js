@@ -22,6 +22,10 @@ const cleanQuery = (query) => {
   return result;
 }
 
+const escapeRegex = (text) => {
+    return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+};
+
 
 router.get('/list', function (req, res, next) {
 
@@ -46,7 +50,8 @@ router.get('/suit', function (req, res, next) {
 });
 
 router.get('/search', function (req, res, next) {
-  let cleaned = cleanQuery(req.query.query)
+  let cleaned = cleanQuery(req.query.query);
+  if (cleaned.length === 0) return res.send([]);
   Card.find({ name: { '$regex' : cleaned, '$options' : 'i' } })
   .sort([
     ['img']
