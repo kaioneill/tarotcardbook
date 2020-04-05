@@ -64,18 +64,19 @@ class BuildCard extends Component {
 
   updateResults = (event) => {
     let timeout = null;
-    if (event) this.setState({ query: event.target.value });
+    if (event) {
+      this.setState({ query: event.target.value });
+      if (event.target.value === "") {
+        this.setState({ results: [], card: {} });
+      }
+    }
     // this.checkMatch(event.target, event.target.value);
+    
     clearTimeout(timeout);
     timeout = setTimeout(() => {
       fetch("cards/search?query=" + this.state.query)
         .then((res) => res.json())
         .then((results) => this.setState({ results: results }))
-        .then((_) =>
-          this.state.query === ""
-            ? this.setState({ results: [], card: {} })
-            : null
-        )
         .catch((e) => console.log(e));
     }, 500);
   };
@@ -110,6 +111,11 @@ class BuildCard extends Component {
   setReversed = (event) => {
     if (this.state.card.name) {
       this.setState({ reversed: event.target.checked }, () => {
+        if (this.state.reversed) {
+          this.setState({ query: this.state.query + " Reversed"});
+        } else {
+          this.setState({ query: this.state.query.split(" Reversed")[0] });
+        }
         this.props.addCard(
           this.state.card,
           this.props.index,
