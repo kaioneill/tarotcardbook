@@ -21,17 +21,13 @@ class Tarot extends Component {
     return (
       <Router>
         <div className="Tarot">
-          <div className="header">
-            <NavLink
-              className="dull"
-              exact
-              to="/dashboard"
-            >
-              <h1>tarot garden</h1>
+          <div className="header dark-back">
+            <NavLink className="dull" exact to="/dashboard">
+              <h1 className="light">tarot garden</h1>
             </NavLink>
             <div className="main-select btn-group">
               <NavLink
-                className="button"
+                className="button light"
                 activeClassName="depressed"
                 exact
                 to="/dashboard"
@@ -39,7 +35,7 @@ class Tarot extends Component {
                 dashboard
               </NavLink>
               <NavLink
-                className="button"
+                className="button light"
                 activeClassName="depressed"
                 exact
                 to="/pull_cards"
@@ -47,21 +43,21 @@ class Tarot extends Component {
                 pull cards
               </NavLink>
               <NavLink
-                className="button"
+                className="button light"
                 activeClassName="depressed"
                 to="/build_spread"
               >
                 build spread
               </NavLink>
               <NavLink
-                className="button"
+                className="button light"
                 activeClassName="depressed"
                 to="/past_spreads"
               >
                 past spreads
               </NavLink>
               <NavLink
-                className="button"
+                className="button light"
                 activeClassName="depressed"
                 to="/all_cards"
               >

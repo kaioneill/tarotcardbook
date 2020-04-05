@@ -66,10 +66,10 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <div className="top-bar flex flex-center">
+          <div className="top-bar flex flex-center dark-back">
             {this.state.loggedIn ? (
               <div className="logout">
-                <div className="button" onClick={this.logout}>logout</div>
+                <div className="button light smaller-text" onClick={this.logout}>logout</div>
               </div>
             ) : (
               ""

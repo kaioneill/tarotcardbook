@@ -18,15 +18,17 @@ body {
   text-align: center;
   width: 100%;
   flex: 1 0 auto;
-  padding-top: 10px;
 }
 
+.top-bar {
+  padding-top: 10px;
+}
 
 .footer {
   display: flex;
   justify-content: center;
   color: grey;
-  padding: 40px 0 20px 0;
+  padding: 50px 0 20px 0;
   flex-shrink: 0;
 }
 
@@ -85,7 +87,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -160,7 +162,37 @@ a.more-info:hover {
   color: black;
 }
 
+/* STYLE STUFF START */
 
+.dark-back {
+  background-color: #333;
+}
+
+.light {
+  color: white;
+}
+
+.button.light {
+  background-color: #333;
+  border: 0;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.button.light.depressed {
+  border-radius: 0;
+  border-bottom: 1px solid white;
+  background-color: #333;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* STYLE STUFF END */
+
+.smaller-text {
+  font-size: 14px;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -201,6 +233,13 @@ a.more-info:hover {
 
   h1 {
     margin-bottom: 0px;
+    margin-top: 0;
+  }
+
+  .logout {
+    width: 97%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .card-size {
@@ -250,10 +289,14 @@ a.more-info:hover {
   }
 
   .main-select {
-    padding: 35px 20px 20px 20px;
+    padding: 10px 20px 20px 20px;
   }
 
   .top-bar {
+  }
+
+  h1 {
+    margin-top: 0px;
   }
 
   .logout {
@@ -310,10 +353,14 @@ a.more-info:hover {
   }
 
   .main-select {
-    padding: 35px 20px 20px 20px;
+    padding: 10px 20px 20px 20px;
   }
 
   .top-bar {}
+
+  h1 {
+    margin-top: 0px;
+  }
 
   .logout {
     width: 80%;
