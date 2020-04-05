@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
 import Card from "./Card";
+import onClickOutside from "react-onclickoutside";
 
 class BuildCard extends Component {
   constructor(props) {
@@ -17,6 +18,17 @@ class BuildCard extends Component {
     this.checkMatch = this.checkMatch.bind(this);
     this.setCard = this.setCard.bind(this);
     this.setReversed = this.setReversed.bind(this);
+    this.hideDropdown = this.hideDropdown.bind(this);;
+  }
+
+  handleClickOutside = (event) => {
+    document.querySelector(`#results${this.props.index}`).style.display = "none";
+  };
+
+  hideDropdown = (event) => {
+    if (event.target.className.split(' ').indexOf('no-click') === -1) {
+      document.querySelector(`#results${this.props.index}`).style.display = "none";
+    }
   }
 
   moveDropdown = (event) => {
@@ -58,7 +70,9 @@ class BuildCard extends Component {
         .then((res) => res.json())
         .then((results) => this.setState({ results: results }))
         .then((_) =>
-          this.state.query === "" ? this.setState({ results: [], card: {} }) : null
+          this.state.query === ""
+            ? this.setState({ results: [], card: {} })
+            : null
         )
         .catch((e) => console.log(e));
     }, 500);
@@ -107,36 +121,44 @@ class BuildCard extends Component {
 
   render() {
     return (
-      <div className="BuildCard">
+      <div className="BuildCard" onClick={(event) => this.hideDropdown(event)}>
         <h2>{this.props.index}</h2>
         <div className="flex flex-center vertical">
           <div>
-            <input
-              // list={`results${this.props.index}`}
-              placeholder="search for a card"
-              type="text"
-              value={this.state.query}
-              onChange={(event) => this.updateResults(event)}
-              onKeyUp={(event) => this.moveDropdown(event)}
-            ></input>
-            <br />
-            <div id={`results${this.props.index}`} className="flex vertical">
-              {this.state.results.map((card) => (
-                <input
-                  type="text"
-                  className="dropdown-option"
-                  key={card.name}
-                  value={card.name + (this.state.reversed ? " Reversed" : "")}
-                  onChange={() => {}}
-                  onKeyUp={(event) => this.cycleDropdown(event)}
-                  onClick={(event) => {
-                    this.setState({ query: event.target.value });
-                    this.setCard(event.target.value);
-                  }}
-                >
-                  {/* {card.name + (this.state.reversed ? " Reversed" : "")} */}
-                </input>
-              ))}
+            <div className="no-click">
+              <input
+                // list={`results${this.props.index}`}
+                className="no-click"
+                placeholder="search for a card"
+                type="text"
+                value={this.state.query}
+                onChange={(event) => this.updateResults(event)}
+                onKeyUp={(event) => this.moveDropdown(event)}
+                onClick={() =>
+                  (document.querySelector(
+                    `#results${this.props.index}`
+                  ).style.display = "flex")
+                }
+              ></input>
+              <br />
+              <div id={`results${this.props.index}`} className="flex vertical no-click">
+                {this.state.results.map((card) => (
+                  <input
+                    type="text"
+                    className="dropdown-option no-click"
+                    key={card.name}
+                    value={card.name + (this.state.reversed ? " Reversed" : "")}
+                    onChange={() => {}}
+                    onKeyUp={(event) => this.cycleDropdown(event)}
+                    onClick={(event) => {
+                      this.setState({ query: event.target.value });
+                      this.setCard(event.target.value);
+                    }}
+                  >
+                    {/* {card.name + (this.state.reversed ? " Reversed" : "")} */}
+                  </input>
+                ))}
+              </div>
             </div>
             <br />
             <input
@@ -157,4 +179,4 @@ class BuildCard extends Component {
   }
 }
 
-export default BuildCard;
+export default onClickOutside(BuildCard);
