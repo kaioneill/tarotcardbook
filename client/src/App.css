@@ -410,6 +410,9 @@ a.dull:visited {
 }
 
 .my-dropdown {
+  max-height: 350px;
+  overflow: scroll;
   position: absolute;
   border: 1px solid lightgrey;
 }
+
