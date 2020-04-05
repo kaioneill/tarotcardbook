@@ -48,19 +48,29 @@ class Login extends Component {
   render() {
     return (
       <div className="flex flex-center vertical">
-        <Link to="/signup">
-          <div className="button">
-            signup
+        <div className="header dark-back">
+          <div className="signup">
+            <Link to="/signup">
+              <div className="button light">signup</div>
+            </Link>
           </div>
-        </Link>
+        </div>
+        <div className="header login dark-back">
+          <h1 className="light">tarot garden</h1>
+        </div>
         <h2>login</h2>
-        <form className="flex flex-center vertical" onSubmit={this.handleSubmit}>
+        <form
+          className="flex flex-center vertical"
+          onSubmit={this.handleSubmit}
+        >
           <label>
             username:
             <input
               type="text"
               value={this.state.username}
-              onChange={event => this.setState({ username: event.target.value })}
+              onChange={(event) =>
+                this.setState({ username: event.target.value })
+              }
             />
           </label>
           <label>
@@ -68,11 +78,15 @@ class Login extends Component {
             <input
               type="password"
               value={this.state.password}
-              onChange={event => this.setState({ password: event.target.value })}
+              onChange={(event) =>
+                this.setState({ password: event.target.value })
+              }
             />
           </label>
           <div className="small-pad">
-            <button className="button" type="submit">submit</button>
+            <button className="button" type="submit">
+              submit
+            </button>
           </div>
         </form>
       </div>

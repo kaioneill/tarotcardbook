@@ -219,16 +219,18 @@ a.more-info:hover {
     padding: 20px 0;
   }
 
-  .logout {
-    
-  }
-
   h1 {
     margin-bottom: 0px;
     margin-top: 0;
   }
 
   .logout {
+    width: 97%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .signup {
     width: 97%;
     display: flex;
     justify-content: flex-end;
@@ -250,6 +252,9 @@ a.more-info:hover {
     height: 300px;
   }
 
+  .login {
+    padding-bottom: 17px;
+  }
   
 }
 
@@ -276,7 +281,6 @@ a.more-info:hover {
   .header {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid lightgrey;
   }
 
   .main-select {
@@ -291,6 +295,12 @@ a.more-info:hover {
   }
 
   .logout {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .signup {
     width: 80%;
     display: flex;
     justify-content: flex-end;
@@ -339,7 +349,6 @@ a.more-info:hover {
   .header {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid lightgrey;
   }
 
   .main-select {
@@ -353,6 +362,12 @@ a.more-info:hover {
   }
 
   .logout {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .signup {
     width: 80%;
     display: flex;
     justify-content: flex-end;
