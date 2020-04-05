@@ -385,3 +385,14 @@ a.dull:visited {
   color: black;
   text-decoration: none;
 }
+
+.dropdown-option:focus {
+  background-color: lightgrey;
+  border: 0;
+  outline: none;
+}
+
+.dropdown-option {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
