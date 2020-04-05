@@ -76,6 +76,9 @@ const cardSchema = new mongoose.Schema(
 );
 
 cardSchema.plugin(random);
+cardSchema.index({
+  name: 'text'
+});
 
 const Card = mongoose.model("Card", cardSchema);
 
