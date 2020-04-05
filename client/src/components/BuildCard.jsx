@@ -26,7 +26,7 @@ class BuildCard extends Component {
   };
 
   hideDropdown = (event) => {
-    if (event.target.className.split(' ').indexOf('no-click') === -1) {
+    if (!event || event.target.className.split(' ').indexOf('no-click') === -1) {
       document.querySelector(`#results${this.props.index}`).style.display = "none";
     }
   }
@@ -57,6 +57,8 @@ class BuildCard extends Component {
       event.target.nextSibling.focus();
     } else if (event.keyCode === 13) {
       this.setCard(event.target.value);
+      this.hideDropdown();
+      this.setState({ query: event.target.value });
     }
   };
 
@@ -124,7 +126,7 @@ class BuildCard extends Component {
       <div className="BuildCard" onClick={(event) => this.hideDropdown(event)}>
         <h2>{this.props.index}</h2>
         <div className="flex flex-center vertical">
-          <div>
+          <div >
             <input
               // list={`results${this.props.index}`}
               className="no-click"
@@ -140,7 +142,7 @@ class BuildCard extends Component {
               }
             ></input>
             <br />
-            <div id={`results${this.props.index}`} className="flex vertical no-click">
+            <div id={`results${this.props.index}`} className="flex vertical no-click my-dropdown">
               {this.state.results.map((card) => (
                 <input
                   type="text"
@@ -152,6 +154,7 @@ class BuildCard extends Component {
                   onClick={(event) => {
                     this.setState({ query: event.target.value });
                     this.setCard(event.target.value);
+                    this.hideDropdown();
                   }}
                 >
                   {/* {card.name + (this.state.reversed ? " Reversed" : "")} */}

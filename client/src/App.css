@@ -388,11 +388,21 @@ a.dull:visited {
 
 .dropdown-option:focus {
   background-color: lightgrey;
-  border: 0;
+  border: 1px solid white;
+  /* border: 0; */
   outline: none;
 }
 
 .dropdown-option {
+  padding: 10px;
+  /* transform: translateX(50%); */
   color: transparent;
-  text-shadow: 0 0 0 #000;
+  text-shadow: 0 0 0 black;
+  border: 0;
+}
+
+.my-dropdown {
+  position: absolute;
+  transform: translateX(50%);
+  border: 1px solid lightgrey;
 }
