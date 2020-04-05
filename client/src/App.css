@@ -403,6 +403,5 @@ a.dull:visited {
 
 .my-dropdown {
   position: absolute;
-  transform: translateX(50%);
   border: 1px solid lightgrey;
 }

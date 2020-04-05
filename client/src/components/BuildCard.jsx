@@ -126,7 +126,7 @@ class BuildCard extends Component {
       <div className="BuildCard" onClick={(event) => this.hideDropdown(event)}>
         <h2>{this.props.index}</h2>
         <div className="flex flex-center vertical">
-          <div >
+          <div>
             <input
               // list={`results${this.props.index}`}
               className="no-click"
@@ -142,24 +142,29 @@ class BuildCard extends Component {
               }
             ></input>
             <br />
-            <div id={`results${this.props.index}`} className="flex vertical no-click my-dropdown">
-              {this.state.results.map((card) => (
-                <input
-                  type="text"
-                  className="dropdown-option no-click"
-                  key={card.name}
-                  value={card.name + (this.state.reversed ? " Reversed" : "")}
-                  onChange={() => {}}
-                  onKeyUp={(event) => this.cycleDropdown(event)}
-                  onClick={(event) => {
-                    this.setState({ query: event.target.value });
-                    this.setCard(event.target.value);
-                    this.hideDropdown();
-                  }}
-                >
-                  {/* {card.name + (this.state.reversed ? " Reversed" : "")} */}
-                </input>
-              ))}
+            <div className="flex flex-center no-click">
+              <div
+                id={`results${this.props.index}`}
+                className="flex vertical no-click my-dropdown"
+              >
+                {this.state.results.map((card) => (
+                  <input
+                    type="text"
+                    className="dropdown-option no-click"
+                    key={card.name}
+                    value={card.name + (this.state.reversed ? " Reversed" : "")}
+                    onChange={() => {}}
+                    onKeyUp={(event) => this.cycleDropdown(event)}
+                    onClick={(event) => {
+                      this.setState({ query: event.target.value });
+                      this.setCard(event.target.value);
+                      this.hideDropdown();
+                    }}
+                  >
+                    {/* {card.name + (this.state.reversed ? " Reversed" : "")} */}
+                  </input>
+                ))}
+              </div>
             </div>
             <br />
             <input
