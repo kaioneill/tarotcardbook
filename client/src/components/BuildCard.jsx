@@ -34,16 +34,17 @@ class BuildCard extends Component {
   };
 
   cycleDropdown = (event) => {
+    event.preventDefault();
     if (event.keyCode === 38) {
       if (event.target.previousSibling) {
-        event.preventDefault();
         event.target.previousSibling.focus();
       } else {
         event.target.parentNode.previousSibling.previousSibling.focus();
       }
     } else if (event.keyCode === 40 && event.target.nextSibling) {
-      event.preventDefault();
       event.target.nextSibling.focus();
+    } else if (event.keyCode === 13) {
+      this.setCard(event.target.value);
     }
   };
 
@@ -57,7 +58,7 @@ class BuildCard extends Component {
         .then((res) => res.json())
         .then((results) => this.setState({ results: results }))
         .then((_) =>
-          this.state.query === "" ? this.setState({ results: [] }) : null
+          this.state.query === "" ? this.setState({ results: [], card: {} }) : null
         )
         .catch((e) => console.log(e));
     }, 500);
@@ -128,6 +129,10 @@ class BuildCard extends Component {
                   value={card.name + (this.state.reversed ? " Reversed" : "")}
                   onChange={() => {}}
                   onKeyUp={(event) => this.cycleDropdown(event)}
+                  onClick={(event) => {
+                    this.setState({ query: event.target.value });
+                    this.setCard(event.target.value);
+                  }}
                 >
                   {/* {card.name + (this.state.reversed ? " Reversed" : "")} */}
                 </input>
