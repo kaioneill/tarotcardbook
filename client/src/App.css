@@ -406,7 +406,7 @@ a.dull:visited {
   /* transform: translateX(50%); */
   color: transparent;
   text-shadow: 0 0 0 black;
-  border: 0;
+  border: 1px solid white;
 }
 
 .my-dropdown {
