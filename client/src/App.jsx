@@ -69,7 +69,7 @@ class App extends Component {
           <div className="top-bar flex flex-center dark-back">
             {this.state.loggedIn ? (
               <div className="logout">
-                <div className="button light smaller-text" onClick={this.logout}>logout</div>
+                <div className="button light" onClick={this.logout}>logout</div>
               </div>
             ) : (
               ""

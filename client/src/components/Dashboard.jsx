@@ -104,7 +104,7 @@ class Dashboard extends Component {
   render() {
     if (!this.state.spreads.length && !this.state.loading) {
       return (
-        <div className="Dashboard shadow-box">
+        <div className="Dashboard white-back shadow-box">
           <h2>dashboard</h2>
           <div>
             <div className="card-container flex flex-center flex-wrap">
@@ -115,7 +115,7 @@ class Dashboard extends Component {
       );
     } else if (this.state.loading) {
       return (
-        <div className="Dashboard shadow-box">
+        <div className="Dashboard white-back shadow-box">
           <h2>dashboard</h2>
           <div>
             <div className="card-container flex flex-center flex-wrap">
@@ -126,7 +126,7 @@ class Dashboard extends Component {
       );
     } else {
       return (
-        <div className="Dashboard shadow-box">
+        <div className="Dashboard white-back shadow-box">
           <h2>dashboard</h2>
           <div>
             <div className="flex flex-center flex-wrap vertical">

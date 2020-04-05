@@ -18,6 +18,8 @@ body {
   text-align: center;
   width: 100%;
   flex: 1 0 auto;
+  background-color: lightgrey;
+  padding-bottom: 20px;
 }
 
 .top-bar {
@@ -27,28 +29,12 @@ body {
 .footer {
   display: flex;
   justify-content: center;
-  color: grey;
-  padding: 50px 0 20px 0;
+  color: #555;
+  padding: 20px 0 20px 0;
   flex-shrink: 0;
+  background-color: lightgrey;
 }
 
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .hidden {
   display: none;
@@ -87,7 +73,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -188,10 +174,19 @@ a.more-info:hover {
   box-shadow: none;
 }
 
+
 /* STYLE STUFF END */
 
-.smaller-text {
-  font-size: 14px;
+.bigger {
+  font-size: 16px;
+}
+
+.main-content {
+  padding-top: 50px;
+}
+
+.white-back {
+  background-color: #fff;
 }
 
 
@@ -201,7 +196,6 @@ a.more-info:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
   }
 
 
@@ -219,8 +213,6 @@ a.more-info:hover {
   }
 
   .header {
-    /* border-bottom: 1px solid lightgrey; */
-    margin-bottom: 50px;
   }
 
   .main-select {
@@ -285,7 +277,6 @@ a.more-info:hover {
     display: flex;
     justify-content: center;
     border-bottom: 1px solid lightgrey;
-    margin-bottom: 50px;
   }
 
   .main-select {
@@ -349,7 +340,6 @@ a.more-info:hover {
     display: flex;
     justify-content: center;
     border-bottom: 1px solid lightgrey;
-    margin-bottom: 50px;
   }
 
   .main-select {

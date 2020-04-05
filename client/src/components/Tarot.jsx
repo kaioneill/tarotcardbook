@@ -27,7 +27,7 @@ class Tarot extends Component {
             </NavLink>
             <div className="main-select btn-group">
               <NavLink
-                className="button light"
+                className="button bigger light"
                 activeClassName="depressed"
                 exact
                 to="/dashboard"
@@ -35,7 +35,7 @@ class Tarot extends Component {
                 dashboard
               </NavLink>
               <NavLink
-                className="button light"
+                className="button bigger light"
                 activeClassName="depressed"
                 exact
                 to="/pull_cards"
@@ -43,21 +43,21 @@ class Tarot extends Component {
                 pull cards
               </NavLink>
               <NavLink
-                className="button light"
+                className="button bigger light"
                 activeClassName="depressed"
                 to="/build_spread"
               >
                 build spread
               </NavLink>
               <NavLink
-                className="button light"
+                className="button bigger light"
                 activeClassName="depressed"
                 to="/past_spreads"
               >
                 past spreads
               </NavLink>
               <NavLink
-                className="button light"
+                className="button bigger light"
                 activeClassName="depressed"
                 to="/all_cards"
               >
@@ -65,7 +65,7 @@ class Tarot extends Component {
               </NavLink>
             </div>
           </div>
-          <div className="flex flex-center sticky">
+          <div className="flex flex-center sticky main-content">
             <Switch>
               <Route path="/" exact>
                 <Redirect to="/dashboard" />
