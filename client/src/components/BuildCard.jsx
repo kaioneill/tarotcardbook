@@ -125,40 +125,38 @@ class BuildCard extends Component {
         <h2>{this.props.index}</h2>
         <div className="flex flex-center vertical">
           <div>
-            <div className="no-click">
-              <input
-                // list={`results${this.props.index}`}
-                className="no-click"
-                placeholder="search for a card"
-                type="text"
-                value={this.state.query}
-                onChange={(event) => this.updateResults(event)}
-                onKeyUp={(event) => this.moveDropdown(event)}
-                onClick={() =>
-                  (document.querySelector(
-                    `#results${this.props.index}`
-                  ).style.display = "flex")
-                }
-              ></input>
-              <br />
-              <div id={`results${this.props.index}`} className="flex vertical no-click">
-                {this.state.results.map((card) => (
-                  <input
-                    type="text"
-                    className="dropdown-option no-click"
-                    key={card.name}
-                    value={card.name + (this.state.reversed ? " Reversed" : "")}
-                    onChange={() => {}}
-                    onKeyUp={(event) => this.cycleDropdown(event)}
-                    onClick={(event) => {
-                      this.setState({ query: event.target.value });
-                      this.setCard(event.target.value);
-                    }}
-                  >
-                    {/* {card.name + (this.state.reversed ? " Reversed" : "")} */}
-                  </input>
-                ))}
-              </div>
+            <input
+              // list={`results${this.props.index}`}
+              className="no-click"
+              placeholder="search for a card"
+              type="text"
+              value={this.state.query}
+              onChange={(event) => this.updateResults(event)}
+              onKeyUp={(event) => this.moveDropdown(event)}
+              onClick={() =>
+                (document.querySelector(
+                  `#results${this.props.index}`
+                ).style.display = "flex")
+              }
+            ></input>
+            <br />
+            <div id={`results${this.props.index}`} className="flex vertical no-click">
+              {this.state.results.map((card) => (
+                <input
+                  type="text"
+                  className="dropdown-option no-click"
+                  key={card.name}
+                  value={card.name + (this.state.reversed ? " Reversed" : "")}
+                  onChange={() => {}}
+                  onKeyUp={(event) => this.cycleDropdown(event)}
+                  onClick={(event) => {
+                    this.setState({ query: event.target.value });
+                    this.setCard(event.target.value);
+                  }}
+                >
+                  {/* {card.name + (this.state.reversed ? " Reversed" : "")} */}
+                </input>
+              ))}
             </div>
             <br />
             <input
