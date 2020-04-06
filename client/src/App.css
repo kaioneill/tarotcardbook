@@ -189,6 +189,29 @@ a.more-info:hover {
   background-color: #fff;
 }
 
+.flex-start {
+  align-items: flex-start;
+}
+
+.wide-input {
+  width: 200px;
+}
+
+input[type="text"], input[type="password"] {
+  font-size: 16px;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.39), 0 -1px 1px white, 0 1px 0 white;
+  padding: 3px;
+}
+
+
+.Login input[type="text"],
+.Signup input[type="text"],
+.Login input[type="password"],
+.Signup input[type="password"] {
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.39), 0 -1px 1px lightgrey, 0 1px 0 lightgrey;
+}
 
 @media only screen and (max-width: 600px) {
   .Tarot {

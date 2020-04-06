@@ -47,7 +47,7 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="flex flex-center vertical">
+      <div className="Login flex flex-center vertical">
         <div className="header dark-back">
           <div className="signup">
             <Link to="/signup">
@@ -63,26 +63,32 @@ class Login extends Component {
           className="flex flex-center vertical"
           onSubmit={this.handleSubmit}
         >
-          <label>
-            username:
-            <input
-              type="text"
-              value={this.state.username}
-              onChange={(event) =>
-                this.setState({ username: event.target.value })
-              }
-            />
-          </label>
-          <label>
-            password:
-            <input
-              type="password"
-              value={this.state.password}
-              onChange={(event) =>
-                this.setState({ password: event.target.value })
-              }
-            />
-          </label>
+          <div className="small-pad flex flex-center">
+            <label className="flex vertical flex-start">
+              username:
+              <input
+                className="wide-input"
+                type="text"
+                value={this.state.username}
+                onChange={(event) =>
+                  this.setState({ username: event.target.value })
+                }
+              />
+            </label>
+          </div>
+          <div className="small-pad flex flex-center">
+            <label className="flex vertical flex-start">
+              password:
+              <input
+                className="wide-input"
+                type="password"
+                value={this.state.password}
+                onChange={(event) =>
+                  this.setState({ password: event.target.value })
+                }
+              />
+            </label>
+          </div>
           <div className="small-pad">
             <button className="button" type="submit">
               submit

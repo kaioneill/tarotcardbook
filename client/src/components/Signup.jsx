@@ -43,7 +43,7 @@ class Signup extends Component {
 
   render() {
     return (
-      <div className="flex flex-center vertical">
+      <div className="Signup flex flex-center vertical">
         <div className="header dark-back">
           <div className="signup">
             <Link to="/login">
@@ -59,34 +59,47 @@ class Signup extends Component {
           className="flex flex-center vertical"
           onSubmit={this.handleSubmit}
         >
-          <label>
-            email:
-            <input
-              type="text"
-              value={this.state.email}
-              onChange={(event) => this.setState({ email: event.target.value })}
-            />
-          </label>
-          <label>
-            username:
-            <input
-              type="text"
-              value={this.state.username}
-              onChange={(event) =>
-                this.setState({ username: event.target.value })
-              }
-            />
-          </label>
-          <label>
-            password:
-            <input
-              type="password"
-              value={this.state.password}
-              onChange={(event) =>
-                this.setState({ password: event.target.value })
-              }
-            />
-          </label>
+          <div className="small-pad flex flex-center">
+            <label className="flex vertical flex-start">
+              email:
+              <div>
+                <input
+                  className="wide-input"
+                  type="text"
+                  value={this.state.email}
+                  onChange={(event) =>
+                    this.setState({ email: event.target.value })
+                  }
+                />
+              </div>
+            </label>
+          </div>
+          <div className="small-pad flex flex-center">
+            <label className="flex vertical flex-start">
+              username:
+              <input
+                className="wide-input"
+                type="text"
+                value={this.state.username}
+                onChange={(event) =>
+                  this.setState({ username: event.target.value })
+                }
+              />
+            </label>
+          </div>
+          <div className="small-pad flex flex-center">
+            <label className="flex vertical flex-start">
+              password:
+              <input
+                className="wide-input"
+                type="password"
+                value={this.state.password}
+                onChange={(event) =>
+                  this.setState({ password: event.target.value })
+                }
+              />
+            </label>
+          </div>
           <div className="small-pad">
             <button className="button" type="submit">
               submit
