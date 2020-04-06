@@ -133,7 +133,7 @@ class BuildSpread extends Component {
 
   render() {
     return (
-      <div className="BuildSpread shadow-box">
+      <div className="BuildSpread white-back shadow-box">
         {!this.state.update ? (
           <h2>build spread</h2>
         ) : (

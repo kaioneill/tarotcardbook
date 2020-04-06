@@ -96,7 +96,7 @@ class Spread extends Component {
   render() {
     if (this.state.cardData.length === 0) {
       return (
-        <div className="Spread shadow-box">
+        <div className="Spread white-back shadow-box">
           <h2>pull cards</h2>
           <div className="btn-group">
             <div className="button" onClick={this.moreCards}>
@@ -115,7 +115,7 @@ class Spread extends Component {
       );
     } else {
       return (
-        <div className="Spread shadow-box">
+        <div className="Spread white-back shadow-box">
           {!this.state.update ? (
             <h2>pull cards</h2>
           ) : (

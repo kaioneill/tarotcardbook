@@ -35,7 +35,7 @@ export class CardList extends Component {
   render() {
     if (this.state.cards.length === 0) {
       return (
-        <div className="CardList shadow-box">
+        <div className="CardList white-back shadow-box">
           <h2>all cards</h2>
           <div className="btn-group">
             <div className="button depressed" onClick={(e) => this.getSuit(e, 'Trump')}>major arcana</div>
@@ -51,7 +51,7 @@ export class CardList extends Component {
       );
     } else {
       return (
-        <div className="CardList shadow-box">
+        <div className="CardList white-back shadow-box">
           <h2>all cards</h2>
           <div className="btn-group">
             <div className="button depressed" onClick={(e) => this.getSuit(e, 'Trump')}>major arcana</div>
