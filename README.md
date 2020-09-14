@@ -1,2 +1,3 @@
-a tarot card puller and tracker with info (and stats to come)
-http://tarot-garden.herokuapp.com/
+a tarot card puller and tracker
+
+tarot-garden.herokuapp.com
