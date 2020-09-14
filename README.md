@@ -1,3 +1,3 @@
 a tarot card puller and tracker
 
-tarot-garden.herokuapp.com
+http://tarot-garden.herokuapp.com
